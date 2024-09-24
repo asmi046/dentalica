@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e8c3c14ff33b199b4a0838993eb8423",
+    "content-hash": "9102a46801e81ac25935090163ca5e74",
     "packages": [
         {
             "name": "brick/math",
@@ -5608,6 +5608,52 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "asmi046/site_skelet",
+            "version": "1.0.27",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/asmi046/site_skelet.git",
+                "reference": "21329e32c4c070cf5815aeae70abcd09ad29e8ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/asmi046/site_skelet/zipball/21329e32c4c070cf5815aeae70abcd09ad29e8ab",
+                "reference": "21329e32c4c070cf5815aeae70abcd09ad29e8ab",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Asmi046\\SiteSkelet\\Providers\\SkiletServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Asmi046\\SiteSkelet\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "asmi046",
+                    "email": "asmi046@gmail.com"
+                }
+            ],
+            "support": {
+                "issues": "https://github.com/asmi046/site_skelet/issues",
+                "source": "https://github.com/asmi046/site_skelet/tree/1.0.27"
+            },
+            "time": "2024-09-24T11:23:24+00:00"
+        },
         {
             "name": "fakerphp/faker",
             "version": "v1.23.1",
