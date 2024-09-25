@@ -14,8 +14,6 @@ export default defineConfig({
         vue(),
         laravel({
             input: [
-                'public/bvi/js/bvi.js',
-                'public/bvi/css/bvi.min.css',
                 'resources/css/app.css',
                 'resources/js/app.js',
                 'public/scss/main.scss'
