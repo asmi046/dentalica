@@ -25,9 +25,12 @@
 
     <meta name="_token" content="{{ csrf_token() }}">
 
+    <script src="{{ asset('bvi/js/bvi.js') }}"></script>
+    <link href="{{ asset('bvi/css/bvi.min.css') }}" rel="stylesheet">
+
     @vite([
-        'public/bvi/js/bvi.js',
-        'public/bvi/css/bvi.min.css',
+        // 'public/bvi/js/bvi.js',
+        // 'public/bvi/css/bvi.min.css',
         'resources/css/app.css',
         'resources/js/app.js',
         'public/scss/main.scss'
