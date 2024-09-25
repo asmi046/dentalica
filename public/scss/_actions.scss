@@ -1,0 +1,62 @@
+.actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .actions_wrapper {
+        display: flex;
+        flex: 1;
+        margin-right: 20px;
+        .action {
+            background-color: $gray_bg_color;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            border-radius: 20px;
+            .text {
+                margin-right: 40px;
+                margin-left: 40px;
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                h3 {
+                    font-size: 47px;
+                    margin-top: 0;
+                    margin-bottom: 20px;
+                }
+                p {
+                    margin-bottom: 20px;
+                }
+
+                .btn_wrap {
+                    margin-top: auto;
+                    display: inline;
+                }
+            }
+
+            .photo {
+                height: 300px;
+                border-radius: 20px;
+                overflow: hidden;
+            }
+        }
+    }
+
+
+    .actions_button {
+        background-color: $main_color;
+        display: block;
+        border-radius: 20px;
+        width: 130px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            object-fit: unset;
+            width: 75px;
+            height: 75px;
+            margin: auto auto 20px auto;
+        }
+    }
+
+}
