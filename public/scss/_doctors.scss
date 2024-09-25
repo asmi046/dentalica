@@ -1,0 +1,47 @@
+.doctors {
+    margin-top:40px;
+    .wrapper {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .doctors_card {
+            width:22%;
+
+            .photo {
+                border-radius: 20px;
+                overflow: hidden;
+                border: 0.5px solid $gray_border_color;
+                height: 350px;
+            }
+
+            .text {
+                margin-top: 20px;
+                padding: 20px;
+                border-radius: 20px;
+                border: 0.5px solid $main_color;
+
+                h3{
+                    margin-top: 0;
+                    font-size: 30px;
+                    line-height: 1.1;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color:$main_color;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .doctors_button {
+        border-color: $sub_color;
+        background-color: $sub_color;
+        width:100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+}
