@@ -32,10 +32,6 @@
         'resources/js/app.js',
         'public/scss/main.scss'
     ])
-    <script>
-
-        new isvek.Bvi();
-    </script>
 </head>
 <body>
 
