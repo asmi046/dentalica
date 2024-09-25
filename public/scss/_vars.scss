@@ -1,19 +1,21 @@
-$main_color: #325ea5;
-$hover_color: #273772;
-$sub_color: #5aa495;
-$black_color: #333;
+$main_color: #96744A;
+$hover_color: #ba6700;
+$sub_color: #7A9154;
+$black_color: #1D1D1B;
 
-$gray_bg_color:#F5F5F5;
+// $gray_bg_color:#EDEDED;
+$gray_bg_color:#F0F0F0;
+$light_gray_bg_color:#F0EBE8;
 $gray_border_color:#B4C5C5;
 
 $main_transition: all .5s ease;
 
-$main_fonts:'Roboto', sans-serif;
+$main_fonts:'Lato', sans-serif;
 
-$border_rad: 10px;
+$border_rad: 15px;
 
 $section_space: 20px;
-$conteiner_max_w: 1280px;
+$conteiner_max_w: 1440px;
 
 $box_shadow: 0 0.5em 1em -0.125em rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.02);
 $box_padding: 1.25rem;

@@ -12,6 +12,7 @@
 body{
     font-family: $main_fonts;
     font-size: 16px;
+    color: $black_color
 }
 
 header,
@@ -28,8 +29,49 @@ section{
     margin: 0 auto;
 }
 
-// Схема с сайдбаром
-// @import "sidebar-schem";
+img {
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
 
-// Боковое беню
+.circl_btn {
+    width:40px;
+    height: 40px;
+    background-color: $main_color;
+    border-radius: 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    &.phone {
+        background-image: url('../img/icons/phone.svg')
+    }
+
+    &:hover {
+        background-color: $hover_color;
+        border-color: $hover_color;
+    }
+}
+
+.gray_hr {
+    width: 130px;
+    height: 1px;
+    background-color: $main_color;
+    border: none;
+    margin: 20px auto 20px 0
+}
+
+@media (max-width:1440px) {
+    .container {
+        width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@import "header";
+@import "burger-icon";
+@import "footer";
+
 // @import "menues";

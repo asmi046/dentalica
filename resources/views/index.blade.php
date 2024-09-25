@@ -9,6 +9,7 @@
 @section('description', $description)
 
 @section('main')
+    <x-main-header></x-main-header>
 
 @endsection
 

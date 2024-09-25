@@ -26,14 +26,19 @@
     <meta name="_token" content="{{ csrf_token() }}">
 
     @vite([
+        'public/bvi/js/bvi.js',
+        'public/bvi/css/bvi.min.css',
         'resources/css/app.css',
         'resources/js/app.js',
         'public/scss/main.scss'
     ])
 </head>
 <body>
+    @include("allicon")
     <main id="main">
         @yield('main')
+
+        <x-footer></x-footer>
     </main>
 </body>
 </html>

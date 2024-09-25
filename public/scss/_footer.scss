@@ -1,3 +1,23 @@
 footer {
-    
+    background-color: $gray_bg_color;
+    margin-top: 20px;
+    .container{
+
+        display: flex;
+        flex-wrap: wrap;
+        min-height: 100px;
+
+        .col {
+            width:24%;
+        }
+    }
+
+    .logo_footer {
+        img {
+            width:235px;
+            height: auto;
+            overflow: hidden;
+        }
+
+    }
 }
