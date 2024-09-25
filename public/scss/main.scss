@@ -12,7 +12,18 @@
 body{
     font-family: $main_fonts;
     font-size: 16px;
-    color: $black_color
+    color: $black_color;
+    font-weight: 200;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Philosopher";
+    font-weight: normal;
+    line-height: 0.9;
+}
+
+h2{
+    font-size: 54px;
 }
 
 header,
@@ -73,5 +84,7 @@ img {
 @import "header";
 @import "burger-icon";
 @import "footer";
+@import "bvi-btn";
+@import "princips";
 
 // @import "menues";
