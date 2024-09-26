@@ -87,3 +87,85 @@
         background-image: url('../img/icons/tooth-white.svg');
     }
 }
+
+
+@media (max-width: 1024px) {
+    .princips {
+        .top_line {
+            height: auto;
+            flex-direction: column-reverse;
+            .header {
+                margin: 0 0 20px 0;
+                flex: unset;
+                height: auto;
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+
+                    br{
+                        display:  none;
+                    }
+                }
+
+            }
+
+            .picture {
+                width:100%;
+                height: 200px;
+            }
+        }
+
+        .bottom_line {
+            flex-direction: column;
+            .vertical {
+                margin: 20px 0 40px 0;
+
+                .inner_princips {
+                    height: 280px;
+                }
+            }
+
+            .horizontal {
+                .inner_princips:last-child {
+                    margin-bottom: 0;
+                }
+
+                .inner_princips {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .princips .bottom_line .vertical .inner_princips {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    .princips .bottom_line {
+        font-size: 18px;
+        .vertical .inner_princips:first-child {
+            margin-bottom: 20px;
+        }
+
+        .vertical  {
+            margin-bottom: 20px;
+            .inner_princips {
+                width: 100%;
+                height: auto;
+                p {
+                    width: 70%;
+                }
+            }
+        }
+        .horizontal .inner_princips {
+            margin-bottom: 20px;
+            p {
+                width: 70%;
+            }
+        }
+    }
+}

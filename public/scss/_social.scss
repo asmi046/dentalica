@@ -28,6 +28,10 @@
         width: 20px;
         height: 20px;
     }
+}
 
-
+@media (max-width: 768px) {
+   .social-lnk {
+        margin: auto auto 0 auto;
+    }
 }

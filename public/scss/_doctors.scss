@@ -45,3 +45,32 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 1024px) {
+    .doctors .wrapper {
+        .doctors_card {
+            width:48%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .doctors {
+        .wrapper {
+            .doctors_card {
+                .photo {
+                    height: 250px;
+                }
+                .text {
+                    h3{
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

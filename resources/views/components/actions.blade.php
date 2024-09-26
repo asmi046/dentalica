@@ -11,11 +11,13 @@
             </div>
 
             <div class="photo">
+
                 <img src="{{ asset('img/actions/action_1.webp') }}" alt="Скидка 15% в день рождения">
             </div>
         </div>
     </div>
     <a class="actions_button" href="#">
+        <p>Смотреть все акции</p>
         <img src="{{ asset('img/icons/arrow.svg') }}" alt="">
     </a>
 </div>

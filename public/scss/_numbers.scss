@@ -27,7 +27,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    margin-top: 40px;
 
     .number_element {
         width:18%;
@@ -42,6 +42,50 @@
 
         .title {
             font-size: 22px;
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .numbers_wrapper .number_element {
+        width:40%;
+        margin-bottom: 50px;
+
+        .title {
+            width:70%;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .numbers_section {
+        margin-top: 35px;
+        .container .logo-to-numbers {
+            width: 100px;
+            height: 100px;
+            top: -70px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .numbers_section {
+        margin-top: 30px;
+        .container .logo-to-numbers {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    .numbers_wrapper .number_element {
+        width:48%;
+        .n {
+            font-size: 42px;
+        }
+
+        .title {
+            font-size: 18px;
         }
     }
 }

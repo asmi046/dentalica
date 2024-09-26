@@ -1,6 +1,6 @@
 .review_selector_wrapper {
     display: flex;
-
+    margin-top: 30px;
     .review_selector {
         background-color: $gray_bg_color;
         min-height: 30px;
@@ -90,5 +90,27 @@
                 font-weight: bold;
             }
         }
+    }
+}
+
+@media (max-width: 1024px) {
+    .reviews_card {
+        width: 48%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .reviews_card .top_blk {
+        flex-direction: column;
+        .photo {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .reviews_card .text {
+        font-size: 12px;
     }
 }

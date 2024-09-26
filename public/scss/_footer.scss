@@ -48,3 +48,27 @@ footer {
         color:$main_color;
     }
 }
+
+@media (max-width: 1024px) {
+    footer .container .col {
+        width:32%;
+    }
+
+    footer .container .col_1 {
+        width:100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    footer .container {
+        .col:last-child {
+            margin-bottom: 0;
+        }
+        .col {
+            width: 100%;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
