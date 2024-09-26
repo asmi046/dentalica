@@ -1,3 +1,3 @@
-<div>
-    <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
+<div id="review_app" class="review_app">
+    <review></review>
 </div>

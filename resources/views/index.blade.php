@@ -44,7 +44,7 @@
         <div class="container">
             <h2>Отзывы</h2>
             <hr class="gray_hr">
-
+            <x-reviews.reviews></x-reviews.reviews>
         </div>
     </section>
 

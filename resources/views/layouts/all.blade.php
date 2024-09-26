@@ -28,6 +28,10 @@
     <script src="{{ asset('bvi/js/bvi.js') }}"></script>
     <link href="{{ asset('bvi/css/bvi.min.css') }}" rel="stylesheet">
 
+    <script>
+        window.asset = "{{ asset('') }}";
+    </script>
+
     @vite([
         'resources/css/app.css',
         'resources/js/app.js',
@@ -35,7 +39,7 @@
     ])
 </head>
 <body>
-
+    <x-preloader></x-preloader>
     @include("allicon")
     <main id="main">
         @yield('main')

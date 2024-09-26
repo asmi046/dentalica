@@ -1,6 +1,26 @@
 import './bootstrap';
 
+import {createApp} from 'vue/dist/vue.esm-bundler';
+
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+import Review from './components/Reviews/Review.vue'
+
+const review_app = createApp({
+    components:{
+        Review,
+    },
+})
+
+review_app.use(VueAxios, axios)
+review_app.mount("#review_app")
+
 document.addEventListener("DOMContentLoaded", (event) => {
-    console.log("DOM fully loaded and parsed");
     new isvek.Bvi();
-  });
+});
+
+window.addEventListener('load', function () {
+    var preloader = document.getElementById('preloader');
+    preloader.classList.add('hide');
+});

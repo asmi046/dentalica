@@ -31,12 +31,14 @@
         "deploy_m": "vite build && npm run send_vite_build && npm run pull_rep && npm run optimize_all"
     },
     "devDependencies": {
-        "axios": "^1.7.4",
+        "axios": "^1.7.7",
         "laravel-vite-plugin": "^1.0",
         "sass": "^1.79.3",
         "vite": "^5.0"
     },
     "dependencies": {
-        "@vitejs/plugin-vue": "^5.1.4"
+        "@vitejs/plugin-vue": "^5.1.4",
+        "vue-axios": "^3.5.2",
+        "vue3-star-ratings": "^3.0.5"
     }
 }
