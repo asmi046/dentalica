@@ -1,0 +1,33 @@
+.social-lnk {
+    display: flex;
+    margin: auto 0 0 auto;
+    .link {
+        margin-left: 20px;
+        display: flex;
+        svg {
+            margin: auto;
+            fill: $sub_color;
+            width: 25px;
+            height: 25px;
+        }
+
+        &:hover {
+            svg{
+                fill:$main_color
+            }
+        }
+    }
+
+    .tg_lnk svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .ok_lnk svg,
+    .ws_lnk svg {
+        width: 20px;
+        height: 20px;
+    }
+
+
+}

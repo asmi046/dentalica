@@ -7,6 +7,8 @@ import VueAxios from 'vue-axios'
 
 import Review from './components/Reviews/Review.vue'
 
+import './animation.js'
+
 const review_app = createApp({
     components:{
         Review,
