@@ -19,7 +19,7 @@
 
     <section class="numbers_section">
         <div class="container">
-            <h2>Наша кдиника в цифрах</h2>
+            <h2>Наша клиника в цифрах</h2>
             <hr class="gray_hr">
             <img class="logo-to-numbers" src="{{ asset('img/icons/logo-to-numbers.svg') }}" alt="Клиника Денталика в цифрах">
             <x-numbers></x-numbers>
