@@ -5,6 +5,29 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(TextPlugin,ScrollTrigger);
 
+let tl = gsap.timeline({delay:1})
+
+tl.fromTo('.top_blk',
+    {
+        opacity:0,
+        y:-200
+    },
+    {
+        opacity:1,
+        y:0,
+        duration:.5
+    }
+)
+.fromTo(
+    '.center_blk',
+    {
+        opacity:0,
+    },
+    {
+        opacity:1,
+        duration:.5
+    },
+)
 
 const locations = Array.from(document.querySelectorAll(".numbers_wrapper .number_element .n span"))
 locations.forEach((elem) => {
