@@ -74,12 +74,14 @@ header{
         .photo_side {
             height: 370px;
             flex: unset;
+            border-radius: 0;
         }
     }
 }
 
 @media (max-width: 480px) {
     header.main_page_header .text_side {
+        padding: 20px 15px;
         .top_blk .logo {
             width:200px;
         }
