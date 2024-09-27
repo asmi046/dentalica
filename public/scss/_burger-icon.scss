@@ -39,14 +39,14 @@
     -ms-transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 9px;
+    top: 6px;
   }
 
   .icon-menu.active span:last-child {
     -ms-transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
-    bottom: 12px;
+    bottom: 8px;
   }
 
 @media (max-width: 480px) {
@@ -57,4 +57,12 @@
             top:49%;
         }
     }
+
+    .icon-menu.active span:first-child {
+        top: 5px;
+      }
+
+      .icon-menu.active span:last-child {
+        bottom: 6px;
+      }
 }

@@ -40,6 +40,8 @@
 </head>
 <body>
     <x-preloader></x-preloader>
+    <x-menues.side-menu></x-menues.side-menu>
+
     @include("allicon")
     <main id="main">
         @yield('main')

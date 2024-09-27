@@ -73,6 +73,11 @@ img {
     margin: 20px auto 20px 0
 }
 
+.phone_lnk {
+    font-size: 30px;
+    font-weight: bold;
+}
+
 @media (max-width:1440px) {
     .container {
         width: 96%;
@@ -105,6 +110,4 @@ img {
 @import "review";
 @import "preloader";
 @import "social";
-
-
-// @import "menues";
+@import "menues";

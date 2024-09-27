@@ -8,6 +8,9 @@ import VueAxios from 'vue-axios'
 import Review from './components/Reviews/Review.vue'
 
 import './animation.js'
+import SideMenu from './menues.js';
+
+new SideMenu('#main_side_menue', '.show_menue_button');
 
 const review_app = createApp({
     components:{

@@ -47,6 +47,14 @@
 }
 
 
+@media (max-width: 1280px) {
+    .numbers_wrapper .number_element {
+        .n {
+            font-size: 68px;
+        }
+    }
+}
+
 @media (max-width: 1024px) {
     .numbers_wrapper .number_element {
         width:40%;

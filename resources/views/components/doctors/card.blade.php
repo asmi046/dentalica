@@ -1,6 +1,6 @@
 <div class="doctors_card">
     <div class="photo">
-        <img src="{{ asset('img/person_no_photo.jpg') }}" alt="">
+        <img src="{{ asset('img/tmp_img/doctor_'.($index+1).'.webp') }}" alt="">
     </div>
     <div class="text">
         <h3>Мазуров Евгений Викторович</h3>

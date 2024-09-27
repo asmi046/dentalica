@@ -1,14 +1,6 @@
 <header class="main_page_header">
     <div class="text_side">
-        <div class="top_blk">
-            <a href="" class="circl_btn">
-                <x-burger-icon></x-burger-icon>
-            </a>
-            <a class="logo" href="{{ route('home') }}">
-                <img src="{{ asset('img/logo.svg') }}" alt="">
-            </a>
-            <a href="" class="circl_btn phone"></a>
-        </div>
+        <x-top-control></x-top-control>
 
         <div class="center_blk_wrapper">
             <div class="center_blk">

@@ -1,7 +1,7 @@
 <div class="doctors">
     <div class="wrapper">
         @for ($i=0; $i<4; $i++)
-            <x-doctors.card></x-doctors.card>
+            <x-doctors.card :index="$i"></x-doctors.card>
         @endfor
     </div>
 

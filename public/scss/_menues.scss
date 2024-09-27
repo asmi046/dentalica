@@ -2,7 +2,7 @@
     position: fixed;
     width: 0;
     height: 0;
-
+    z-index: 100;
 
     &.active {
         width: 100%;
@@ -15,7 +15,7 @@
         height: 100%;
         left:0;
         top:0;
-        z-index: 20;
+        z-index: 100;
         position: absolute;
         opacity: 0;
         transition: $main_transition;
@@ -28,19 +28,60 @@
     .side_menue {
         background-color: white;
         width: 100%;
-        max-width: 420px;
+        max-width: 680px;
         height: 100%;
         position: absolute;
         left:-500px;
         top:0;
-        z-index: 21;
+        z-index: 101;
         transition: $main_transition;
         box-shadow: 0 8px 10px -5px rgba(0,0,0,.2), 0 16px 24px 2px rgba(0,0,0,.14), 0 6px 30px 5px rgba(0,0,0,.12);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .top_blk {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .logo{
+                width:220px;
+                height: auto;
+                img{
+                    object-fit: contain;
+                }
+            }
+        }
+        .menue_body{
+            flex: 1;
+        }
 
+        .bottom_blk{
+            display: flex;
+            flex-direction: column;
+            & > * {
+                margin-bottom: 15px;
+            }
+
+            .social-lnk {
+                margin: auto auto 0 0;
+
+                a{
+                    margin-left: 0;
+                    margin-right: 20px;
+                }
+            }
+        }
+        & * {
+            opacity: 0;
+        }
     }
 
     &.active .side_menue{
         left:0;
+        & * {
+            opacity: 1;
+        }
     }
 
 }
