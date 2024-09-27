@@ -30,3 +30,10 @@ button,
         text-decoration: none;
     }
 }
+
+@media (max-width: 480px) {
+    button,
+    .button {
+        padding: 10px 35px;
+    }
+}
