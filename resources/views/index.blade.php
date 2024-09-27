@@ -1,8 +1,8 @@
 @extends('layouts.all')
 
 @php
-    $title = "";
-    $description = "";
+    $title = "Стоматология в Курске - Денталика";
+    $description = "Стоматологическая клиника Dentalica в городе Курск. Все виды стоматологических услуг";
 @endphp
 
 @section('title', $title)
