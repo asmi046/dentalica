@@ -11,6 +11,14 @@
 @section('main')
     <x-main-header></x-main-header>
 
+    <section class="services_section">
+        <div class="container">
+            <h2>Услуги</h2>
+            <hr class="gray_hr">
+            <x-services.services></x-services.services>
+        </div>
+    </section>
+
     <section class="actions">
         <div class="container">
             <x-actions></x-actions>

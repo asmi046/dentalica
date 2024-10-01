@@ -1,25 +1,33 @@
 <div class="social-lnk">
-    <a href="#" class="link vk_lnk">
-        <svg class="sprite_icon">
-            <use xlink:href="#vk_icon"></use>
-        </svg>
-    </a>
+    @if( !empty($contacts['vk']))
+        <a href="{{ $contacts['vk'] }}" class="link vk_lnk">
+            <svg class="sprite_icon">
+                <use xlink:href="#vk_icon"></use>
+            </svg>
+        </a>
+    @endif
 
-    <a href="#" class="link tg_lnk">
+    @if( !empty($contacts['tg']))
+    <a href="{{ $contacts['tg'] }}" class="link tg_lnk">
         <svg class="sprite_icon">
             <use xlink:href="#tg_icon"></use>
         </svg>
     </a>
+    @endif
 
-    <a href="#" class="link ws_lnk">
+    @if( !empty($contacts['ws']))
+    <a href="{{ $contacts['ws'] }}" class="link ws_lnk">
         <svg class="sprite_icon">
             <use xlink:href="#ws_icon"></use>
         </svg>
     </a>
+    @endif
 
-    <a href="#" class="link ok_lnk">
+    @if( !empty($contacts['ok']))
+    <a href="{{ $contacts['ok'] }}" class="link ok_lnk">
         <svg class="sprite_icon">
             <use xlink:href="#ok_icon"></use>
         </svg>
     </a>
+    @endif
 </div>

@@ -5,17 +5,17 @@
     </div>
 
     <div class="number_element">
-        <p class="n"><span>3500</span></p>
-        <p class="title">Имеплантов поставлено нашими специалистами</p>
+        <p class="n"><span>4500</span></p>
+        <p class="title">Имплантов поставлено нашим специалистом</p>
     </div>
 
     <div class="number_element">
         <p class="n"><span>31000</span>+</p>
-        <p class="title">Удалений произвели наши специалисты 85% зубы мудрости</p>
+        <p class="title">Удалений зубов произвели наши специалисты 85% зубы мудрости</p>
     </div>
 
     <div class="number_element">
         <p class="n"><span>25000</span>+</p>
-        <p class="title">Зубов залечено нашими специалистами 99% по рекомендации из дугих клиник</p>
+        <p class="title">Зубов пролечено нашими специалистами 99% по рекомендации из дугих клиник</p>
     </div>
 </div>

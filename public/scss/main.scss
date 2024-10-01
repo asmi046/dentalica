@@ -55,6 +55,14 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    &.green{
+        background-color: $sub_color;
+    }
+
+    &.green:hover{
+        background-color: $sub_color_hover;
+    }
+
     &.phone {
         background-image: url('../img/icons/phone.svg')
     }
@@ -111,3 +119,4 @@ img {
 @import "preloader";
 @import "social";
 @import "menues";
+@import "services";

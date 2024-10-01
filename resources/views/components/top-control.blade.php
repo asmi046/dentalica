@@ -5,5 +5,5 @@
     <a class="logo" href="{{ route('home') }}">
         <img src="{{ asset('img/logo.svg') }}" alt="">
     </a>
-    <a href="" class="circl_btn phone"></a>
+    <a href="" class="circl_btn green phone"></a>
 </div>

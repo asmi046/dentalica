@@ -1,0 +1,52 @@
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: 'Philosopher';
+    margin-top: 40px;
+    .service {
+        border: 0.5px solid $main_color;
+        border-radius: 20px;
+        padding: 15px 20px;
+        width: 49%;
+        font-size: 22px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        p {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .number {
+            width: 41px;
+            height: 41px;
+            border-radius: 40px;
+            color: white;
+            text-align: center;
+            line-height: 41px;
+            background-color: $sub_color;
+            font-style: italic;
+            font-size: 18px;
+        }
+
+        &:hover {
+            background-color: $sub_color;
+            color: white;
+
+            .number {
+                background-color: white;
+                color:$black_color
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .services {
+        .service {
+            width:100%;
+        }
+    }
+}

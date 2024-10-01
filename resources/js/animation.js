@@ -43,3 +43,22 @@ locations.forEach((elem) => {
     }),
 })
 })
+
+const services = Array.from(document.querySelectorAll(".services .service"))
+services.forEach((elem) => {
+    ScrollTrigger.create({
+    trigger: elem,
+    start:'bottom bottom',
+    animation: gsap.fromTo(elem,
+        {
+            opacity:0,
+            x:-200
+        },
+        {
+            opacity:1,
+            x:0,
+            duration:0.5
+        }
+    )
+})
+})
