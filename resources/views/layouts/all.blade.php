@@ -30,6 +30,7 @@
 
     <script>
         window.asset = "{{ asset('') }}";
+        window.storage = "{{ asset('storage') }}";
     </script>
 
     @vite([
@@ -39,6 +40,12 @@
     ])
 </head>
 <body>
+    <div id="all_modal_win">
+        <action-window></action-window>
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в течении 15 минут"></modal-window>
+    </div>
+
+
     <x-preloader></x-preloader>
     <x-menues.side-menu></x-menues.side-menu>
 

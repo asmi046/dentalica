@@ -14,22 +14,7 @@ header{
             display: flex;
             flex-direction: column;
 
-            .top_blk {
-                display: flex;
-                justify-content: space-between;
-                .circl_btn {
-                    margin-top: auto;
-                    margin-bottom: auto;
-                }
 
-                .logo {
-                    width:317px;
-                    height: auto;
-                    img {
-                        object-fit: contain;
-                    }
-                }
-            }
 
             .center_blk_wrapper {
                 flex:1;
@@ -64,6 +49,28 @@ header{
             flex: 1;
         }
     }
+
+    .top_blk {
+        display: flex;
+        justify-content: space-between;
+        .circl_btn {
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+
+        .logo {
+            width:317px;
+            height: auto;
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+.inner_page_header {
+    background-color: $gray_bg_color;
+    padding: 20px 35px;
 }
 
 @media (max-width: 768px) {
@@ -80,22 +87,30 @@ header{
 }
 
 @media (max-width: 480px) {
-    header.main_page_header .text_side {
-        padding: 20px 15px;
-        .top_blk .logo {
-            width:200px;
-        }
+    header {
+        &.main_page_header .text_side {
+            padding: 20px 15px;
 
-        .center_blk_wrapper {
-            .center_blk {
-                margin-top: 30px;
-                .h{
-                    font-size: 28px;
-                }
-                .sub_h {
-                    font-size: 18px;
+
+            .center_blk_wrapper {
+                .center_blk {
+                    margin-top: 30px;
+                    .h{
+                        font-size: 28px;
+                    }
+                    .sub_h {
+                        font-size: 18px;
+                    }
                 }
             }
         }
+
+        .top_blk .logo {
+            width:200px;
+        }
+    }
+
+    .inner_page_header {
+        padding: 20px 15px;
     }
 }

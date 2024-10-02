@@ -3,17 +3,19 @@
 namespace App\View\Components;
 
 use Closure;
-use Illuminate\Contracts\View\View;
+use App\Models\Sale;
 use Illuminate\View\Component;
+use Illuminate\Contracts\View\View;
 
 class Actions extends Component
 {
+    public $sale;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->sale = Sale::first();
     }
 
     /**

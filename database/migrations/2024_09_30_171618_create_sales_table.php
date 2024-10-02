@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('sales', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title')->comment('Заголовок акции');
+            $table->string('subtitle')->comment('Подзаголовок акции');
+            $table->string('img', 700)->comment('Изображение акции');
+            $table->text('description')->comment('Описание акции');
         });
     }
 

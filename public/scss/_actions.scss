@@ -7,38 +7,6 @@
         display: flex;
         flex: 1;
         margin-right: 20px;
-        .action {
-            background-color: $gray_bg_color;
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-            border-radius: 20px;
-            .text {
-                margin: 10px 40px;
-                width: 40%;
-                display: flex;
-                flex-direction: column;
-                h3 {
-                    font-size: 36px;
-                    margin-top: 0;
-                    margin-bottom: 20px;
-                }
-                p {
-                    margin-bottom: 20px;
-                }
-
-                .btn_wrap {
-                    margin-top: auto;
-                    display: inline;
-                }
-            }
-
-            .photo {
-                height: 300px;
-                border-radius: 20px;
-                overflow: hidden;
-            }
-        }
     }
 
 
@@ -63,6 +31,56 @@
         }
     }
 
+}
+
+.action {
+    background-color: $gray_bg_color;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    .text {
+        margin: 10px 40px;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        h3 {
+            font-size: 36px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        .btn_wrap {
+            margin-top: auto;
+            display: inline;
+        }
+    }
+
+    .photo {
+        height: 300px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+.all_actions_wrapper {
+    display: flex;
+    flex-direction: column;
+    .action {
+        margin-bottom: 20px;
+    }
+}
+
+.action_window {
+    img {
+        border-radius: 20px;
+    }
+    h3 {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -91,7 +109,7 @@
 }
 
 @media (max-width: 768px) {
-    .actions .actions_wrapper .action {
+    .action {
         flex-direction: column;
         .text {
             margin-left: 0;
@@ -103,7 +121,7 @@
 }
 
 @media (max-width: 480px) {
-    .actions .actions_wrapper .action .text h3 {
+    .action .text h3 {
         font-size: 32px;
         margin-bottom: 10px;
     }

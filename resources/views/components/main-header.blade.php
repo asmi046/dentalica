@@ -1,6 +1,6 @@
 <header class="main_page_header">
     <div class="text_side">
-        <x-top-control></x-top-control>
+        <x-header.top-control></x-header.top-control>
 
         <div class="center_blk_wrapper">
             <div class="center_blk">
@@ -8,7 +8,7 @@
                 <hr class="gray_hr">
                 <p class="sub_h">Стоматологическая клиника в Курске. Полный спектр услуг по оптимальным ценам.</p>
 
-                <a href="#" class="button">Записаться</a>
+                <a href="#showModal" class="button">Записаться</a>
             </div>
         </div>
 
