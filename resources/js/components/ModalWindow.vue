@@ -13,11 +13,12 @@
             <p class="sub_h">{{subtitle}}</p>
             <form v-show="!showAccept" class="sending_form" action="/send_consult" method="POST">
                 <input type="hidden" name="_token" :value="_token">
+                <input type="hidden" name="form" value="Форма модального окна">
                 <input type="text" v-mask="{mask: '+7 (NNN) NNN-NN-NN', model: 'cpf' }" name="phone" v-model="phone" placeholder="Телефон*">
                 <div class="error_list_wrap">
                     <div v-for="(item, index) in errorList" :key="index" class="error">{{item}}</div>
                 </div>
-                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a target="_blank" href="https://www.mirturizma46.ru/politika-v-oblasti-obrabotki-personalnyx-dannyx-polzovatelej/">политикой конфиденциальности</a></p>
+                <p class="policy_descr">Заполняя данную форму и отправляя заявку вы соглашаетесь с <a target="_blank" href="/page/politika-konfidencialnosti">политикой конфиденциальности</a></p>
                 <div class="control_wrap">
                     <button class="btn" @click.prevent="sendMsg()">Отправить</button> <div v-show="showLoader" class="loader"></div>
                 </div>
@@ -25,7 +26,8 @@
             </form>
             <div v-show="showAccept" class="accept_message">
                 <p class="emoji">📢🤝✅</p>
-                <h2>Ваше сообщение отправлено</h2>
+                <br>
+                <strong>Ваше сообщение отправлено</strong>
             </div>
         </div>
     </div>
@@ -70,6 +72,7 @@ export default {
             this.showLoader = true;
             axios.post(this.rout, {
                 _token: this._token,
+                form: "Форма модального окна",
                 phone: this.phone,
 
             })

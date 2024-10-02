@@ -10,9 +10,7 @@
 
 @section('main')
 
-<header class="inner_page_header">
-    <x-header.top-control></x-header.top-control>
-</header>
+<x-header.inner-page-header></x-header.inner-page-header>
 
 <section class="all_sales_section">
     <div class="container">
