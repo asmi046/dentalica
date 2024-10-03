@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class SaleController extends Controller
 {
     public function index() {
-        $all_sales = Sale::all();
+        $all_sales = Sale::orderBy('order')->get();
         return view('sales-all', ['all_sales' => $all_sales]);
     }
 

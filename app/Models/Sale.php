@@ -10,6 +10,7 @@ class Sale extends Model
     use HasFactory;
 
     public $fillable = [
+        'order',
         'title',
         'subtitle',
         'img',
