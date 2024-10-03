@@ -30,6 +30,7 @@
 
     .bottom_line {
         display: flex;
+        font-size: 16px;
         .vertical{
             margin-right: 30px;
             display: flex;
@@ -145,27 +146,58 @@
 }
 
 @media (max-width: 480px) {
+    .princips .top_line {
+        margin-bottom: 0;
+        .picture {
+            height: 100px;
+        }
+        .header {
+            padding: 0;
+            border: none;
+            margin-bottom: 0;
+        }
+    }
     .princips .bottom_line {
-        font-size: 18px;
+        font-size: 16px;
         .vertical .inner_princips:first-child {
             margin-bottom: 20px;
+
         }
+
+
 
         .vertical  {
             margin-bottom: 20px;
             .inner_princips {
                 width: 100%;
                 height: auto;
-                p {
-                    width: 70%;
-                }
+                // p {
+                //     width: 70%;
+                // }
             }
         }
         .horizontal .inner_princips {
             margin-bottom: 20px;
+            // p {
+            //     width: 70%;
+            // }
+        }
+
+        .inner_princips {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
             p {
-                width: 70%;
+                    width: 100%;
             }
         }
+    }
+
+    .tooth_bg {
+        width:40px;
+        height:40px;
+        background-size: 50%;
+        bottom: 15px;
+        right: 15px;
     }
 }

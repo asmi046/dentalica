@@ -47,8 +47,11 @@
 
 @media (max-width: 480px) {
     .services {
-        ._side {
-            width:100%;
+        .service {
+            font-size: 18px;
+            width: 100%;
+            padding: 5px 15px;
+            margin-bottom: 10px;
         }
     }
 }
