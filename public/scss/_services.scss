@@ -4,12 +4,13 @@
     justify-content: space-between;
     font-family: 'Philosopher';
     margin-top: 40px;
+
     .service {
         border: 0.5px solid $main_color;
         border-radius: 20px;
         padding: 15px 20px;
-        width: 49%;
         font-size: 22px;
+        width:49%;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
@@ -17,6 +18,7 @@
         p {
             margin-top: auto;
             margin-bottom: auto;
+            flex:1;
         }
 
         .number {
@@ -45,7 +47,7 @@
 
 @media (max-width: 480px) {
     .services {
-        .service {
+        ._side {
             width:100%;
         }
     }

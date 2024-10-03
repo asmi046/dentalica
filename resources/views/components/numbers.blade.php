@@ -5,7 +5,7 @@
     </div>
 
     <div class="number_element">
-        <p class="n"><span>4500</span></p>
+        <p class="n"><span>4500</span>+</p>
         <p class="title">Имплантов поставлено нашим специалистом</p>
     </div>
 
@@ -16,6 +16,6 @@
 
     <div class="number_element">
         <p class="n"><span>25000</span>+</p>
-        <p class="title">Зубов пролечено нашими специалистами 99% по рекомендации из дугих клиник</p>
+        <p class="title">Зубов пролечено нашими специалистами 70% по рекомендации из других клиник</p>
     </div>
 </div>

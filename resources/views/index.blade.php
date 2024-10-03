@@ -42,7 +42,7 @@
 
     <section class="doctors_section">
         <div class="container">
-            <h2>Специалисты нашей клиники</h2>
+            <h2>Специалисты клиники</h2>
             <hr class="gray_hr">
             <x-doctors.doctors></x-doctors.doctors>
         </div>
