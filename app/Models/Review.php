@@ -5,17 +5,16 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Doctor extends Model
+class Review extends Model
 {
     use HasFactory;
 
     public $fillable = [
         'name',
-        'slug',
-        'photo',
-        'order',
-        'dolgnost',
+        'platform',
+        'img',
+        'score',
         'description',
-        'short_description'
+        'platform_lnk',
     ];
 }

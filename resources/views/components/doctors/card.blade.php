@@ -1,9 +1,9 @@
 <div class="doctors_card">
     <div class="photo">
-        <img src="{{ asset('img/tmp_img/doctor_'.($index+1).'.webp') }}" alt="">
+        <img src="{{ Storage::url($item->photo) }}" alt="{{ $item->title }}">
     </div>
     <div class="text">
-        <h3>Мазуров Евгений Викторович</h3>
-        <p>Опыт работы: с 1997 года <br>Должность: <br>глав-врач</p>
+        <h3>{{ $item->name }}</h3>
+        <p>{{ $item->dolgnost }}</p>
     </div>
 </div>

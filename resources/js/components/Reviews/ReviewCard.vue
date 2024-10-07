@@ -2,15 +2,15 @@
     <div class="reviews_card">
         <div class="top_blk">
             <div class="photo">
-                <img :src="base_path+'img/person.webp'" alt="">
+                <img :src="(props.item.img)?base_path+'/'+props.item.img:asset_path+'img/person_no_photo.jpg'" alt="">
             </div>
             <div class="person">
-                <vue3-star-ratings v-model="reiting" star-size="18" star-color="#FFDE00" inactive-color="lightgray" :disable-click="false" />
-                <p>Елена В.</p>
+                <vue3-star-ratings v-model="props.item.score" star-size="18" star-color="#FFDE00" inactive-color="lightgray" :disable-click="false" />
+                <p>{{ props.item.name }}</p>
             </div>
         </div>
-        <div class="text">Я с удовольствием поделюсь своим положительным опытом посещения стоматологической клиники "Денталика". Уже с момента входа в клинику меня поразила атмосфера комфорта и уюта. </div>
-        <div class="platform">Отзыв из Яндекса</div>
+        <div class="text">{{ props.item.description.slice(0,150) }} {{ props.item.description.length > 150?"...":"" }}</div>
+        <a target="_blank" :href="props.item.platform_lnk" class="platform">Смотреть отзыв в {{ props.item.platform }}</a>
     </div>
 </template>
 
@@ -18,8 +18,12 @@
 import { ref } from 'vue';
 import vue3StarRatings from "vue3-star-ratings";
 
-const base_path = window.asset || '';
+const base_path = window.storage || '';
+const asset_path = window.asset || '';
 
+const props = defineProps({
+  item: Object
+})
 
 let reiting = ref(4)
 

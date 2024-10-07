@@ -29,5 +29,12 @@
         <rect x="0.5" y="0.5" width="29" height="29" rx="9.5" fill="none" />
     </symbol>
 
+    <symbol id="arrow" viewBox="0 0 7 12">
+        <g id="Сгруппировать_7" data-name="Сгруппировать 7" transform="translate(-2374.717 -1250.842)">
+            <line x2="4.703" y2="4.679" transform="translate(2375.841 1251.966)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.59"/>
+            <line x1="4.703" y2="4.679" transform="translate(2375.841 1256.635)" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.59"/>
+        </g>
+    </symbol>
+
 
   </svg>

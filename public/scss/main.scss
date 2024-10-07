@@ -87,6 +87,35 @@ img {
     font-weight: bold;
 }
 
+
+.arrow_button {
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0.5px solid $gray_border_color;
+    background-color: $gray_bg_color;
+    display: flex;
+    svg {
+        width: 35%;
+        height: 35%;
+        stroke: $gray_border_color;
+        margin: auto;
+    }
+    &:hover {
+        background-color: $sub_color;
+        svg {
+            stroke: white;
+        }
+    }
+
+    &.arrow_pred {
+        transform: rotate(180deg);
+    }
+}
+
+
+swiper-slide { height: auto; }
+
 @media (max-width:1440px) {
     .container {
         width: 96%;

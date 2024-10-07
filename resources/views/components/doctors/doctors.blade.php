@@ -1,9 +1,9 @@
 <div class="doctors">
     <div class="wrapper">
-        @for ($i=0; $i<4; $i++)
-            <x-doctors.card :index="$i"></x-doctors.card>
-        @endfor
+        @foreach ($doctors as $item)
+            <x-doctors.card :item="$item"></x-doctors.card>
+        @endforeach
     </div>
 
-    <a href="#" class="button doctors_button">Все специалисты</a>
+    <a href="{{ route('doctors') }}" class="button doctors_button">Все специалисты</a>
 </div>

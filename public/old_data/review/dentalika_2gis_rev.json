@@ -1,0 +1,65 @@
+[
+    {
+        "id": "68775540",
+        "region_id": 73,
+        "text": "Хочу поблагодарить мед.состав клиники Денталика за качественно предоставленные медицинские услуги!) Зуб мудрости вырос совершенно неудачно, лежал около нерва и многие клиники отказали мне, так как операция была весьма сложная. Но в Денталика мне успешно и качественно удалили зуб, аккуратно зашили рану и дали полную рекомендацию к лечению. Все заживает отлично!) Большое спасибо Маслиховой Римме Ивановне за успешно проверенную операцию!)",
+        "rating": 5,
+        "provider": "2gis",
+        "source": null,
+        "is_hidden": false,
+        "hiding_type": null,
+        "hiding_reason": null,
+        "url": "",
+        "likes_count": 0,
+        "comments_count": 1,
+        "date_created": "2023-12-24T15:45:00.661834+07:00",
+        "date_edited": null,
+        "object": {
+            "id": "10274364931016555",
+            "type": "branch"
+        },
+        "user": {
+            "id": "31002976",
+            "reviews_count": 12,
+            "first_name": "Евгения Сергеева",
+            "last_name": null,
+            "name": "Евгения Сергеева",
+            "provider": "2gis",
+            "photo_preview_urls": {
+                "1920x": "",
+                "320x": "",
+                "640x": "",
+                "64x64": "",
+                "url": ""
+            },
+            "url": "",
+            "additional_data": {
+                "email": null
+            },
+            "public_id": "a3d6a07ad3a445648fb218f3b4e40bbf"
+        },
+        "official_answer": {
+            "id": "34691419",
+            "org_name": "Денталика, стоматологическая клиника",
+            "text": "Добрый день, Евгения, благодарим Вас за отзыв. \nДля нас ценно, что Вы высоко оценили профессионализм наших специалистов. Желаем Вам крепкого стоматологического здоровья, будем рады помочь Вам снова при необходимости. \nС уважением команда клиники \"Денталика\".",
+            "date_created": "2024-09-11T19:36:26.249884+07:00",
+            "logo_preview_urls": {}
+        },
+        "photos": [],
+        "additional_data": {
+            "status_history": [],
+            "has_unresolved_complaints": false,
+            "pin_status": "none",
+            "ip": "",
+            "user_agent": "",
+            "external_id": null,
+            "filtered_facts": null,
+            "is_unrated_permanently": null,
+            "is_liked": null,
+            "from_friend": false
+        },
+        "on_moderation": false,
+        "is_rated": true,
+        "is_verified": false
+    }
+]

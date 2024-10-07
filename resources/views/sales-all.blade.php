@@ -2,6 +2,7 @@
 
 @php
     $title = "Скидки на стоматологические услуги в Курске - Денталика";
+    $title_page = "Акции и скидки";
     $description = "Скидки на стоматологические услуги в Курске от клиники Денталика.";
 @endphp
 
@@ -11,6 +12,8 @@
 @section('main')
 
 <x-header.inner-page-header></x-header.inner-page-header>
+<x-header.inner-page-title :title="$title_page"></x-header.inner-page-title>
+
 
 <section class="all_sales_section">
     <div class="container">

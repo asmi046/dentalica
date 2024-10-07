@@ -2,8 +2,8 @@
     <div class="review_selector_wrapper">
         <div class="review_selector">
             <a href="#" @click.prevent="selecReviewPlatform('all')" :class="{active: selectedElement == 'all'}" class="selector all_reviews ">Все отзывы</a>
+            <a href="#" @click.prevent="selecReviewPlatform('Yandex')"  :class="{active: selectedElement == 'Yandex'}" class="selector ya_reviews"></a>
             <a href="#" @click.prevent="selecReviewPlatform('2gis')" :class="{active: selectedElement == '2gis'}" class="selector gis_reviews "></a>
-            <a href="#" @click.prevent="selecReviewPlatform('yandex')"  :class="{active: selectedElement == 'yandex'}" class="selector ya_reviews"></a>
         </div>
     </div>
 </template>

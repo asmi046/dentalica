@@ -1,40 +1,9 @@
 .doctors {
     margin-top:40px;
     .wrapper {
-
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-
-        .doctors_card {
-            width:22%;
-
-            .photo {
-                border-radius: 20px;
-                overflow: hidden;
-                border: 0.5px solid $gray_border_color;
-                height: 350px;
-            }
-
-            .text {
-                margin-top: 20px;
-                padding: 20px;
-                border-radius: 20px;
-                border: 0.5px solid $main_color;
-
-                h3{
-                    margin-top: 0;
-                    font-size: 30px;
-                    line-height: 1.1;
-                    margin-bottom: 10px;
-                }
-
-                p {
-                    color:$main_color;
-                    font-size: 16px;
-                }
-            }
-        }
     }
 
     .doctors_button {
@@ -46,36 +15,75 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .doctors .wrapper {
-        .doctors_card {
-            width:48%;
-            margin-bottom: 40px;
+.doctors_card {
+    width:22%;
+    display: flex;
+    flex-direction: column;
+    .photo {
+        border-radius: 20px;
+        overflow: hidden;
+        border: 0.5px solid $gray_border_color;
+        height: 350px;
+    }
+
+    .text {
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        border: 0.5px solid $main_color;
+        flex: 1;
+        h3{
+            margin-top: 0;
+            font-size: 30px;
+            line-height: 1.1;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color:$main_color;
+            font-size: 16px;
         }
     }
 }
 
+.all_doctors_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .doctors_card {
+        margin-bottom:  40px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .doctors_card {
+        width:48%;
+        margin-bottom: 40px;
+    }
+
+}
+
 @media (max-width: 480px) {
     .doctors {
-        .wrapper {
-            .doctors_card {
-                margin-bottom: 20px;
-                .photo {
-                    height: 250px;
-                }
-                .text {
-                    h3{
-                        font-size: 22px;
-                    }
-                    p {
-                        font-size: 16px;
-                    }
-                }
-            }
-        }
-
         .doctors_button {
             margin-top: 0;
+        }
+    }
+
+    .doctors_card {
+        margin-bottom: 20px;
+        .photo {
+            height: 250px;
+        }
+        .text {
+            h3{
+                font-size: 22px;
+            }
+            p {
+                font-size: 16px;
+            }
         }
     }
 }

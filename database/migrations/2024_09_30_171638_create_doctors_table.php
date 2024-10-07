@@ -14,6 +14,13 @@ return new class extends Migration
         Schema::create('doctors', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name')->comment('Имя доктора');
+            $table->string('slug')->unicue()->comment('Ссылка');
+            $table->string('photo', 500)->comment('Фото доктора');
+            $table->integer('order')->default(0)->comment('Порядок вывода');
+            $table->string('dolgnost')->nullable()->default('Стоматолог')->comment('Должность');
+            $table->text('description')->nullable()->comment('Описание');
+            $table->text('short_description')->nullable()->comment('Короткое описание');
         });
     }
 

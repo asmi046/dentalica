@@ -19,6 +19,8 @@ class DatabaseSeeder extends Seeder
                 ContactSeeder::class,
                 DoctorSeeder::class,
                 PageSeeder::class,
+                ReviewSeeder::class,
+                ReviewSeederGis::class,
             ]
         );
         // User::factory(10)->create();
