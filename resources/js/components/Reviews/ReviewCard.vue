@@ -25,6 +25,4 @@ const props = defineProps({
   item: Object
 })
 
-let reiting = ref(4)
-
 </script>

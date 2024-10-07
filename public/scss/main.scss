@@ -64,6 +64,17 @@ img {
         background-color: $sub_color_hover;
     }
 
+    &.arrow_back {
+        display: flex;
+        svg{
+            width:35%;
+            height: 35%;
+            stroke: white;
+            margin: auto;
+            transform: rotate(180deg);
+        }
+    }
+
     &.phone {
         background-image: url('../img/icons/phone.svg')
     }
@@ -71,6 +82,13 @@ img {
     &:hover {
         background-color: $hover_color;
         border-color: $hover_color;
+    }
+}
+
+.bacword_btn {
+    display: flex;
+    span{
+        margin: auto 0 auto 10px;
     }
 }
 

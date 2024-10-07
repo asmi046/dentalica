@@ -21,6 +21,8 @@ class DatabaseSeeder extends Seeder
                 PageSeeder::class,
                 ReviewSeeder::class,
                 ReviewSeederGis::class,
+                MenuSeeder::class,
+                UserSeeder::class
             ]
         );
         // User::factory(10)->create();

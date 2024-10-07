@@ -14,8 +14,12 @@ import { VMaskDirective } from 'v-slim-mask'
 import './animation.js'
 import SideMenu from './menues.js';
 
-import { register } from 'swiper/element/bundle';
-register();
+
+import('swiper/element/bundle').then(mod => {
+    mod.register()
+})
+
+
 
 new SideMenu('#main_side_menue', '.show_menue_button');
 

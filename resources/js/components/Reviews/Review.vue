@@ -6,17 +6,6 @@
         slides-per-view="1.2"
         space-between="40"
         ref="swiper"
-        :breakpoints="{
-
-            768: {
-                slidesPerView: 2,
-            },
-
-            1024: {
-                slidesPerView: 4,
-            },
-
-        }"
     >
             <swiper-slide v-for="item in allRevews[reviewFilter]" :key="item.id">
                 <review-card :item="item"></review-card>
@@ -38,12 +27,27 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref, onMounted } from 'vue';
 import PlatformSelect from './PlatformSelect.vue';
 import ReviewCard from './ReviewCard.vue';
 
-
 const swiper = ref()
+
+
+
+
+
+
+onMounted(() => {
+      swiper.value.breakpoints = {
+            768: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 4,
+            }
+        }
+})
 
 const prevSlide = () => {
     swiper.value.swiper.slidePrev()

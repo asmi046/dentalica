@@ -2,7 +2,7 @@
 
 @php
     $title = (empty($page->seo_title))?$page->title:$page->seo_title;
-    $description = (empty($page->seo_description))?$page->title:$page->seo_description;;
+    $description = (empty($page->seo_description))?$page->title:$page->seo_description;
 @endphp
 
 @section('title', $title)

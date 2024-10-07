@@ -4,16 +4,17 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use MoonShine\Providers\MoonShineApplicationServiceProvider;
+use Closure;
 use MoonShine\MoonShine;
-use MoonShine\Menu\MenuGroup;
+use MoonShine\Pages\Page;
 use MoonShine\Menu\MenuItem;
+use MoonShine\Menu\MenuGroup;
+use MoonShine\Menu\MenuElement;
+use App\MoonShine\Resources\MenuResource;
 use MoonShine\Resources\MoonShineUserResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Resources\ResourceContract;
-use MoonShine\Menu\MenuElement;
-use MoonShine\Pages\Page;
-use Closure;
+use MoonShine\Providers\MoonShineApplicationServiceProvider;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -39,6 +40,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     protected function menu(): array
     {
         return [
+            MenuItem::make(
+                static fn() => __('Мню'),
+                new MenuResource()
+            )->icon('heroicons.bars-3') ,
+
             MenuGroup::make(static fn() => __('moonshine::ui.resource.system'), [
                 MenuItem::make(
                     static fn() => __('moonshine::ui.resource.admins_title'),
@@ -50,9 +56,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 ),
             ]),
 
-            MenuItem::make('Documentation', 'https://moonshine-laravel.com/docs')
-                ->badge(fn() => 'Check')
-                ->blank(),
+
         ];
     }
 

@@ -21,6 +21,9 @@ return new class extends Migration
             $table->string('dolgnost')->nullable()->default('Стоматолог')->comment('Должность');
             $table->text('description')->nullable()->comment('Описание');
             $table->text('short_description')->nullable()->comment('Короткое описание');
+
+            $table->string('seo_title')->nullable()->comment('SEO заголовок');
+            $table->text('seo_description')->nullable()->comment('SEO описание');
         });
     }
 

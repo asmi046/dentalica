@@ -56,13 +56,42 @@
     }
 }
 
+.doctors_page {
+    display: flex;
+    margin-top: 20px;
+    .img {
+        flex: 1;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .about{
+        margin-left: 50px;
+        flex:2;
+        h2 {
+            margin-top: 0;
+        }
+    }
+}
+
+
 @media (max-width: 1024px) {
 
     .doctors_card {
         width:48%;
         margin-bottom: 40px;
+
     }
 
+}
+
+@media (max-width: 768px) {
+    .doctors_page {
+        flex-direction: column;
+
+        .about{
+            margin: 40px 0 0 0;
+        }
+    }
 }
 
 @media (max-width: 480px) {

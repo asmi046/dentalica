@@ -16,6 +16,8 @@ class Doctor extends Model
         'order',
         'dolgnost',
         'description',
-        'short_description'
+        'short_description',
+        'seo_title',
+        'seo_description'
     ];
 }

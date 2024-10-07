@@ -12,9 +12,9 @@ return [
     'dir' => 'app/MoonShine',
     'namespace' => 'App\MoonShine',
 
-    'title' => env('MOONSHINE_TITLE', 'MoonShine'),
-    'logo' => env('MOONSHINE_LOGO'),
-    'logo_small' => env('MOONSHINE_LOGO_SMALL'),
+    'title' => env('MOONSHINE_TITLE', 'Dentalica'),
+    'logo' => env('MOONSHINE_LOGO', 'img/admin/ms_logo.webp'),
+    'logo_small' => env('MOONSHINE_LOGO_SMALL', 'img/admin/ms_logo_mini.webp'),
 
     'route' => [
         'domain' => env('MOONSHINE_URL', ''),

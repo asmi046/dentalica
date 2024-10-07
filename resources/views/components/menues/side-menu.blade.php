@@ -12,7 +12,9 @@
         </div>
 
         <div class="menue_body">
-
+            <nav class="side_navigation">
+                <x-menues.puncts></x-menues.puncts>
+            </nav>
         </div>
 
         <div class="bottom_blk">

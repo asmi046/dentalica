@@ -18,6 +18,6 @@ Route::get('/sale/{id}', [SaleController::class, "get_one"])->name('sales_get_on
 Route::get('/page/{slug}', [PageController::class, "index"])->name('page');
 
 Route::get('/doctors', [DoctorController::class, "index"])->name('doctors');
-Route::get('/doctors/{slug}', [PageController::class, "doctors_page"])->name('doctors_page');
+Route::get('/doctors/{slug}', [DoctorController::class, "doctors_page"])->name('doctors_page');
 
 Route::get('/all_rewiews', [ReviewController::class, "index"])->name('rewiews');
