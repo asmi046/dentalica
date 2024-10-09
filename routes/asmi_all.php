@@ -1,12 +1,13 @@
 <?php
 
-use App\Http\Controllers\DoctorController;
-use App\Http\Controllers\ReviewController;
-
-use App\Http\Controllers\SaleController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SaleController;
 
 use App\Http\Controllers\IndexController;
+use App\Http\Controllers\DoctorController;
+
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\Page\PageController;
 
 Route::get('/', [IndexController::class, "index"])->name('home');
@@ -21,3 +22,5 @@ Route::get('/doctors', [DoctorController::class, "index"])->name('doctors');
 Route::get('/doctors/{slug}', [DoctorController::class, "doctors_page"])->name('doctors_page');
 
 Route::get('/all_rewiews', [ReviewController::class, "index"])->name('rewiews');
+
+Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');

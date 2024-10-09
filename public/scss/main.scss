@@ -55,6 +55,11 @@ img {
     }
 }
 
+.map_in_page {
+    width:100%;
+    min-height: 300px;
+}
+
 .circl_btn {
     width:40px;
     height: 40px;
@@ -175,3 +180,4 @@ swiper-slide { height: auto; }
 @import "social";
 @import "menues";
 @import "services";
+@import "contacts";

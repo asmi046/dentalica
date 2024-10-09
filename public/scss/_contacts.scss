@@ -1,0 +1,36 @@
+.contacts_page_content {
+    display: flex;
+    justify-content: space-between;
+    .side{
+        flex:1;
+    }
+
+    .page_contacts_wrapper {
+        line-height: 2;
+
+        .social-lnk {
+            margin-top: 10px;
+            .link {
+                margin-left: 0;
+                margin-right: 20px;
+            }
+        }
+    }
+
+
+    .map_wrapper {
+        border: 0.5px solid $main_color;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .contacts_page_content {
+        flex-direction: column;
+        .side:first-child {
+            margin-bottom: 20px;
+        }
+    }
+}
