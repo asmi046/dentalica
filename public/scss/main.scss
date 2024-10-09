@@ -48,6 +48,13 @@ img {
     object-fit: cover;
 }
 
+.color_lnk {
+    color:$main_color;
+    &:hover {
+        color:$hover_color
+    }
+}
+
 .circl_btn {
     width:40px;
     height: 40px;

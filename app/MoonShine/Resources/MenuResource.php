@@ -12,8 +12,11 @@ use MoonShine\Fields\Url;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Field;
 use MoonShine\Fields\Number;
+use MoonShine\Fields\Select;
 use MoonShine\Fields\Switcher;
 use MoonShine\Decorations\Block;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
@@ -28,6 +31,27 @@ class MenuResource extends ModelResource
     protected string $title = 'Меню';
     protected string $column = 'title';
 
+    public function import(): ?ImportHandler
+    {
+        return null;
+    }
+
+    public function export(): ?ExportHandler
+    {
+        return null;
+    }
+
+    public function filters(): array
+    {
+        return [
+            Select::make('Выберите меню', 'menu')
+            ->options([
+                'Главное меню' => 'Главное меню',
+                'Дополнительная информация' => 'Дополнительная информация'
+
+            ])->nullable()->placeholder('Выберите пункт меню')
+        ];
+    }
 
     /**
      * @return list<MoonShineComponent|Field>
@@ -39,7 +63,7 @@ class MenuResource extends ModelResource
                 ID::make()->sortable(),
                 Text::make('Название', 'title'),
                 Text::make('Ссылка', 'lnk'),
-                Switcher::make('Отображать', 'enabled'),
+                Text::make('Меню', 'menu'),
                 Number::make('Порядок сортировки', 'order')->sortable(),
             ]),
         ];

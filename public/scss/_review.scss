@@ -96,14 +96,90 @@
     }
 }
 
-@media (max-width: 1024px) {
+.review_dop {
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    .side {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1;
+    }
 
+    .like_place {
+        height: 104px;
+        .label {
+            width:81px;
+            height: 104px;
+            background: url('../img/review/god_place.svg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            font-size: 14px;
+            img {
+                width:35px;
+                height: auto;
+                margin: 15px auto 10px auto;
+            }
+        }
+
+        .text {
+            flex:1;
+            margin: auto 0 auto 20px;
+        }
+    }
+
+    .qr {
+        .bar{
+            width: 100px;
+            border: 0.5px solid $main_color;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .text {
+            margin: auto 0 auto 20px;
+            flex:1;
+        }
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .review_dop {
+        flex-direction: column-reverse;
+
+        .qr {
+            margin-bottom: 20px;
+        }
+    }
 }
 
 @media (max-width: 480px) {
     .reviews_card .top_blk {
         .photo {
             margin-bottom: 20px;
+        }
+    }
+
+    .review_dop {
+        .side {
+            flex-direction: column;
+            height: auto;
+            .text {
+                margin: 10px auto 10px auto;
+                text-align: center;
+            }
+
+            .bar,
+            .label {
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
         }
     }
 }
