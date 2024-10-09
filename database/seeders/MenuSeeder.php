@@ -45,13 +45,6 @@ class MenuSeeder extends Seeder
 
                 [
                     'menu' => "Главное меню",
-                    'lnk' => "#",
-                    'order' => 1,
-                    'title' => "Отзывы",
-                ],
-
-                [
-                    'menu' => "Главное меню",
                     'lnk' => "/contacts",
                     'order' => 1,
                     'title' => "Контакты",
@@ -62,30 +55,30 @@ class MenuSeeder extends Seeder
             [
                 [
                     'menu' => "Дополнительная информация",
-                    'lnk' => "#",
+                    'lnk' => "/page/informaciia-ob-organizacii",
                     'order' => 1,
-                    'title' => "Сведения о медицинской организации",
+                    'title' => "Информация об организации",
                 ],
 
                 [
                     'menu' => "Дополнительная информация",
-                    'lnk' => "#",
+                    'lnk' => "/page/informaciia-o-professionalnom-obrazovanii-i-kvalifikacii-medicinskix-rabotnikov-ooo-dentalika",
                     'order' => 1,
-                    'title' => "Информация для пациенто",
+                    'title' => "Информация о профессиональном образовании и квалификации медицинских работников",
                 ],
 
                 [
                     'menu' => "Дополнительная информация",
-                    'lnk' => "#",
+                    'lnk' => "/page/informaciia-dlia-potrebitelia-zakazcika-pacienta",
                     'order' => 1,
-                    'title' => "Информация для специалистов",
+                    'title' => "Информация для потребителя",
                 ],
 
                 [
                     'menu' => "Дополнительная информация",
-                    'lnk' => "#",
+                    'lnk' => "/page/prava-i-obiazannostiax-grazdan-v-sfere-oxrany-zdorovia-pravila-vnutrennego-rasporiadka-dlia-potrebitelei-uslug",
                     'order' => 1,
-                    'title' => "Дополнительная информация",
+                    'title' => "Права и обязанностях граждан в сфере охраны здоровья",
                 ],
 
             ]);

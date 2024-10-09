@@ -24,3 +24,6 @@ Route::get('/doctors/{slug}', [DoctorController::class, "doctors_page"])->name('
 Route::get('/all_rewiews', [ReviewController::class, "index"])->name('rewiews');
 
 Route::get('/contacts', [ContactsController::class, "index"])->name('contacts');
+
+Route::get('/services', [ServiceController::class, "index"])->name('services');
+Route::get('/services/{slug}', [ServiceController::class, "services_page"])->name('services_page');

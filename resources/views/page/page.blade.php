@@ -9,13 +9,21 @@
 @section('description', $description)
 
 @section('main')
-<x-header.inner-page-header></x-header.inner-page-header>
+    <x-header.inner-page-header></x-header.inner-page-header>
+    <x-header.inner-page-title-no-photo :title="$title"></x-header.inner-page-title-no-photo>
 
-    <section class="all_sales_section">
+    <section class="page_section">
         <div class="container text_styles">
-            <h1>{{$page->title}}</h1>
             {!! $page->description !!}
         </div>
     </section>
+
+<section class="review_section">
+    <div class="container">
+        <h2>Отзывы</h2>
+        <hr class="gray_hr">
+        <x-reviews.reviews></x-reviews.reviews>
+    </div>
+</section>
 @endsection
 
