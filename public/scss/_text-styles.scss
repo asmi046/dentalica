@@ -5,7 +5,7 @@
     }
 
     a {
-        font-weight: bold;
+        font-weight: 600;
     }
 
     ul li {
@@ -25,7 +25,7 @@
     ol{
         counter-reset: my-numbers;
         padding-left: 20px;
-
+        list-style: none;
 
         li {
             margin: 10px 0;
