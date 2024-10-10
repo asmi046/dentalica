@@ -76,6 +76,7 @@ header{
     display: flex;
     justify-content: space-between;
     min-height: 310px;
+    max-height: 370px;
     background-color: $gray_bg_color;
     margin-bottom: 20px;
     h1 {
