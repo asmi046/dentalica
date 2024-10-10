@@ -76,7 +76,6 @@ header{
     display: flex;
     justify-content: space-between;
     min-height: 310px;
-    max-height: 370px;
     background-color: $gray_bg_color;
     margin-bottom: 20px;
     h1 {
@@ -126,6 +125,9 @@ header{
     .inner_page_title {
         flex-direction: column;
         background-color: white;
+        h1{
+            font-size: 32px;
+        }
         .text{
             background-color: $gray_bg_color;
             .wrapper {
@@ -166,8 +168,14 @@ header{
         padding: 20px 15px;
     }
 
-    .inner_page_title .text .wrapper {
-        margin-top: 20px;
-        margin-bottom: 20px;
+    .inner_page_title {
+        .img {
+            display: none;
+        }
+        min-height: unset;
+        .text .wrapper {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
     }
 }

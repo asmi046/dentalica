@@ -50,6 +50,7 @@ img {
 
 .color_lnk {
     color:$main_color;
+    font-weight: bold;
     &:hover {
         color:$hover_color
     }
