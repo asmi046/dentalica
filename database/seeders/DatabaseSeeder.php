@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
+                PriceSeeder::class,
+                ServiceSeeder::class,
                 SaleSeeder::class,
                 ContactSeeder::class,
                 DoctorSeeder::class,
@@ -22,7 +24,8 @@ class DatabaseSeeder extends Seeder
                 ReviewSeeder::class,
                 ReviewSeederGis::class,
                 MenuSeeder::class,
-                UserSeeder::class
+                UserSeeder::class,
+                UploadSeeder::class,
             ]
         );
         // User::factory(10)->create();

@@ -1,11 +1,16 @@
 .text_styles {
     word-break: break-all;
+    font-weight: normal;
     p{
         margin: 20px 0;
     }
 
     a {
-        font-weight: 600;
+
+        color: $main_color;
+        &:hover {
+            color:$hover_color;
+        }
     }
 
     ul li {

@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Foundation\Application;
+use MoonShine\Http\Middleware\Authenticate;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 
@@ -15,6 +16,9 @@ return Application::configure(basePath: dirname(__DIR__))
 
             Route::middleware('web')
                 ->group(base_path('routes/asmi_consultation.php'));
+
+            Route::middleware(['moonshine', Authenticate::class])
+                ->group(base_path('routes/moonshine.php'));
 
         }
     )

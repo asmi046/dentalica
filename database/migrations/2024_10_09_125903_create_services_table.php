@@ -14,6 +14,9 @@ return new class extends Migration
         Schema::create('services', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('title')->comment('Название разделе услуг');
+            $table->text('description')->nullable()->comment('Описание раздела');
+            $table->json('price_list')->nullable()->comment('Список цен');
         });
     }
 

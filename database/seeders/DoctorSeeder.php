@@ -23,33 +23,33 @@ class DoctorSeeder extends Seeder
 
         $data = [
             [
-                'name' => 'Маслихова Римма Ивановна',
-                'slug' => Str::slug('Маслихова Римма Ивановна'),
-                'photo' => "doctors/doctor_1.webp",
-                'order' => 1,
-                'dolgnost' => "Cтоматолог терапевт / Ортопед / Хирург",
-                'description' => file_get_contents(public_path('old_data/doctors/maslihova.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/maslihova-short.html'))
-            ],
-
-            [
                 'name' => 'Корнев Сергей Александрович',
                 'slug' => Str::slug('Корнев Сергей Александрович'),
                 'photo' => "doctors/doctor_2.webp",
-                'order' => 2,
+                'order' => 1,
                 'dolgnost' => "Стоматолог хирург / Ортопед / Терапевт",
-                'description' => file_get_contents(public_path('old_data/doctors/alimova.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/alimova-short.html'))
+                'description' => file_get_contents(public_path('old_data/doctors/kornev.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/kornev-short.html'))
             ],
 
             [
                 'name' => 'Алымова Виктория Викторовна',
                 'slug' => Str::slug('Алымова Виктория Викторовна'),
                 'photo' => "doctors/doctor_3.webp",
-                'order' => 3,
+                'order' => 2,
                 'dolgnost' => "Стоматолог терапевт",
-                'description' => file_get_contents(public_path('old_data/doctors/kornev.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/kornev-short.html'))
+                'description' => file_get_contents(public_path('old_data/doctors/alimova.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/alimova-short.html'))
+            ],
+
+            [
+                'name' => 'Маслихова Римма Ивановна',
+                'slug' => Str::slug('Маслихова Римма Ивановна'),
+                'photo' => "doctors/doctor_1.webp",
+                'order' => 3,
+                'dolgnost' => "Cтоматолог терапевт / Ортопед / Хирург",
+                'description' => file_get_contents(public_path('old_data/doctors/maslihova.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/maslihova-short.html'))
             ],
 
             [
@@ -73,8 +73,8 @@ class DoctorSeeder extends Seeder
             ],
 
             [
-                'name' => 'Коонева Евгения Леонидовна',
-                'slug' => Str::slug('Коонева Евгения Леонидовна'),
+                'name' => 'Корнева Евгения Леонидовна',
+                'slug' => Str::slug('Корнева Евгения Леонидовна'),
                 'photo' => "doctors/doctor_2.webp",
                 'order' => 6,
                 'dolgnost' => "Главный врач",

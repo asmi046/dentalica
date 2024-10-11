@@ -38,7 +38,7 @@ class MenuSeeder extends Seeder
 
                 [
                     'menu' => "Главное меню",
-                    'lnk' => "#",
+                    'lnk' => "/prices",
                     'order' => 1,
                     'title' => "Прейскурант",
                 ],
