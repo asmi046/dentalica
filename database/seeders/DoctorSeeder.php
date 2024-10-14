@@ -68,8 +68,8 @@ class DoctorSeeder extends Seeder
                 'photo' => "doctors/doctor_1.webp",
                 'order' => 5,
                 'dolgnost' => "Врач-рентгенолог",
-                'description' => "",
-                'short_description' => ""
+                'description' => file_get_contents(public_path('old_data/doctors/firsov.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/firsov-short.html'))
             ],
 
             [
@@ -78,8 +78,18 @@ class DoctorSeeder extends Seeder
                 'photo' => "doctors/doctor_2.webp",
                 'order' => 6,
                 'dolgnost' => "Главный врач",
-                'description' => "",
-                'short_description' => ""
+                'description' => file_get_contents(public_path('old_data/doctors/korneva.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/korneva-short.html'))
+            ],
+
+            [
+                'name' => 'Корнев Никитв Сергеевич',
+                'slug' => Str::slug('Корнев Никитв Сергеевич'),
+                'photo' => "doctors/doctor_2.webp",
+                'order' => 7,
+                'dolgnost' => "Гигиенист",
+                'description' => file_get_contents(public_path('old_data/doctors/kornev_n.html')),
+                'short_description' => file_get_contents(public_path('old_data/doctors/kornev_n-short.html'))
             ],
         ];
 

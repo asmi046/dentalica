@@ -11,6 +11,6 @@ class ServiceController extends Controller
     }
 
     public function services_page($slug) {
-        return view('services_page');
+        return view('services-page');
     }
 }
