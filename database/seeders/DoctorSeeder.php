@@ -16,16 +16,17 @@ class DoctorSeeder extends Seeder
      */
     public function run(): void
     {
-        Storage::disk('public')->put("doctors/doctor_1.webp", file_get_contents(public_path('img/tmp_img/doctor_1.webp')), 'public');
-        Storage::disk('public')->put("doctors/doctor_2.webp", file_get_contents(public_path('img/tmp_img/doctor_2.webp')), 'public');
-        Storage::disk('public')->put("doctors/doctor_3.webp", file_get_contents(public_path('img/tmp_img/doctor_3.webp')), 'public');
-        Storage::disk('public')->put("doctors/doctor_4.webp", file_get_contents(public_path('img/tmp_img/doctor_4.webp')), 'public');
+        Storage::disk('public')->put("doctors/kornev.webp", file_get_contents(public_path('img/tmp_img/kornev.webp')), 'public');
+        Storage::disk('public')->put("doctors/kornev-j.webp", file_get_contents(public_path('img/tmp_img/kornev-j.webp')), 'public');
+        Storage::disk('public')->put("doctors/alimova.webp", file_get_contents(public_path('img/tmp_img/alimova.webp')), 'public');
+        Storage::disk('public')->put("doctors/lisova.webp", file_get_contents(public_path('img/tmp_img/lisova.webp')), 'public');
+        Storage::disk('public')->put("doctors/maslihova.webp", file_get_contents(public_path('img/tmp_img/maslihova.webp')), 'public');
 
         $data = [
             [
                 'name' => 'Корнев Сергей Александрович',
                 'slug' => Str::slug('Корнев Сергей Александрович'),
-                'photo' => "doctors/doctor_2.webp",
+                'photo' => "doctors/kornev.webp",
                 'order' => 1,
                 'dolgnost' => "Стоматолог хирург / Ортопед / Терапевт",
                 'description' => file_get_contents(public_path('old_data/doctors/kornev.html')),
@@ -35,7 +36,7 @@ class DoctorSeeder extends Seeder
             [
                 'name' => 'Алымова Виктория Викторовна',
                 'slug' => Str::slug('Алымова Виктория Викторовна'),
-                'photo' => "doctors/doctor_3.webp",
+                'photo' => "doctors/alimova.webp",
                 'order' => 2,
                 'dolgnost' => "Стоматолог терапевт",
                 'description' => file_get_contents(public_path('old_data/doctors/alimova.html')),
@@ -45,7 +46,7 @@ class DoctorSeeder extends Seeder
             [
                 'name' => 'Маслихова Римма Ивановна',
                 'slug' => Str::slug('Маслихова Римма Ивановна'),
-                'photo' => "doctors/doctor_1.webp",
+                'photo' => "doctors/maslihova.webp",
                 'order' => 3,
                 'dolgnost' => "Cтоматолог терапевт / Ортопед / Хирург",
                 'description' => file_get_contents(public_path('old_data/doctors/maslihova.html')),
@@ -55,7 +56,7 @@ class DoctorSeeder extends Seeder
             [
                 'name' => 'Лисова Татьяна Олеговна',
                 'slug' => Str::slug('Лисова Татьяна Олеговна'),
-                'photo' => "doctors/doctor_4.webp",
+                'photo' => "doctors/lisova.webp",
                 'order' => 4,
                 'dolgnost' => "Стоматолог терапевт",
                 'description' => file_get_contents(public_path('old_data/doctors/lisova.html')),
@@ -85,7 +86,7 @@ class DoctorSeeder extends Seeder
             [
                 'name' => 'Корнев Никитв Сергеевич',
                 'slug' => Str::slug('Корнев Никитв Сергеевич'),
-                'photo' => "doctors/doctor_2.webp",
+                'photo' => "doctors/kornev-j.webp",
                 'order' => 7,
                 'dolgnost' => "Гигиенист",
                 'description' => file_get_contents(public_path('old_data/doctors/kornev_n.html')),

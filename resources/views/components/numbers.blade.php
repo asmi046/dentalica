@@ -6,7 +6,7 @@
 
     <div class="number_element">
         <p class="n"><span>4500</span>+</p>
-        <p class="title">Имплантов поставлено нашим специалистом</p>
+        <p class="title">Имплантатов поставлено нашим специалистом</p>
     </div>
 
     <div class="number_element">
