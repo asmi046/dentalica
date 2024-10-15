@@ -63,31 +63,31 @@ class DoctorSeeder extends Seeder
                 'short_description' => file_get_contents(public_path('old_data/doctors/lisova-short.html'))
             ],
 
-            [
-                'name' => 'Фирсов Евгений Игоревич',
-                'slug' => Str::slug('Фирсов Евгений Игоревич'),
-                'photo' => "doctors/doctor_1.webp",
-                'order' => 5,
-                'dolgnost' => "Врач-рентгенолог",
-                'description' => file_get_contents(public_path('old_data/doctors/firsov.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/firsov-short.html'))
-            ],
+            // [
+            //     'name' => 'Фирсов Евгений Игоревич',
+            //     'slug' => Str::slug('Фирсов Евгений Игоревич'),
+            //     'photo' => "doctors/doctor_1.webp",
+            //     'order' => 5,
+            //     'dolgnost' => "Врач-рентгенолог",
+            //     'description' => file_get_contents(public_path('old_data/doctors/firsov.html')),
+            //     'short_description' => file_get_contents(public_path('old_data/doctors/firsov-short.html'))
+            // ],
 
-            [
-                'name' => 'Корнева Евгения Леонидовна',
-                'slug' => Str::slug('Корнева Евгения Леонидовна'),
-                'photo' => "doctors/doctor_2.webp",
-                'order' => 6,
-                'dolgnost' => "Главный врач",
-                'description' => file_get_contents(public_path('old_data/doctors/korneva.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/korneva-short.html'))
-            ],
+            // [
+            //     'name' => 'Корнева Евгения Леонидовна',
+            //     'slug' => Str::slug('Корнева Евгения Леонидовна'),
+            //     'photo' => "doctors/doctor_2.webp",
+            //     'order' => 6,
+            //     'dolgnost' => "Главный врач",
+            //     'description' => file_get_contents(public_path('old_data/doctors/korneva.html')),
+            //     'short_description' => file_get_contents(public_path('old_data/doctors/korneva-short.html'))
+            // ],
 
             [
                 'name' => 'Корнев Никитв Сергеевич',
                 'slug' => Str::slug('Корнев Никитв Сергеевич'),
                 'photo' => "doctors/kornev-j.webp",
-                'order' => 7,
+                'order' => 5,
                 'dolgnost' => "Гигиенист",
                 'description' => file_get_contents(public_path('old_data/doctors/kornev_n.html')),
                 'short_description' => file_get_contents(public_path('old_data/doctors/kornev_n-short.html'))

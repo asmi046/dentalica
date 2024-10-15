@@ -17,6 +17,12 @@ class MenuSeeder extends Seeder
             [
                 [
                     'menu' => "Главное меню",
+                    'lnk' => "/",
+                    'order' => 1,
+                    'title' => "Главная страница",
+                ],
+                [
+                    'menu' => "Главное меню",
                     'lnk' => "#",
                     'order' => 1,
                     'title' => "Услуги",
