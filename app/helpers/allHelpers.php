@@ -1,5 +1,21 @@
 <?php
 
+if (!function_exists("separate_table")) {
+    function separate_table($table) {
+        $result = [];
+        if (isset($table[0]['table']))
+        {   foreach ($table as $item)
+                $result[$item['table']][] = $item;
+        } else {
+            foreach ($table as $item)
+                $result['all'][] = $item;
+        }
+        return ($result);
+    }
+}
+
+
+
 // Месяц текстом
 if (!function_exists("get_month")) {
     function get_month($date) {

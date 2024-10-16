@@ -25,6 +25,12 @@
                     <summary>{{ $item->title }}</summary>
                     <div class="response">
 
+                            @foreach (separate_table($item->price_list) as $key => $table)
+
+                            @if ($key !== "all")
+                                <h3>{{ $key}} </h3>
+                            @endif
+
                             <table>
                                 <thead>
                                     <tr>
@@ -34,7 +40,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($item->price_list as $subitem)
+                                    @foreach ($table as $subitem)
                                         <tr>
                                             <td class="td_code">{{ $subitem["code"] }}</td>
                                             <td>{{ $subitem["name"] }}</td>
@@ -43,6 +49,8 @@
                                     @endforeach
                                 </tbody>
                             </table>
+
+                            @endforeach
 
                     </div>
                 </details>
