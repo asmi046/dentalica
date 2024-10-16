@@ -1,5 +1,8 @@
 <div class="actions">
-    <x-card-actions :sale="$sale"></x-card-actions>
+    @foreach ( $sale as $item)
+        <x-card-actions :sale="$item"></x-card-actions>
+    @endforeach
+
     <a class="actions_button" href="{{ route('sales_all') }}">
         <p>Смотреть все акции</p>
         <img src="{{ asset('img/icons/arrow.svg') }}" alt="">

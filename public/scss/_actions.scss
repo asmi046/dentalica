@@ -2,12 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    flex-direction: column;
 
     .actions_wrapper {
         display: flex;
         flex: 1;
-        margin-right: 20px;
+        margin: 10px 0;
+
+
     }
+
+
 
 
     .actions_button {
@@ -17,6 +22,7 @@
         width: 130px;
         display: flex;
         flex-direction: column;
+        display: none;
 
         p {
             display: none;
@@ -63,6 +69,14 @@
         height: 300px;
         border-radius: 20px;
         overflow: hidden;
+    }
+}
+
+.actions{
+    .actions_wrapper:nth-child(2) {
+        .action {
+            flex-direction: row-reverse;
+        }
     }
 }
 
@@ -119,6 +133,21 @@
             margin-right: 0;
             margin-bottom: 30px;
             width:100%
+        }
+    }
+
+
+    .actions{
+
+
+        .actions_button {
+            display: flex;
+        }
+
+        .actions_wrapper:nth-child(2) {
+            .action {
+                flex-direction: column;
+            }
         }
     }
 }

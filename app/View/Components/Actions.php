@@ -15,7 +15,7 @@ class Actions extends Component
      */
     public function __construct()
     {
-        $this->sale = Sale::orderBy('order')->first();
+        $this->sale = Sale::orderBy('order')->take(2)->get();
     }
 
     /**
