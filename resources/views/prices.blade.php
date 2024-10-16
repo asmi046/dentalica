@@ -18,6 +18,8 @@
 <section class="prices_section">
     <div class="container">
         <div class="prices_wrapper">
+            <h3>В данном разделе представлены цены актуальные на {{ date("d.m.Y") }}</h3>
+            <br>
             @foreach ($prices as $item)
                 <details>
                     <summary>{{ $item->title }}</summary>
