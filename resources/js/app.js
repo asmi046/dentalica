@@ -48,6 +48,20 @@ all_modal_win.mount("#all_modal_win")
 
 document.addEventListener("DOMContentLoaded", (event) => {
     new isvek.Bvi();
+
+    let beforeImg = document.querySelectorAll('.before');
+    for (let i=0; i<beforeImg.length; i++) {
+        beforeImg[i].addEventListener('mouseover', () => {
+            beforeImg[i].classList.remove('blured')
+        })
+        beforeImg[i].addEventListener('mouseout', () => {
+            beforeImg[i].classList.add('blured')
+        })
+
+        beforeImg[i].addEventListener('click', () => {
+            beforeImg[i].classList.toggle('blured')
+        })
+    }
 });
 
 window.addEventListener('load', function () {

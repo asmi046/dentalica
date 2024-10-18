@@ -44,6 +44,13 @@ class MenuSeeder extends Seeder
 
                 [
                     'menu' => "Главное меню",
+                    'lnk' => "/before_after",
+                    'order' => 1,
+                    'title' => "Примеры работ",
+                ],
+
+                [
+                    'menu' => "Главное меню",
                     'lnk' => "/prices",
                     'order' => 1,
                     'title' => "Прейскурант",

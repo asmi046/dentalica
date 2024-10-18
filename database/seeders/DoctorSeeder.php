@@ -94,6 +94,18 @@ class DoctorSeeder extends Seeder
             ],
         ];
 
-        DB::table("doctors")->insert($data);
+
+
+        foreach ($data as $item) {
+
+            DB::table("seo_data")->insert(
+                [
+                    'url' => 'doctors/'.$item['slug'],
+                    'seo_title' => $item['name'],
+                    'seo_description' => $item['name'],
+                ]
+            );
+            DB::table("doctors")->insert($item);
+        }
     }
 }

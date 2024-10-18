@@ -1,5 +1,14 @@
 <?php
 
+use App\Services\SeoServices;
+
+if (!function_exists("header_seo")) {
+    function seo_data():SeoServices {
+        return app(SeoServices::class);
+    }
+}
+
+
 if (!function_exists("separate_table")) {
     function separate_table($table) {
         $result = [];

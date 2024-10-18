@@ -15,6 +15,8 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(
             [
+                SeoDataSeeder::class,
+                BeforeAfterSeeder::class,
                 PriceSeeder::class,
                 ServiceSeeder::class,
                 SaleSeeder::class,
@@ -26,6 +28,7 @@ class DatabaseSeeder extends Seeder
                 MenuSeeder::class,
                 UserSeeder::class,
                 UploadSeeder::class,
+
             ]
         );
         // User::factory(10)->create();

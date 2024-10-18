@@ -4,9 +4,9 @@
 
         <div class="center_blk_wrapper">
             <div class="center_blk">
-                <p class="h">Мы делаем всё, чтобы Ваша улыбка была здоровой и красивой</p>
+                <p class="h">{{seo_data()->seo_data->page_title}}</p>
                 <hr class="gray_hr">
-                <p class="sub_h">Стоматологическая клиника в Курске. Полный спектр услуг по оптимальным ценам.</p>
+                <p class="sub_h">Мы делаем всё, чтобы Ваша улыбка была здоровой и красивой</p>
 
                 <a href="#showModal" class="button">Записаться</a>
             </div>

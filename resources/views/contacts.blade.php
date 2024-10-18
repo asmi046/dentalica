@@ -1,18 +1,13 @@
 @extends('layouts.all')
 
 @php
-    $title = "Контакты - Денталика";
-    $description = "Контакты нашей клиники, свяжитесь с нами любым удобным способом";
-    $title_page = "Контакты";
+    $title_page = seo_data()->seo_data->page_title;
 @endphp
-
-@section('title', $title)
-@section('description', $description)
 
 @section('main')
 
 <x-header.inner-page-header></x-header.inner-page-header>
-<x-header.inner-page-title :title="$title_page"></x-header.doctor-page-title>
+<x-header.inner-page-title-no-photo :title="$title_page"></x-header.doctor-page-title-no-photo>
 
 <section class="contacts_page_section">
     <div class="container">

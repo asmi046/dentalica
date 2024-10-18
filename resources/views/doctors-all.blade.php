@@ -1,18 +1,13 @@
 @extends('layouts.all')
 
 @php
-    $title = "Специалисты нашей клиники - Денталика";
-    $title_page = "Специалисты нашей клиники";
-    $description = "Специалисты нашей клиники";
+    $title_page = seo_data()->seo_data->page_title;
 @endphp
-
-@section('title', $title)
-@section('description', $description)
 
 @section('main')
 
 <x-header.inner-page-header></x-header.inner-page-header>
-<x-header.inner-page-title :title="$title_page"></x-header.inner-page-title>
+<x-header.inner-page-title-no-photo :title="$title_page"></x-header.inner-page-title-no-photo>
 
 
 <section class="all_doctors_section">

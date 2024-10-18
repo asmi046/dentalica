@@ -1,0 +1,48 @@
+.before_after_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .before_after {
+        width:23%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        border: 0.5px solid $main_color;
+        overflow: hidden;
+        background-color: $light_gray_bg_color;
+        .card_img {
+            height: 150px;
+        }
+
+        .blured {
+            filter: blur(30px);
+        }
+
+        .comment {
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 18px;
+
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .before_after_wrapper {
+        .before_after {
+            width:32%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .before_after_wrapper {
+        .before_after {
+            .card_img {
+                height: 100px;
+            }
+            width:48%;
+        }
+    }
+}

@@ -12,7 +12,7 @@
 @section('main')
 
 <x-header.inner-page-header></x-header.inner-page-header>
-<x-header.inner-page-title :title="$title_page"></x-header.inner-page-title>
+<x-header.inner-page-title-no-photo :title="$title_page"></x-header.inner-page-title-no-photo>
 
 
 <section class="all_sales_section">

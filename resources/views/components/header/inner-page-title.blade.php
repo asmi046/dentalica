@@ -1,4 +1,4 @@
-@props( ["title" => "Заголовок страницы", 'img' => asset('img/inner_page/tooth.webp')])
+@props( ["title" => "Заголовок страницы", 'img' => asset('img/inner_page/collectiv.webp')])
 
 <div class="inner_page_title">
     <div class="text">

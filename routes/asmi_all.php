@@ -8,8 +8,11 @@ use App\Http\Controllers\PriceController;
 
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\DevicesController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\Page\PageController;
+use App\Http\Controllers\BeforeAfterController;
 
 Route::get('/', [IndexController::class, "index"])->name('home');
 
@@ -30,3 +33,7 @@ Route::get('/services', [ServiceController::class, "index"])->name('services');
 Route::get('/services/{slug}', [ServiceController::class, "services_page"])->name('services_page');
 
 Route::get('/prices', [PriceController::class, "index"])->name('prices');
+
+Route::get('/before_after', [BeforeAfterController::class, "index"])->name('before_after');
+
+Route::get('/devices', [DevicesController::class, "index"])->name('devices');

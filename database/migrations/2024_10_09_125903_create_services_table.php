@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('title')->comment('Название разделе услуг');
+            $table->string('slug')->comment('Слаг');
             $table->string('img', 500)->nullable()->comment('Изображение');
             $table->integer('order')->default(0)->comment('Порядок');
             $table->mediumText('description')->nullable()->comment('Описание раздела');

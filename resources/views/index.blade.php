@@ -1,12 +1,5 @@
 @extends('layouts.all')
 
-@php
-    $title = "Стоматология в Курске - Денталика";
-    $description = "Стоматологическая клиника Dentalica в городе Курск. Все виды стоматологических услуг";
-@endphp
-
-@section('title', $title)
-@section('description', $description)
 
 @section('main')
     <x-main-header></x-main-header>

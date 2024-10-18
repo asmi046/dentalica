@@ -3,17 +3,19 @@
 namespace App\View\Components\Services;
 
 use Closure;
-use Illuminate\Contracts\View\View;
+use App\Models\Service;
 use Illuminate\View\Component;
+use Illuminate\Contracts\View\View;
 
 class Services extends Component
 {
+    public $all_services;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        //
+        $this->all_services = Service::all();
     }
 
     /**

@@ -56,11 +56,11 @@ class PriceSeeder extends Seeder
             //     'list_file' => 'orto_most_implant.csv'
             // ],
 
-            [
-                'title' => "Вспомогательные манипуляции",
-                'description' => "Вспомогательные манипуляции",
-                'list_file' => 'vspom.csv'
-            ],
+            // [
+            //     'title' => "Вспомогательные манипуляции",
+            //     'description' => "Вспомогательные манипуляции",
+            //     'list_file' => 'vspom.csv'
+            // ],
         ];
 
         foreach ($data as $item) {

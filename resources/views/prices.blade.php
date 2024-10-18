@@ -1,13 +1,8 @@
 @extends('layouts.all')
 
 @php
-    $title = "Цены на стоматологические услуги - Денталика";
-    $title_page = "Цены на услуги";
-    $description = "Цены на стоматологические услуги";
+    $title_page = seo_data()->seo_data->page_title;
 @endphp
-
-@section('title', $title)
-@section('description', $description)
 
 @section('main')
 
