@@ -51,16 +51,21 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     let beforeImg = document.querySelectorAll('.before');
     for (let i=0; i<beforeImg.length; i++) {
-        beforeImg[i].addEventListener('mouseover', () => {
-            beforeImg[i].classList.remove('blured')
-        })
-        beforeImg[i].addEventListener('mouseout', () => {
-            beforeImg[i].classList.add('blured')
-        })
+        if (window.screen.width > 1024) {
+            beforeImg[i].addEventListener('mouseover', () => {
+                beforeImg[i].classList.remove('blured')
+            })
+            beforeImg[i].addEventListener('mouseout', () => {
+                beforeImg[i].classList.add('blured')
+            })
+        } else {
+            beforeImg[i].addEventListener('click', () => {
+                beforeImg[i].classList.toggle('blured')
+            })
+        }
 
-        beforeImg[i].addEventListener('click', () => {
-            beforeImg[i].classList.toggle('blured')
-        })
+
+
     }
 });
 

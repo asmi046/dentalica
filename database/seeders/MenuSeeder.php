@@ -91,7 +91,7 @@ class MenuSeeder extends Seeder
                     'menu' => "Дополнительная информация",
                     'lnk' => "/page/prava-i-obiazannostiax-grazdan-v-sfere-oxrany-zdorovia-pravila-vnutrennego-rasporiadka-dlia-potrebitelei-uslug",
                     'order' => 1,
-                    'title' => "Права и обязанностях граждан в сфере охраны здоровья",
+                    'title' => "Правила предоставления платных медицинских услуг",
                 ],
 
             ]);
