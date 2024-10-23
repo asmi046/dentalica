@@ -93,6 +93,12 @@ class MenuSeeder extends Seeder
                     'order' => 1,
                     'title' => "Правила предоставления платных медицинских услуг",
                 ],
+                [
+                    'menu' => "Дополнительная информация",
+                    'lnk' => "/page/vakansii",
+                    'order' => 1,
+                    'title' => "Вакансии клиники",
+                ],
 
             ]);
 

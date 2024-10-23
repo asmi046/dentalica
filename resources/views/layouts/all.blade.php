@@ -32,7 +32,7 @@
 <body>
     <div id="all_modal_win">
         <action-window></action-window>
-        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Мы свяжемся с Вами в течении 15 минут"></modal-window>
+        <modal-window rout="/send_consult" redirect="/thencs" hesh="showModal" title="Помощь специалиста" subtitle="Оставьте свой телефон и мы свяжемся с Вами."></modal-window>
     </div>
 
 
