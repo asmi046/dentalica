@@ -10,8 +10,8 @@ button,
     line-height: 1;
     font-family: $main_fonts;
     font-size: 22px;
-
     border-radius: $border_rad;
+    font-weight: 200;
 
     &:hover {
         background-color: $hover_color;

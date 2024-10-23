@@ -32,6 +32,8 @@
             <div class="about text_styles">
                 {!! $doctor_info->short_description !!}
                 {!! $doctor_info->description !!}
+                <br>
+                <a href="#showModal" class="button">Получить консультацию</a>
             </div>
         </div>
     </div>

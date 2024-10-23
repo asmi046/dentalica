@@ -10,6 +10,11 @@
         &:hover {
             color:$hover_color;
         }
+
+        &.button {
+            color:white;
+            font-weight: 200;
+        }
     }
 
     ul li {
