@@ -1,5 +1,4 @@
 .text_styles {
-    word-break: break-all;
     font-weight: normal;
     p{
         margin: 20px 0;
@@ -57,5 +56,13 @@
         top:7px;
         border-radius: 2px;
         background-color: $main_color;
+    }
+}
+
+
+
+@media (max-width: 320px) {
+    .text_styles {
+        word-break: break-all;
     }
 }
