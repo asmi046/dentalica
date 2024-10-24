@@ -32,6 +32,8 @@
 
     <section class="princips_section">
         <div class="container">
+            <h2>Почему пациенты выбирают нас</h2>
+            <hr class="gray_hr">
             <x-princips></x-princips>
         </div>
     </section>

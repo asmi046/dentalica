@@ -84,8 +84,8 @@ class DoctorSeeder extends Seeder
             // ],
 
             [
-                'name' => 'Корнев Никитв Сергеевич',
-                'slug' => Str::slug('Корнев Никитв Сергеевич'),
+                'name' => 'Корнев Никита Сергеевич',
+                'slug' => Str::slug('Корнев Никита Сергеевич'),
                 'photo' => "doctors/kornev-j.webp",
                 'order' => 5,
                 'dolgnost' => "Гигиенист",

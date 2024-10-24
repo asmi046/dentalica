@@ -22,6 +22,14 @@ table {
     tr:nth-child(2n) td {
         background-color: $light_gray_bg_color;
     }
+
+    .td_price {
+        min-width:100px;
+    }
+
+    .td_code {
+        min-width:70px;
+    }
 }
 
 
@@ -31,12 +39,13 @@ table {
         th,td {
             padding: 5px ;
         }
+
         .td_price {
-            width:80px;
+            min-width:80px;
         }
 
         .td_code {
-            width:70px;
+            min-width:70px;
         }
     }
 }

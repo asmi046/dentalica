@@ -10,7 +10,7 @@
 
 @section('main')
     <x-header.inner-page-header></x-header.inner-page-header>
-    <x-header.inner-page-title-no-photo :title="$title"></x-header.inner-page-title-no-photo>
+    <x-header.inner-page-title-no-photo :title="$page->title"></x-header.inner-page-title-no-photo>
 
     <section class="page_section">
         <div class="container text_styles">

@@ -3,7 +3,7 @@
         <div class="text">
             <h3>{{$sale->title}}</h3>
             <hr class="gray_hr">
-            <p>{{$sale->subtitle}}</p>
+            <p>{!!$sale->subtitle!!}</p>
             <div class="btn_wrap">
                 <a class="button" href="#actionWindow_{{$sale->id}}">Подробнее об акции</a>
             </div>

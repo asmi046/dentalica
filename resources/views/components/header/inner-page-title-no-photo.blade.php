@@ -4,7 +4,7 @@
     <div class="container">
         <div class="text">
             <div class="wrapper">
-                <h1>{{ $title }}</h1>
+                <h1>{!! $title !!}</h1>
                 <hr class="gray_hr">
                 <x-breadcrumbs.main :title="$title"></x-breadcrumbs.main>
             </div>
