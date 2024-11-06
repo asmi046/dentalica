@@ -43,15 +43,15 @@ class DoctorSeeder extends Seeder
                 'short_description' => file_get_contents(public_path('old_data/doctors/alimova-short.html'))
             ],
 
-            [
-                'name' => 'Маслихова Римма Ивановна',
-                'slug' => Str::slug('Маслихова Римма Ивановна'),
-                'photo' => "doctors/maslihova.webp",
-                'order' => 3,
-                'dolgnost' => "Cтоматолог терапевт / Ортопед / Хирург",
-                'description' => file_get_contents(public_path('old_data/doctors/maslihova.html')),
-                'short_description' => file_get_contents(public_path('old_data/doctors/maslihova-short.html'))
-            ],
+            // [
+            //     'name' => 'Маслихова Римма Ивановна',
+            //     'slug' => Str::slug('Маслихова Римма Ивановна'),
+            //     'photo' => "doctors/maslihova.webp",
+            //     'order' => 3,
+            //     'dolgnost' => "Cтоматолог терапевт / Ортопед / Хирург",
+            //     'description' => file_get_contents(public_path('old_data/doctors/maslihova.html')),
+            //     'short_description' => file_get_contents(public_path('old_data/doctors/maslihova-short.html'))
+            // ],
 
             [
                 'name' => 'Лисова Татьяна Олеговна',
