@@ -11,10 +11,22 @@ class Service extends Model
 
     public $fillable = [
         'title',
+        'price',
+        'time',
+        'good_pacients',
+
+        'resul',
+        'adv',
+
         'img',
         'order',
         'description',
         'seo_title',
         'seo_description',
+    ];
+
+    public $casts = [
+        'resul' => 'array',
+        'adv' => 'array',
     ];
 }
