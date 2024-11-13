@@ -35,6 +35,10 @@ class SeoServices {
         return $result;
     }
 
+    public function get_seo_data($key) {
+        return isset($this->seo_data[$key])? $this->seo_data[$key] : "";
+    }
+
     public function get_data_by_url() {
         $url = \Request::path();
         debugbar()->info($url);

@@ -21,8 +21,6 @@ class Service extends Model
         'img',
         'order',
         'description',
-        'seo_title',
-        'seo_description',
     ];
 
     public $casts = [

@@ -14,6 +14,8 @@ use MoonShine\Fields\Image;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Block;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
@@ -26,6 +28,16 @@ class PageResource extends ModelResource
     protected string $model = Page::class;
     protected string $title = 'Страницы';
     protected string $column = 'title';
+
+    public function import(): ?ImportHandler
+    {
+        return null;
+    }
+
+    public function export(): ?ExportHandler
+    {
+        return null;
+    }
 
     /**
      * @return list<MoonShineComponent|Field>

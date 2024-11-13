@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Service;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -11,6 +12,8 @@ class ServiceController extends Controller
     }
 
     public function services_page($slug) {
-        return view('services-page');
+        $service = Service::where('slug', $slug)->first();
+        if (!$service) abort(404);
+        return view('services-page', [ "service" => $service]);
     }
 }

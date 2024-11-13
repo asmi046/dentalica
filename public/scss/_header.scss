@@ -108,6 +108,51 @@ header{
             }
         }
     }
+
+    &._service {
+        .container {
+            display: flex;
+        }
+
+        .cerecter {
+            padding: 20px 0;
+            display: flex;
+            gap:20px;
+            font-size: 32px;
+            font-family: "Philosopher";
+
+            .c_param {
+                display: flex;
+                margin-top: auto;
+                & > * {
+                    margin-top: auto;
+                    margin-bottom: auto;
+                }
+                .icon {
+                    width:70px;
+                    height:70px;
+                    border-radius: 70px;
+                    border:1px solid $main_color;
+                    background-color: white;
+                    display: flex;
+
+                    svg {
+                        height: 32px;
+                        margin: auto;
+                    }
+
+                    svg._icon_time {
+                        height: 41px;
+                    }
+                }
+
+                span {
+                    margin-left: 20px;
+                }
+            }
+
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -177,5 +222,29 @@ header{
             margin-top: 20px;
             margin-bottom: 20px;
         }
+    }
+
+    .inner_page_title._service {
+
+        .container {
+            flex-direction: column;
+
+            .cerecter {
+                font-size: 22px;
+                .c_param .icon {
+                    width: 35px;
+                    height: 35px;
+
+                    svg {
+                        height: 16px;
+                    }
+                    svg._icon_time {
+                        height: 20px;
+                    }
+                }
+            }
+        }
+
+
     }
 }

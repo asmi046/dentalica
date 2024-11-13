@@ -4,13 +4,21 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Models\Service;
-
-use MoonShine\Resources\ModelResource;
-use MoonShine\Decorations\Block;
 use MoonShine\Fields\ID;
+
+use MoonShine\Fields\Json;
+use MoonShine\Fields\Slug;
+use MoonShine\Fields\Text;
 use MoonShine\Fields\Field;
+use MoonShine\Fields\Image;
+use MoonShine\Fields\Number;
+use MoonShine\Fields\TinyMce;
+use MoonShine\Fields\Position;
+use MoonShine\Handlers\ExportHandler;
+use MoonShine\Handlers\ImportHandler;
+use MoonShine\Resources\ModelResource;
+use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 
 /**
@@ -20,17 +28,82 @@ class ServiceResource extends ModelResource
 {
     protected string $model = Service::class;
 
-    protected string $title = 'Services';
+    protected string $title = 'Услуги';
+
+    public function import(): ?ImportHandler
+    {
+        return null;
+    }
+
+    public function export(): ?ExportHandler
+    {
+        return null;
+    }
+
+    /**
+     * @return list<Field>
+     */
+    public function indexFields(): array
+    {
+        return [
+            ID::make()->sortable(),
+            Image::make('Изображение', 'img')->dir('service'),
+            Text::make('Название', 'title'),
+            Number::make('Порядок сортировки', 'order')->sortable(),
+        ];
+    }
 
     /**
      * @return list<MoonShineComponent|Field>
      */
-    public function fields(): array
+    public function formFields(): array
     {
         return [
-            Block::make([
-                ID::make()->sortable(),
+            ID::make()->sortable(),
+
+            Text::make('Название', 'title'),
+            Slug::make('Окончание сылки', 'slug'),
+            Text::make('Цена от', 'price'),
+            Text::make('Время выполнения', 'time'),
+            Text::make('good_pacients', 'good_pacients'),
+            Number::make('Порядок сортировки', 'order')->sortable(),
+            Image::make('Изображение', 'img')->dir('service'),
+            TinyMce::make('Описание', 'description'),
+            Json::make('Результаты', 'resul')->fields([
+                Position::make(),
+                Text::make('Заголовок', 'title')
             ]),
+            Json::make('Преимущества', 'adv')->fields([
+                Position::make(),
+                Text::make('Заголовок', 'title')
+            ])
+        ];
+    }
+
+    /**
+     * @return list<Field>
+     */
+    public function detailFields(): array
+    {
+        return [
+            ID::make()->sortable(),
+
+            Text::make('Название', 'title'),
+            Slug::make('Окончание сылки', 'slug'),
+            Text::make('Цена от', 'price'),
+            Text::make('Время выполнения', 'time'),
+            Text::make('good_pacients', 'good_pacients'),
+            Number::make('Порядок сортировки', 'order')->sortable(),
+            Image::make('Изображение', 'img')->dir('service'),
+            TinyMce::make('Описание', 'description'),
+            Json::make('Результаты', 'resul')->fields([
+                Position::make(),
+                Text::make('Заголовок', 'title')
+            ]),
+            Json::make('Преимущества', 'adv')->fields([
+                Position::make(),
+                Text::make('Заголовок', 'title')
+            ])
         ];
     }
 

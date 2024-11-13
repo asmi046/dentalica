@@ -2,7 +2,7 @@
 
 use App\Services\SeoServices;
 
-if (!function_exists("header_seo")) {
+if (!function_exists("seo_data")) {
     function seo_data():SeoServices {
         return app(SeoServices::class);
     }
