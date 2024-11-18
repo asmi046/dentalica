@@ -28,7 +28,7 @@ class SaleSeeder extends Seeder
             [
                 'order' => 0,
                 'title' => 'Cкидка 20% на услугу отбеливания зубов немецкой системой Flash',
-                'subtitle' => 'Cкидка 20% на услугу отбеливпния зубов немецкой системой Flash. <br>Акция действительна до конца 2024 года.',
+                'subtitle' => 'Cкидка 20% на услугу отбеливания зубов немецкой системой Flash. <br>Акция действительна до конца 2024 года.',
                 'img' => "sales/flash_white.webp",
                 'description' => file_get_contents(public_path('old_data//sales//flash.html')),
             ],
