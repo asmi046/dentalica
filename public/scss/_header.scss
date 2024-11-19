@@ -4,7 +4,7 @@ header{
         height:  100vh;
         display: flex;
         justify-content: space-between;
-        max-height: 1024px;
+        max-height: 1080px;
         min-height: 740px;
         padding: 0;
 
@@ -21,7 +21,7 @@ header{
                 flex:1;
                 display: flex;
                 .center_blk {
-                    margin: auto 0 auto 0;
+                    margin: auto;
                     font-weight: 200;
                     text-align: center;
                     .h{
@@ -61,6 +61,9 @@ header{
                 swiper-slide {
                     height: 100vh;
                     min-height: 740px;
+                    img {
+                        object-position: center;
+                    }
                 }
             }
         }

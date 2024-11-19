@@ -23,7 +23,7 @@ class MenuSeeder extends Seeder
                 ],
                 [
                     'menu' => "Главное меню",
-                    'lnk' => "#",
+                    'lnk' => "/services",
                     'order' => 1,
                     'title' => "Услуги",
                 ],
