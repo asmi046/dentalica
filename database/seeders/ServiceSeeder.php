@@ -223,7 +223,7 @@ class ServiceSeeder extends Seeder
                 'adv' => json_encode([]),
 
                 'title' => "Диагностика",
-                'img' => "diagnostika.webp",
+                'img' => "hirurgia.webp",
                 'order' => 8,
                 "slug" => Str::slug("Диагностика"),
                 'description' => file_get_contents(public_path('old_data/services/diagn.html')),
