@@ -179,7 +179,7 @@ class ServiceSeeder extends Seeder
                 ]) ,
 
                 'title' => "Хирургия полости рта",
-                'img' => "protez.webp",
+                'img' => "hirurgia.webp",
                 "slug" => Str::slug("Хирургия полости рта"),
                 'order' => 6,
                 'description' => file_get_contents(public_path('old_data/services/hirurg.html')),
@@ -223,7 +223,7 @@ class ServiceSeeder extends Seeder
                 'adv' => json_encode([]),
 
                 'title' => "Диагностика",
-                'img' => "hirurgia.webp",
+                'img' => "diagnostika.webp",
                 'order' => 8,
                 "slug" => Str::slug("Диагностика"),
                 'description' => file_get_contents(public_path('old_data/services/diagn.html')),
