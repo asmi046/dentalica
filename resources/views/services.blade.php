@@ -16,9 +16,10 @@
 
 <section class="all_services_page_section">
     <div class="container">
-
+        <x-services.services></x-services.services>
     </div>
 </section>
+
 
 <section class="review_section">
     <div class="container">
