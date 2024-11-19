@@ -216,7 +216,7 @@ class ServiceSeeder extends Seeder
 
             [
                 'title' => "Диагностика",
-                'price' => "от 500",
+                'price' => "500",
                 'time' => "20 минут",
                 'good_pacients' => "",
                 'resul' => json_encode([]),
