@@ -18,6 +18,9 @@
         <div class="swipper_wrapper">
             <swiper-container autoplay-delay="4000" loop="true">
                 <swiper-slide>
+                    <img src="{{asset('img/main-photo_new.webp')}}" alt="">
+                </swiper-slide>
+                <swiper-slide>
                     <img src="{{asset('img/main-slide-1.webp')}}" alt="">
                 </swiper-slide>
                 <swiper-slide>
@@ -29,6 +32,10 @@
                 <swiper-slide>
                     <img src="{{asset('img/main-slide-4.webp')}}" alt="">
                 </swiper-slide>
+                <swiper-slide>
+                    <img src="{{asset('img/main-slide-5.webp')}}" alt="">
+                </swiper-slide>
+
             </swiper-container>
         </div>
     </div>
