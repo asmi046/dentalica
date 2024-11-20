@@ -4,7 +4,6 @@
 @section('main')
     <x-main-header></x-main-header>
 
-
     <section class="actions">
         <div class="container">
             <x-actions></x-actions>
