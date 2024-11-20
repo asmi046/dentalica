@@ -42,12 +42,12 @@ class MenuSeeder extends Seeder
                     'title' => "Специалисты",
                 ],
 
-                [
-                    'menu' => "Главное меню",
-                    'lnk' => "/before_after",
-                    'order' => 1,
-                    'title' => "Примеры работ",
-                ],
+                // [
+                //     'menu' => "Главное меню",
+                //     'lnk' => "/before_after",
+                //     'order' => 1,
+                //     'title' => "Примеры работ",
+                // ],
 
                 [
                     'menu' => "Главное меню",

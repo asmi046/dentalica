@@ -61,6 +61,7 @@ header{
                 swiper-slide {
                     height: 100vh;
                     min-height: 740px;
+                    max-height: 1080px;
                     img {
                         object-position: center;
                     }
@@ -174,16 +175,48 @@ header{
     }
 }
 
+@media (max-width: 1880px) {
+
+    header.main_page_header .photo_side {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 1481px) {
+
+    header.main_page_header .photo_side {
+        max-width: 620px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    header.main_page_header {
+        max-height: 700px;
+    }
+
+    header.main_page_header .photo_side .swipper_wrapper swiper-slide {
+        max-height: 700px;
+    }
+}
+
 @media (max-width: 768px) {
     header.main_page_header {
         flex-direction: column;
         border-radius: 0 0 20px 20px;
         overflow: hidden;
+        max-height: unset;
+        height: unset;
         .photo_side {
             max-width: 100%;
-            height: 500px;
+            // height: 500px;
+
             flex: unset;
             border-radius: 0;
+
+            .swipper_wrapper swiper-slide {
+                max-height: unset;
+            }
         }
     }
 
@@ -207,18 +240,35 @@ header{
 
 @media (max-width: 480px) {
     header {
-        &.main_page_header .text_side {
-            padding: 20px 15px;
+        &.main_page_header {
+            .text_side {
+                padding: 20px 15px;
 
 
-            .center_blk_wrapper {
-                .center_blk {
-                    margin-top: 30px;
-                    .h{
-                        font-size: 28px;
+                .center_blk_wrapper {
+                    .center_blk {
+                        margin-top: 30px;
+                        .h{
+                            font-size: 28px;
+                        }
+                        .sub_h {
+                            font-size: 18px;
+                        }
                     }
-                    .sub_h {
-                        font-size: 18px;
+                }
+            }
+
+            .photo_side {
+                height: 470px;
+                .swipper_wrapper {
+                    height: auto;
+                    swiper-slide {
+                        max-height: 470px;
+                        height: 470px;
+                        img {
+                            object-position: top center;
+                            object-fit: contain;
+                        }
                     }
                 }
             }
