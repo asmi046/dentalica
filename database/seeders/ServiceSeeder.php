@@ -92,7 +92,7 @@ class ServiceSeeder extends Seeder
                 ]) ,
 
                 'title' => "Плазмолифтинг",
-                'img' => "lecenie.webp",
+                'img' => "plazma.webp",
                 "slug" => Str::slug("Плазмолифтинг"),
                 'order' => 3,
                 'description' => file_get_contents(public_path('old_data/services/plazma.html')),
