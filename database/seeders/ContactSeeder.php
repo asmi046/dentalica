@@ -48,25 +48,31 @@ class ContactSeeder extends Seeder
             [
                 'name' => "Ссылка на VK",
                 'key' => "vk",
-                'value' => "#",
+                'value' => "https://vk.com/dentalica_46",
             ],
 
             [
                 'name' => "Ссылка на Telegram",
                 'key' => "tg",
-                'value' => "#",
+                'value' => "https://t.me/dentalica46",
             ],
 
             [
                 'name' => "Ссылка на WhatsApp",
                 'key' => "ws",
-                'value' => "#",
+                'value' => "https://wa.me/79102777878",
             ],
 
             [
                 'name' => "Ссылка на Одноклассники",
                 'key' => "ok",
                 'value' => "#",
+            ],
+
+            [
+                'name' => "Ссылка на Instagramm",
+                'key' => "in",
+                'value' => "https://www.instagram.com/dentalica46",
             ],
 
         ];
