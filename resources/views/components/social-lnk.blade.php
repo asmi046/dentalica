@@ -23,10 +23,18 @@
     </a>
     @endif
 
-    @if( !empty($contacts['ok']))
+    {{-- @if( !empty($contacts['ok']))
     <a href="{{ $contacts['ok'] }}" class="link ok_lnk">
         <svg class="sprite_icon">
             <use xlink:href="#ok_icon"></use>
+        </svg>
+    </a>
+    @endif --}}
+
+    @if( !empty($contacts['in']))
+    <a href="{{ $contacts['in'] }}" class="link in_lnk">
+        <svg class="sprite_icon">
+            <use xlink:href="#in_icon"></use>
         </svg>
     </a>
     @endif
