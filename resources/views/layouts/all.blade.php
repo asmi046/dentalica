@@ -21,6 +21,12 @@
     <script>
         window.asset = "{{ asset('') }}";
         window.storage = "{{ asset('storage') }}";
+        document.ondragstart = prohibit;
+		document.onselectstart = prohibit;
+		document.oncontextmenu = prohibit;
+		function prohibit() {
+			return false;
+		}
     </script>
 
     @vite([
