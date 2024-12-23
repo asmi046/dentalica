@@ -37,6 +37,9 @@
                 <swiper-slide>
                     <img src="{{asset('img/main-slide-5.webp')}}" alt="">
                 </swiper-slide>
+                <swiper-slide>
+                    <img src="{{asset('img/gift-sert.webp')}}" alt="">
+                </swiper-slide>
 
             </swiper-container>
         </div>
