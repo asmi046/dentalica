@@ -20,9 +20,6 @@
             autoplay-delay="10000" loop="true"
             >
                 <swiper-slide>
-                    <img src="{{asset('img/ng-slide.webp')}}" alt="">
-                </swiper-slide>
-                <swiper-slide>
                     <img src="{{asset('img/main-photo_new.webp')}}" alt="">
                 </swiper-slide>
                 <swiper-slide>

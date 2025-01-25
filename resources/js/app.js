@@ -20,7 +20,6 @@ import('swiper/element/bundle').then(mod => {
 })
 
 
-
 new SideMenu('#main_side_menue', '.show_menue_button');
 
 const review_app = createApp({
