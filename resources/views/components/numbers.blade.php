@@ -1,6 +1,6 @@
 <div class="numbers_wrapper">
     <div class="number_element">
-        <p class="n"><span>11</span> лет</p>
+        <p class="n"><span>{{date("Y") - 2024}}</span> лет</p>
         <p class="title">На рынке стоматологических услуг</p>
     </div>
 

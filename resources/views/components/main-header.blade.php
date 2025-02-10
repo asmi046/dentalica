@@ -17,7 +17,7 @@
     <div class="photo_side">
         <div class="swipper_wrapper">
             <swiper-container
-            autoplay-delay="10000" loop="true"
+            autoplay-delay="6000" loop="true"
             >
                 <swiper-slide>
                     <img src="{{asset('img/main-photo_new.webp')}}" alt="">
