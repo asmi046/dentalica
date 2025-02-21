@@ -52,7 +52,4 @@
             <x-reviews.reviews></x-reviews.reviews>
         </div>
     </section>
-
-
 @endsection
-
