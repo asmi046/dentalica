@@ -1,0 +1,28 @@
+.useful-cards{
+
+    &__item {
+        border-radius: $border_rad_main;
+        border: 1px solid #96744A;
+        overflow: hidden;
+        min-height: 270px;
+        height: 100%;
+        &-img {
+            max-width: 280px;
+            width: 100%;
+            height: 178px;
+        }
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 15px;
+
+        }
+        &-title{
+            font-weight: 700;
+            font-size: 19px;
+        }
+    }
+}
+
+
