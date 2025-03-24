@@ -12,9 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('services', function (Blueprint $table) {
-            $table->string('banner', 800)->nullable()->comment('Баннер страницы');
-            $table->string('template')->nullable()->comment('Шаблон страницы');
-            $table->json('lending_data')->nullable()->comment('Данные для шаблона');
+            $table->string('title_lend')->nullable()->comment('Заголовок лендинга');
+            $table->string('sub_title_lend')->nullable()->comment('Подзаголовок лендинга');
+            $table->string('banner', 800)->nullable()->comment('Баннер лендинга');
+            $table->string('template')->nullable()->comment('Шаблон лендинга');
+            $table->json('lending_data')->nullable()->comment('Данные для лендинга');
         });
     }
 
@@ -24,6 +26,8 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('services', function (Blueprint $table) {
+            $table->dropColumn('title_lend');
+            $table->dropColumn('sub_title_lend');
             $table->dropColumn('banner');
             $table->dropColumn('template');
             $table->dropColumn('lending_data');

@@ -141,37 +141,39 @@ header{
             font-size: 32px;
             font-family: "Philosopher";
 
-            .c_param {
-                display: flex;
-                margin-top: auto;
-                & > * {
-                    margin-top: auto;
-                    margin-bottom: auto;
-                }
-                .icon {
-                    width:70px;
-                    height:70px;
-                    border-radius: 70px;
-                    border:1px solid $main_color;
-                    background-color: white;
-                    display: flex;
 
-                    svg {
-                        height: 32px;
-                        margin: auto;
-                    }
-
-                    svg._icon_time {
-                        height: 41px;
-                    }
-                }
-
-                span {
-                    margin-left: 20px;
-                }
-            }
 
         }
+    }
+}
+
+.c_param {
+    display: flex;
+    margin-top: auto;
+    & > * {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .icon {
+        width:70px;
+        height:70px;
+        border-radius: 70px;
+        border:1px solid $main_color;
+        background-color: white;
+        display: flex;
+
+        svg {
+            height: 32px;
+            margin: auto;
+        }
+
+        svg._icon_time {
+            height: 41px;
+        }
+    }
+
+    span {
+        margin-left: 20px;
     }
 }
 

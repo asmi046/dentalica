@@ -21,10 +21,17 @@ class Service extends Model
         'img',
         'order',
         'description',
+
+        'title_lend',
+        'sub_title_lend',
+        'banner',
+        'template',
+        'lending_data',
     ];
 
     public $casts = [
         'resul' => 'array',
         'adv' => 'array',
+        'lending_data' => 'array',
     ];
 }
