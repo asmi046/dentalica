@@ -5,7 +5,6 @@
     <section class="why_am">
         <div class="container">
             <h2>Почему выбирают нас:</h2>
-
             <hr class="gray_hr">
 
             <div class="lend_icon_blk_wrapper">
