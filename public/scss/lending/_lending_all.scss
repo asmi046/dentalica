@@ -1,0 +1,57 @@
+.center_blk_lend {
+    display: flex;
+    flex-direction: column;
+
+    .button {
+        margin: 20px auto;
+    }
+}
+
+.c_param_lending {
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+
+    flex-direction: column;
+    .icon {
+        margin: 0 auto;
+    }
+    span {
+        margin: 10px auto auto auto;
+        font-family: 'Philosopher';
+        font-size: 32px;
+    }
+
+}
+
+
+.lend_icon_blk_wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    row-gap:30px;
+    justify-content: space-between;
+    .lend_icon_blk {
+        width:23%;
+        padding: 20px;
+        border-radius: $border_rad;
+        border:1px solid $main_color;
+        .icon_wrapper {
+            width:68px;
+            height:68px;
+            margin-bottom: 20px;
+            img {
+                width:100%;
+                height:100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
+
+@import "green_number";
+@import "how_lec";
+@import "expert";
+@import "technologi";
+@import "stepper";
+@import "poc_prot";
+@import "imp_system";

@@ -49,13 +49,25 @@ $lec_data = [
     //__________________________________________________________________________________
     [
         'part' => 'Как подготовиться к процедуре?',
+        'picture' => '',
+        'title' => 'Подготовка к процедуре:',
+        'sub_title' => '',
+        'content' => file_get_contents(public_path('old_data/lending_data/text/lec_how_procedure_1.html'))
+    ],
+    [
+        'part' => 'Как подготовиться к процедуре?',
+        'picture' => '',
+        'title' => 'Рекомендации после лечения:',
+        'sub_title' => '',
+        'content' => file_get_contents(public_path('old_data/lending_data/text/lec_how_procedure_2.html'))
+    ],
+
+    [
+        'part' => 'Как подготовиться к процедуре?',
         'picture' => 'lending_photo/lec-procedure.webp',
         'title' => '',
         'sub_title' => '',
-        'content' => [
-            'Подготовка к процедуре:' => file_get_contents(public_path('old_data/lending_data/text/lec_how_procedure_1.html')),
-            'Рекомендации после лечения:' => file_get_contents(public_path('old_data/lending_data/text/lec_how_procedure_2.html'))
-        ],
+        'content' => ""
     ],
 
     //_____________________________________________________________________________________
