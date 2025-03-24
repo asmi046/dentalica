@@ -63,5 +63,10 @@
         <path d="M15 22L25 12" stroke="white" stroke-width="2" stroke-linecap="round"/>
     </symbol>
 
+    <symbol id="red_ch" viewBox="0 0 34 34">
+        <circle cx="17" cy="17" r="17" fill="#E14021"/>
+        <path d="M10 17H24" stroke="white" stroke-width="3"/>
+    </symbol>
+
 
   </svg>

@@ -27,12 +27,19 @@ class LendingSeeder extends Seeder
         Storage::disk('public')->put("lending_icon/shprits.svg", file_get_contents( public_path('old_data/lending_data/icon/shprits.svg')), 'public');
         Storage::disk('public')->put("lending_icon/time.svg", file_get_contents( public_path('old_data/lending_data/icon/time.svg')), 'public');
         Storage::disk('public')->put("lending_icon/zub_ok.svg", file_get_contents( public_path('old_data/lending_data/icon/zub_ok.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/white_safety.svg", file_get_contents( public_path('old_data/lending_data/icon/white_safety.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/white_affo_price.svg", file_get_contents( public_path('old_data/lending_data/icon/white_affo_price.svg')), 'public');
 
         Storage::disk('public')->put("lending_photo/impl-expert.webp", file_get_contents( public_path('old_data/lending_data/photo/impl-expert.webp')), 'public');
         Storage::disk('public')->put("lending_photo/modern-image-1.webp", file_get_contents( public_path('old_data/lending_data/photo/modern-image-1.webp')), 'public');
         Storage::disk('public')->put("lending_photo/modern-image-2.webp", file_get_contents( public_path('old_data/lending_data/photo/modern-image-2.webp')), 'public');
         Storage::disk('public')->put("lending_photo/modern-image-3.webp", file_get_contents( public_path('old_data/lending_data/photo/modern-image-3.webp')), 'public');
         Storage::disk('public')->put("lending_photo/modern-image-4.webp", file_get_contents( public_path('old_data/lending_data/photo/modern-image-4.webp')), 'public');
+
+        Storage::disk('public')->put("lending_photo/dentium.png", file_get_contents( public_path('old_data/lending_data/photo/dentium.png')), 'public');
+        Storage::disk('public')->put("lending_photo/impro.png", file_get_contents( public_path('old_data/lending_data/photo/impro.png')), 'public');
+        Storage::disk('public')->put("lending_photo/osstem.png", file_get_contents( public_path('old_data/lending_data/photo/osstem.png')), 'public');
+        Storage::disk('public')->put("lending_photo/straumann.png", file_get_contents( public_path('old_data/lending_data/photo/straumann.png')), 'public');
 
         include_once "lend_data/implantation.php";
         include_once "lend_data/lec.php";

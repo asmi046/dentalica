@@ -43,7 +43,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => '',
+        'picture' => 'lending_icon/white_safety.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Пожизненная гарантия на импланты и материалы',
@@ -156,27 +156,27 @@ $implantation_data = [
         'part' => 'Наши гарантии',
         'picture' => '',
         'title' => 'Пожизненная гарантия на имплантат',
-        'sub_title' => '',
+        'sub_title' => '01.',
         'content' => '',
     ],
     [
         'part' => 'Наши гарантии',
         'picture' => '',
         'title' => 'Приживляемость до 99% при соблюдении рекомендаций',
-        'sub_title' => '',
+        'sub_title' => '02.',
         'content' => '',
     ],
     [
         'part' => 'Наши гарантии',
         'picture' => '',
         'title' => 'Гарантия на работу врача',
-        'sub_title' => '',
+        'sub_title' => '03.',
         'content' => '',
     ],
     //____________________________________________________
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => '',
+        'picture' => 'lending_photo/dentium.png',
         'title' => 'dentium',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/dentium.html')),
@@ -184,7 +184,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => '',
+        'picture' => 'lending_photo/osstem.png',
         'title' => 'osstem',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/osstem.html')),
@@ -192,7 +192,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => '',
+        'picture' => 'lending_photo/straumann.png',
         'title' => 'straumann',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/straumann.html')),
@@ -200,7 +200,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => '',
+        'picture' => 'lending_photo/impro.png',
         'title' => 'impro',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/impro.html')),
@@ -211,14 +211,14 @@ $implantation_data = [
         'part' => 'Кому подходит лечение и когда проявлять осторожность?',
         'picture' => '',
         'title' => 'Показания:',
-        'sub_title' => '',
+        'sub_title' => '0',
         'content' => file_get_contents( public_path('old_data/lending_data/text/implant_poc.html')),
     ],
     [
         'part' => 'Кому подходит лечение и когда проявлять осторожность?',
         'picture' => '',
         'title' => 'Противопоказания:',
-        'sub_title' => '',
+        'sub_title' => '1',
         'content' => file_get_contents( public_path('old_data/lending_data/text/implant_prot.html')),
     ],
 ];

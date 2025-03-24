@@ -10,8 +10,10 @@
 
     h2 {
         font-size: 32px;
-        padding-left: 65px;
+        padding-left: 50px;
         color: $black_color;
+        margin-top: 10px;
+        margin-bottom: 50px;
     }
 
     ul {
@@ -36,6 +38,7 @@
             }
         }
     }
+
     &_good {
         ul {
             li {
@@ -66,5 +69,11 @@
         & > div {
             padding: 30px 40px;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .recommend h2 {
+        font-size: 22px;
     }
 }

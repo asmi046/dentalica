@@ -1,0 +1,51 @@
+.stepper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: $sub_fonts;
+    position: relative;
+
+    .line {
+        position: absolute;
+        width:2px;
+        height: 90%;
+        background-color: $main_color;
+        z-index: 10;
+        left:30px;
+        top: 5%;
+    }
+
+    .step {
+        display: flex;
+        gap: 40px;
+        z-index: 20;
+
+        .counter {
+            display: flex;
+            width:60px;
+            height:60px;
+            border-radius: 60px;
+            border: 1px solid $main_color;
+            font-size: 28px;
+            background-color: white;
+            span {
+                margin: auto;
+            }
+        }
+
+        .title {
+            display: flex;
+            font-size: 32px;
+            flex:1;
+            span {
+                margin: auto auto auto 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .stepper .step .title {
+        font-size: 22px;
+    }
+}

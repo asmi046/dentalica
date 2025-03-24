@@ -1,0 +1,42 @@
+.systems {
+    display: flex;
+    gap:40px;
+    justify-content: space-between;
+
+    .system {
+        flex:1;
+        border-radius: $border_rad;
+        border:1px solid $main_color;
+        padding: 20px;
+
+        .logo_wrapper {
+            height: 40px;
+            margin-bottom: 20px;
+            img {
+                object-fit: contain;
+                object-position: left center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .systems {
+        flex-wrap: wrap;
+        gap: unset;
+        row-gap: 40px;
+        .system {
+            width:48%;
+            flex:unset;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .systems {
+        .system {
+            word-break: break-all;
+        }
+    }
+}
