@@ -5,5 +5,6 @@
 @endphp
 
 @section('main')
+    <x-lending-header :service="$service"></x-lending-header>
 
 @endsection
