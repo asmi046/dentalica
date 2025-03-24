@@ -1,0 +1,70 @@
+.recommend {
+    display: flex;
+    gap: 23px;
+    & > div {
+        padding: 30px 40px;
+        border: $main_border;
+        border-radius: $border_rad_main;
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 32px;
+        padding-left: 65px;
+        color: $black_color;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        li {
+            position: relative;
+            padding-left: 60px;
+            font-family: $sub_fonts;
+            font-size: 18px;
+            display: flex;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 34px;
+                height: 34px;
+                top: 50%;
+                left: 0px;
+                transform: translateY(-50%);
+            }
+        }
+    }
+    &_good {
+        ul {
+            li {
+
+                &::before {
+                    background-image: url('../img/icons/recommend_good-icon.svg');
+                }
+            }
+        }
+    }
+
+    &_bad {
+        ul {
+                li {
+
+                    &::before {
+                        background-image: url('../img/icons/recommend_bad-icon.svg');
+                    }
+                }
+            }
+    }
+}
+
+@media (max-width: 1024px) {
+    .recommend {
+        flex-direction: column;
+
+        & > div {
+            padding: 30px 40px;
+        }
+    }
+}
