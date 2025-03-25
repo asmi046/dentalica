@@ -4,7 +4,7 @@ $white_data = [
         'part' => 'Технология и методика процедуры',
         'picture' => '',
         'title' => '',
-        'sub_title' => '',
+        'sub_title' => '01.',
         'content' => 'Применяет холодный LED-свет, который не перегревает зубы',
     ],
 
@@ -12,7 +12,7 @@ $white_data = [
         'part' => 'Технология и методика процедуры',
         'picture' => '',
         'title' => '',
-        'sub_title' => '',
+        'sub_title' => '02.',
         'content' => 'Обеспечивает равномерное и устойчивое осветление эмали до 10 оттенков за 1,5 часа',
     ],
 
@@ -20,7 +20,7 @@ $white_data = [
         'part' => 'Технология и методика процедуры',
         'picture' => '',
         'title' => '',
-        'sub_title' => '',
+        'sub_title' => '03.',
         'content' => 'Возможна индивидуальная настройка лампы для зубов с повышенной чувствительностью',
     ],
 
@@ -57,11 +57,46 @@ $white_data = [
     //________________________________________________________
 
     [
-        'part' => 'Как происходит процедура',
-        'picture' => 'lending_photo/white_procedure.webp',
-        'title' => '',
-        'sub_title' => '',
-        'content' => file_get_contents(public_path('old_data/lending_data/text/white_how_procedure.html')),
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Определение исходного цвета эмали и желаемого результата',
+        'sub_title' => '01.',
+        'content' => '',
+    ],
+    [
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Фотопротокол для регистрации результата (Опционально)',
+        'sub_title' => '02.',
+        'content' => '',
+    ],
+    [
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Защита рабочего поля (ретрактор и коффердамм)',
+        'sub_title' => '03.',
+        'content' => '',
+    ],
+    [
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Нанесение и активация отбеливающего геля',
+        'sub_title' => '04.',
+        'content' => '',
+    ],
+    [
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Применение реминерализирующего мусса',
+        'sub_title' => '05.',
+        'content' => '',
+    ],
+    [
+        'part' => 'Как проходит процедура',
+        'picture' => '',
+        'title' => 'Рекомендации по уходу после процедуры',
+        'sub_title' => '06.',
+        'content' => '',
     ],
 
     //___________________________________________________
@@ -70,7 +105,7 @@ $white_data = [
         'part' => 'Кому подходит процедура?',
         'picture' => '',
         'title' => 'Показания:',
-        'sub_title' => '',
+        'sub_title' => '0',
         'content' => file_get_contents(public_path('old_data/lending_data/text/white_treatment_poc.html')),
     ],
 
@@ -78,7 +113,7 @@ $white_data = [
         'part' => 'Кому подходит процедура?',
         'picture' => '',
         'title' => 'Противопоказания:',
-        'sub_title' => '',
+        'sub_title' => '1',
         'content' => file_get_contents(public_path('old_data/lending_data/text/white_treatment_prot.html')),
     ],
 

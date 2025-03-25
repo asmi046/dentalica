@@ -19,7 +19,7 @@
 
         </div>
     </section>
-
+{{--
     <section class="services-useful">
         <div class="container">
             <h2>Полезная информация</h2>
@@ -119,7 +119,7 @@
                 </a>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="numbers_section">
         <div class="container">

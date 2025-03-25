@@ -1,0 +1,40 @@
+.lec_podgotovka_wrapper {
+    display: flex;
+    gap:40px;
+
+    .results {
+        flex: 1;
+        margin: unset;
+
+        h3 {
+            margin-top: 10px;
+        }
+    }
+
+    .img_wrapper {
+        flex: 1;
+        display: flex;
+        overflow: hidden;
+        border-radius: $border_rad;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .lec_podgotovka_wrapper .img_wrapper {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .lec_podgotovka_wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .lec_podgotovka_wrapper .img_wrapper {
+        display: flex;
+    }
+}

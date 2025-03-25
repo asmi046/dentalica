@@ -49,3 +49,9 @@
         font-size: 22px;
     }
 }
+
+@media (max-width: 360px) {
+    .stepper .step .title {
+        font-size: 18px;
+    }
+}

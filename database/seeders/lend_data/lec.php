@@ -3,16 +3,16 @@ $lec_data = [
     [
         'part' => 'Как проходит лечение?',
         'picture' => '',
-        'title' => 'Профессиональное удаление отложений:',
-        'sub_title' => '',
+        'title' => 'Профессиональное <br> удаление отложений:',
+        'sub_title' => '01.',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_work_1.html')),
     ],
 
     [
         'part' => 'Как проходит лечение?',
         'picture' => '',
-        'title' => 'Плазмотерапия (плазмолифтинг):',
-        'sub_title' => '',
+        'title' => 'Плазмотерапия <br>(плазмолифтинг):',
+        'sub_title' => '02.',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_work_2.html')),
     ],
 
@@ -75,14 +75,14 @@ $lec_data = [
         'part' => 'Кому подходит лечение и когда проявлять осторожность?',
         'picture' => '',
         'title' => 'Показания:',
-        'sub_title' => '',
+        'sub_title' => '0',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_poc.html')),
     ],
     [
         'part' => 'Кому подходит лечение и когда проявлять осторожность?',
         'picture' => '',
         'title' => 'Противопоказания:',
-        'sub_title' => '',
+        'sub_title' => '1',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_prot.html')),
     ],
 

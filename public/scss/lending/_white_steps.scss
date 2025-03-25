@@ -1,0 +1,30 @@
+.white_steps_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap:40px;
+
+    .stepper_wrapper {
+        flex:1;
+        .stepper {
+            gap:30px;
+            .step .title {
+                font-size: 24px;
+            }
+        }
+    }
+
+
+    .photo_wrapper {
+        width: 630px;
+        border-radius: $border_rad;
+        overflow: hidden;
+        display: flex;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .white_steps_wrapper .stepper_wrapper .stepper .step .title {
+        font-size: 18px;
+    }
+}

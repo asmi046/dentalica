@@ -29,6 +29,13 @@ class LendingSeeder extends Seeder
         Storage::disk('public')->put("lending_icon/zub_ok.svg", file_get_contents( public_path('old_data/lending_data/icon/zub_ok.svg')), 'public');
         Storage::disk('public')->put("lending_icon/white_safety.svg", file_get_contents( public_path('old_data/lending_data/icon/white_safety.svg')), 'public');
         Storage::disk('public')->put("lending_icon/white_affo_price.svg", file_get_contents( public_path('old_data/lending_data/icon/white_affo_price.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/white_long_effect.svg", file_get_contents( public_path('old_data/lending_data/icon/white_long_effect.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/white_exp_staff.svg", file_get_contents( public_path('old_data/lending_data/icon/white_exp_staff.svg')), 'public');
+
+        Storage::disk('public')->put("lending_icon/vector_para_pro.svg", file_get_contents( public_path('old_data/lending_data/icon/vector_para_pro.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/plasma_therapy_autoplasma.svg", file_get_contents( public_path('old_data/lending_data/icon/plasma_therapy_autoplasma.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/medic_exp.svg", file_get_contents( public_path('old_data/lending_data/icon/medic_exp.svg')), 'public');
+        Storage::disk('public')->put("lending_icon/complex_hirurg_estetic.svg", file_get_contents( public_path('old_data/lending_data/icon/complex_hirurg_estetic.svg')), 'public');
 
         Storage::disk('public')->put("lending_photo/impl-expert.webp", file_get_contents( public_path('old_data/lending_data/photo/impl-expert.webp')), 'public');
         Storage::disk('public')->put("lending_photo/modern-image-1.webp", file_get_contents( public_path('old_data/lending_data/photo/modern-image-1.webp')), 'public');
@@ -40,6 +47,7 @@ class LendingSeeder extends Seeder
         Storage::disk('public')->put("lending_photo/impro.png", file_get_contents( public_path('old_data/lending_data/photo/impro.png')), 'public');
         Storage::disk('public')->put("lending_photo/osstem.png", file_get_contents( public_path('old_data/lending_data/photo/osstem.png')), 'public');
         Storage::disk('public')->put("lending_photo/straumann.png", file_get_contents( public_path('old_data/lending_data/photo/straumann.png')), 'public');
+        Storage::disk('public')->put("lending_photo/lec-procedure.webp", file_get_contents( public_path('old_data/lending_data/photo/lec-procedure.webp')), 'public');
 
         include_once "lend_data/implantation.php";
         include_once "lend_data/lec.php";

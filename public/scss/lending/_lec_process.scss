@@ -1,0 +1,39 @@
+.lec_process_wrapper {
+    display: flex;
+    gap:40px;
+
+    .part {
+        padding: 20px;
+        border-radius: $border_rad;
+        border: 1px solid $main_color;
+        flex:1;
+        .head {
+            display: flex;
+            gap:20px;
+            margin-bottom: 20px;
+
+            .text {
+                font-size: 32px;
+                font-family: $sub_fonts;
+                display: flex;
+                span {
+                    margin: auto auto auto 0;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width: 768px) {
+    .lec_process_wrapper {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .lec_process_wrapper .part .head .text {
+        font-size: 22px;
+    }
+}
+

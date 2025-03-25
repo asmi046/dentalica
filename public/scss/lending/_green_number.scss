@@ -1,0 +1,32 @@
+.gch {
+    width: 90px;
+    height: 90px;
+    border-radius: $border_rad;
+    background-color: $sub_color_hover;
+    display: flex;
+    .circle {
+        width: 60px;
+        height: 60px;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        font-family: $sub_fonts;
+        font-size: 28px;
+        border-radius: 60px;
+        span {
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .gch {
+        width:60px;
+        height: 60px;
+        .circle {
+            font-size: 18px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
