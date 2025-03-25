@@ -9,12 +9,12 @@
 
     <section class="whute_procedure_technologi">
         <div class="container">
-            <h2>Технология и методика процедуры</h2>
+            <h2>Преимущества немецкой системы отбеливания</h2>
             <hr class="gray_hr">
 
             <div class="whute_procedure_technologi_wrapper">
                 @foreach ($service->lending_data as $item)
-                    @continue($item['part'] != 'Технология и методика процедуры')
+                    @continue($item['part'] != 'Преимущества немецкой системы отбеливания')
                     <div class="part">
                         <x-lend.green-ch :ch="$item['sub_title']"></x-lend.green-ch>
 

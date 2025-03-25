@@ -14,7 +14,7 @@ $implantation_data = [
         'picture' => 'lending_icon/zub_ok.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Приживаемость до 90%',
+        'content' => 'Приживаемость имплантатов до 99%',
     ],
 
     [
@@ -30,15 +30,15 @@ $implantation_data = [
         'picture' => 'lending_icon/calendar.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Установка имплантата и изготовление временной коронки в один день',
+        'content' => 'Установка имплантата и изготовление временной коронки в день удаления зуба',
     ],
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/time.svg',
+        'picture' => 'lending_icon/vector_para_pro.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Процедура за 30 минут',
+        'content' => '100% гарантия стерильности инструментов и материалов',
     ],
 
     [
@@ -46,7 +46,7 @@ $implantation_data = [
         'picture' => 'lending_icon/white_safety.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Пожизненная гарантия на импланты и материалы',
+        'content' => 'Пожизненная гарантия на имплантаты и материалы',
     ],
 
     [
@@ -94,7 +94,7 @@ $implantation_data = [
     [
         'part' => 'Современные технологии и максимальная безопасность',
         'picture' => 'lending_photo/modern-image-3.webp',
-        'title' => 'Цифровые хирургические шаблоны для точности установки',
+        'title' => 'Цифровые хирургические шаблоны для точности установки имплантата',
         'sub_title' => '',
         'content' => '',
     ],
@@ -139,6 +139,13 @@ $implantation_data = [
         'part' => 'Преимущества имплантации зубов',
         'picture' => '',
         'title' => 'Долговечность при правильном уходе',
+        'sub_title' => '',
+        'content' => '',
+    ],
+    [
+        'part' => 'Преимущества имплантации зубов',
+        'picture' => '',
+        'title' => 'Замещение дефекта зубного ряда любой сложности',
         'sub_title' => '',
         'content' => '',
     ],

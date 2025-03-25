@@ -7,6 +7,7 @@ import VueAxios from 'vue-axios'
 
 import Review from './components/Reviews/Review.vue'
 import ActionWindow from "./components/ActionWindow.vue"
+import InformationWindow from "./components/InformationWindow.vue"
 import ModalWindow from "./components/ModalWindow.vue"
 
 import { VMaskDirective } from 'v-slim-mask'
@@ -37,6 +38,7 @@ const all_modal_win = createApp({
     components:{
         ModalWindow,
         ActionWindow,
+        InformationWindow,
     },
 })
 

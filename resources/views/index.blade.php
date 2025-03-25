@@ -19,107 +19,14 @@
 
         </div>
     </section>
-{{--
+
     <section class="services-useful">
         <div class="container">
             <h2>Полезная информация</h2>
             <hr class="gray_hr">
-            <swiper-container space-between="30" slides-per-view="4" speed="500">
-                <swiper-slide>
-                    <a href="#" class="useful-cards">
-                        <div class="useful-cards__item">
-                            <div class="useful-cards__item-img">
-                                <img src="{{ asset('img/useful-1.webp') }}" alt="">
-                            </div>
-                            <div class="useful-cards__item-content">
-                                <div class="useful-cards__item-title">Лечение взрослых и детей под микроскопом</div>
-                                <p class="useful-cards__item-text">
-                                    Лечение кариеса и корневых каналов проводится только под увеличением. Мы используем
-                                    только
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </swiper-slide>
-                <swiper-slide>
-                    <a href="#" class="useful-cards">
-                        <div class="useful-cards__item">
-                            <div class="useful-cards__item-img">
-                                <img src="{{ asset('img/useful-2.webp') }}" alt="">
-                            </div>
-                            <div class="useful-cards__item-content">
-                                <div class="useful-cards__item-title">Отбеливание системы Flash</div>
-                                <p class="useful-cards__item-text">
-                                    Лечение кариеса и корневых каналов проводится только под увеличением. Мы используем
-                                    только
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </swiper-slide>
-                <swiper-slide>
-                    <a href="#" class="useful-cards">
-                        <div class="useful-cards__item">
-                            <div class="useful-cards__item-img">
-                                <img src="{{ asset('img/useful-3.webp') }}" alt="">
-                            </div>
-                            <div class="useful-cards__item-content">
-                                <div class="useful-cards__item-title">Надежная стерилизация всех инструментов</div>
-                                <p class="useful-cards__item-text">
-                                    Лечение кариеса и корневых каналов проводится только под увеличением. Мы используем
-                                    только
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </swiper-slide>
-                <swiper-slide>
-                    <a href="#" class="useful-cards">
-                        <div class="useful-cards__item">
-                            <div class="useful-cards__item-img">
-                                <img src="{{ asset('img/useful-4.webp') }}" alt="">
-                            </div>
-                            <div class="useful-cards__item-content">
-                                <div class="useful-cards__item-title">Фотопротокол</div>
-                                <p class="useful-cards__item-text">
-                                    Лечение кариеса и корневых каналов проводится только под увеличением. Мы используем
-                                    только
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </swiper-slide>
-                <swiper-slide>
-                    <a href="#" class="useful-cards">
-                        <div class="useful-cards__item">
-                            <div class="useful-cards__item-img">
-                                <img src="{{ asset('img/useful-5.webp') }}" alt="">
-                            </div>
-                            <div class="useful-cards__item-content">
-                                <div class="useful-cards__item-title">Лечение взрослых и детей под микроскопом</div>
-                                <p class="useful-cards__item-text">
-                                    Лечение кариеса и корневых каналов проводится только под увеличением. Мы используем
-                                    только
-                                </p>
-                            </div>
-                        </div>
-                    </a>
-                </swiper-slide>
-            </swiper-container>
-            <div class="reviews_btn_wrapper">
-                <a @click.prevent="prevSlide" class="arrow_button arrow_pred" href="#">
-                    <svg class="sprite_icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </a>
-                <a @click.prevent="nextSlide" class="arrow_button arrow_next" href="#">
-                    <svg class="sprite_icon">
-                        <use xlink:href="#arrow"></use>
-                    </svg>
-                </a>
-            </div>
+            <x-information-in-main></x-information-in-main>
         </div>
-    </section> --}}
+    </section>
 
     <section class="numbers_section">
         <div class="container">
