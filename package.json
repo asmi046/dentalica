@@ -17,7 +17,7 @@
         "migrate_rep": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan migrate --force \"",
         "rollback_rep": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan migrate:rollback\"",
         "seed_rep": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan DB:seed\"",
-        "seed_rep_one": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan DB:seed LendingSeeder --force\"",
+        "seed_rep_one": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan DB:seed InformationSeeder --force\"",
         "optimized_rep": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php composer.phar update --optimize-autoloader --no-dev\"",
         "dump_autoload": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php composer.phar dump-autoload\"",
         "storage_link": "ssh u0141739@37.140.192.118 \"cd www/dentalica-kursk.com && /opt/php/8.2/bin/php artisan storage:link\"",

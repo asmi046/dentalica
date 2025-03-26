@@ -24,6 +24,35 @@
 
 }
 
+.quote {
+    border-radius: $border_rad;
+    border: 1px solid $dark_gray_color;
+    padding: 20px 30px;
+    font-family: $sub_fonts;
+    font-size: 22px;
+    position: relative;
+    .q {
+        width:35px;
+        height:35px;
+        top: -15px;
+        left:-10px;
+        z-index: 1000;
+        position: absolute;
+        background-image: url(../img/icons/quote.svg);
+        background-size: 80% auto;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: white;
+    }
+
+    .q2 {
+        top: unset;
+        left: unset;
+        bottom: -15px;
+        right: -10px;
+    }
+}
+
 
 
 

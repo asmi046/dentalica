@@ -70,6 +70,18 @@
         </div>
     </section>
 
+    <section class="quote_section">
+        <div class="container">
+            @foreach ($service->lending_data as $item)
+                    @continue($item['part'] != 'Цитата')
+                    <div class="quote">
+                        <i class="q"></i>
+                        <i class="q q2"></i>
+                        {!! $item['content'] !!}
+                    </div>
+            @endforeach
+        </div>
+    </section>
 
     <section class="poc_prot">
         <div class="container">
