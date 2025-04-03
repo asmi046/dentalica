@@ -8,7 +8,7 @@
                 <hr class="gray_hr">
                 <p class="sub_h">Имплантация и удаление<br>лечение и протезирование<br>отбеливание и гигиена</p>
 
-                <a href="#showModal" class="button">Записаться</a>
+                <a href="#showModal" class="button btn_effect_3">Записаться</a>
             </div>
         </div>
 

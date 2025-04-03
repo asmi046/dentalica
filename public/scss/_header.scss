@@ -1,7 +1,7 @@
 header{
     &.main_page_header {
         background-color: $gray_bg_color;
-        height:  100vh;
+        height:  90vh;
         display: flex;
         justify-content: space-between;
         max-height: 1080px;
@@ -244,7 +244,7 @@ header{
     header {
         &.main_page_header {
             .text_side {
-                padding: 20px 15px;
+                padding: 20px 15px 40px 15px;
 
 
                 .center_blk_wrapper {

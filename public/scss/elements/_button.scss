@@ -37,3 +37,120 @@ button,
         padding: 10px 35px;
     }
 }
+
+
+.btn_effect {
+    animation-duration: 3s;
+    animation-name: btn_animation_pulse;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-delay: 5s;
+    animation-fill-mode:none;
+}
+
+.btn_effect_2 {
+    position: relative;
+    &::before {
+        content: '';
+
+        animation-duration: 1.5s;
+        animation-name: btn_animation_arrow;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-fill-mode:none;
+
+        width: 13px;
+        height: 27px;
+        background-image: url(../img/icons/arrow_button.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+
+        color: $main_color;
+        position: absolute;
+        bottom: -90%;
+        left: 50%;
+    }
+}
+
+.btn_effect_3 {
+    position: relative;
+    &::before {
+        content: '';
+
+        animation-duration: 1.5s;
+        animation-name: btn_animation_rotate;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-fill-mode:none;
+
+        width: 40px;
+        height: 20px;
+        background-image: url(../img/icons/arrow_circle_green.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+
+        color: $main_color;
+        position: absolute;
+        bottom: -40%;
+        left: -15%;
+    }
+}
+
+
+@keyframes btn_animation_rotate {
+    0% {
+        transform: rotate(80deg);
+    }
+
+    50% {
+        transform: rotate(60deg);
+    }
+
+    100% {
+        transform: rotate(80deg);
+    }
+}
+
+@keyframes btn_animation_arrow {
+    0% {
+        bottom: -90%;
+    }
+
+    50% {
+        bottom: -75%;
+    }
+
+    100% {
+        bottom: -90%;
+    }
+}
+
+@keyframes btn_animation_pulse{
+    0% {
+        transform: scale(1);
+    }
+
+    10% {
+        transform: scale(1.1);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    30% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

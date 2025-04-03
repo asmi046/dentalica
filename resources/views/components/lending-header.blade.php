@@ -15,7 +15,7 @@
                     </div>
                     <span>от {{ $service->price }} руб.</span>
                 </div>
-                <a href="#showModal" class="button">Записаться</a>
+                <a href="#showModal" class="button btn_effect_2">Записаться</a>
             </div>
         </div>
 

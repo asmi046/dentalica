@@ -43,7 +43,7 @@
         </div>
     </section>
 
-    <section class="technologi">
+    {{-- <section class="technologi">
         <div class="container">
             <h2>Современные технологии и максимальная безопасность</h2>
             <hr class="gray_hr">
@@ -62,7 +62,7 @@
                 @endforeach
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="technologi">
         <div class="container">

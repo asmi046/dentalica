@@ -27,7 +27,6 @@ const review_app = createApp({
     components:{
         Review,
         ModalWindow,
-
     },
 })
 
