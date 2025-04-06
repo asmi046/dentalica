@@ -27,28 +27,28 @@ $white_data = [
     //________________________________________________________
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/white_safety.svg',
+        'picture' => 'lending/white_safety.svg',
         'title' => 'Безопасность',
         'sub_title' => '',
         'content' => 'Современное оборудование, сертифицированные материалы, стерильные инструменты, сопровождение после лечения',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/white_long_effect.svg',
+        'picture' => 'lending/white_long_effect.svg',
         'title' => 'Устойчивый эффект',
         'sub_title' => '',
         'content' => 'Эффект отбеливания до 3 лет при соблюдении рекомендаций',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/white_affo_price.svg',
+        'picture' => 'lending/white_affo_price.svg',
         'title' => 'Доступная цена',
         'sub_title' => '',
         'content' => 'Прямая работа с компанией-производителем',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/white_exp_staff.svg',
+        'picture' => 'lending/white_exp_staff.svg',
         'title' => 'Опытный персонал ',
         'sub_title' => '',
         'content' => 'Врачи с опытом более 20 лет и сертифицированным обучением',

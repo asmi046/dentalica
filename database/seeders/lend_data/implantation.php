@@ -3,7 +3,7 @@
 $implantation_data = [
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/pricel.svg',
+        'picture' => 'lending/pricel.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Индивидуальный подбор метода имплантации, цифровые хирургические шаблоны для точности установки',
@@ -11,7 +11,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/zub_ok.svg',
+        'picture' => 'lending/zub_ok.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Приживаемость имплантатов до 99%',
@@ -19,7 +19,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/planshet.svg',
+        'picture' => 'lending/planshet.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Бесплатные контрольные осмотры после процедуры',
@@ -27,7 +27,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/calendar.svg',
+        'picture' => 'lending/calendar.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Установка имплантата и изготовление временной коронки в день удаления зуба',
@@ -35,7 +35,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/vector_para_pro.svg',
+        'picture' => 'lending/vector_para_pro.svg',
         'title' => '',
         'sub_title' => '',
         'content' => '100% гарантия стерильности, использование  сертифицированного оборудования и материалалов',
@@ -43,7 +43,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/white_safety.svg',
+        'picture' => 'lending/white_safety.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Пожизненная гарантия на имплантаты, паспорта качества с индивидуальным стикером',
@@ -51,7 +51,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/hend.svg',
+        'picture' => 'lending/hend.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Имплантаты под любой бюджет',
@@ -59,7 +59,7 @@ $implantation_data = [
 
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/shprits.svg',
+        'picture' => 'lending/shprits.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Манипуляции без боли',
@@ -68,7 +68,7 @@ $implantation_data = [
     //____________________________________________________
     [
         'part' => 'Экспертный подход:',
-        'picture' => 'lending_photo/impl-expert.webp',
+        'picture' => 'lending/impl-expert.webp',
         'title' => '',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/expert.html')),
@@ -77,7 +77,7 @@ $implantation_data = [
     //____________________________________________________
     // [
     //     'part' => 'Современные технологии и максимальная безопасность',
-    //     'picture' => 'lending_photo/modern-image-1.webp',
+    //     'picture' => 'lending/modern-image-1.webp',
     //     'title' => 'Использование сертифицированного оборудования и материалов',
     //     'sub_title' => '',
     //     'content' => '',
@@ -85,7 +85,7 @@ $implantation_data = [
 
     // [
     //     'part' => 'Современные технологии и максимальная безопасность',
-    //     'picture' => 'lending_photo/modern-image-2.webp',
+    //     'picture' => 'lending/modern-image-2.webp',
     //     'title' => 'Соответствие стандартам ВОЗ и требованиям МЗ РФ',
     //     'sub_title' => '',
     //     'content' => '',
@@ -93,7 +93,7 @@ $implantation_data = [
 
     // [
     //     'part' => 'Современные технологии и максимальная безопасность',
-    //     'picture' => 'lending_photo/modern-image-3.webp',
+    //     'picture' => 'lending/modern-image-3.webp',
     //     'title' => 'Цифровые хирургические шаблоны для точности установки имплантата',
     //     'sub_title' => '',
     //     'content' => '',
@@ -101,7 +101,7 @@ $implantation_data = [
 
     // [
     //     'part' => 'Современные технологии и максимальная безопасность',
-    //     'picture' => 'lending_photo/modern-image-4.webp',
+    //     'picture' => 'lending/modern-image-4.webp',
     //     'title' => 'Паспорта качества на имплантаты с индивидуальным стикером',
     //     'sub_title' => '',
     //     'content' => '',
@@ -183,7 +183,7 @@ $implantation_data = [
     //____________________________________________________
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => 'lending_photo/dentium.png',
+        'picture' => 'lending/dentium.png',
         'title' => 'dentium',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/dentium.html')),
@@ -191,7 +191,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => 'lending_photo/osstem.png',
+        'picture' => 'lending/osstem.png',
         'title' => 'osstem',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/osstem.html')),
@@ -199,7 +199,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => 'lending_photo/straumann.png',
+        'picture' => 'lending/straumann.png',
         'title' => 'straumann',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/straumann.html')),
@@ -207,7 +207,7 @@ $implantation_data = [
 
     [
         'part' => 'Мы доверяем только проверенным системам',
-        'picture' => 'lending_photo/impro.png',
+        'picture' => 'lending/impro.png',
         'title' => 'impro',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/impro.html')),

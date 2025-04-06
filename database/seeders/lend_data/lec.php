@@ -19,28 +19,28 @@ $lec_data = [
     //____________________________________________________________
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/vector_para_pro.svg',
+        'picture' => 'lending/vector_para_pro.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Современное немецкое оборудование VECTOR PARO PRO - пародонтальный комплекс для профгигиены и пародонтологического лечения',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/plasma_therapy_autoplasma.svg',
+        'picture' => 'lending/plasma_therapy_autoplasma.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Плазмотерапия для лечения патологии десны и пародонта только с применением одноразовых запатентованных разработчиком метода пробирок',
+        'content' => 'Плазмотерапия только с применением одноразовых запатентованных разработчиком метода оригинальных пробирок',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/medic_exp.svg',
+        'picture' => 'lending/medic_exp.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Врачи-профессионалы с опытом работы от 20 лет и сертифицированным обучением',
     ],
     [
         'part' => 'Почему выбирают нас:',
-        'picture' => 'lending_icon/complex_hirurg_estetic.svg',
+        'picture' => 'lending/complex_hirurg_estetic.svg',
         'title' => '',
         'sub_title' => '',
         'content' => 'Комплексный подход, включая хирургическое лечение и эстетическую коррекцию',

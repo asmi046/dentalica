@@ -14,7 +14,9 @@ use MoonShine\Fields\Field;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
 use MoonShine\Fields\TinyMce;
+use MoonShine\Decorations\Tab;
 use MoonShine\Fields\Position;
+use MoonShine\Decorations\Tabs;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
@@ -29,6 +31,8 @@ class ServiceResource extends ModelResource
     protected string $model = Service::class;
 
     protected string $title = 'Услуги';
+
+    protected string $column = 'title';
 
     public function import(): ?ImportHandler
     {
@@ -59,23 +63,42 @@ class ServiceResource extends ModelResource
     public function formFields(): array
     {
         return [
-            ID::make()->sortable(),
+            Tabs::make([
 
-            Text::make('Название', 'title'),
-            Slug::make('Окончание сылки', 'slug'),
-            Text::make('Цена от', 'price'),
-            Text::make('Время выполнения', 'time'),
-            Text::make('good_pacients', 'good_pacients'),
-            Number::make('Порядок сортировки', 'order')->sortable(),
-            Image::make('Изображение', 'img')->dir('service'),
-            TinyMce::make('Описание', 'description'),
-            Json::make('Результаты', 'resul')->fields([
-                Position::make(),
-                Text::make('Заголовок', 'title')
-            ]),
-            Json::make('Преимущества', 'adv')->fields([
-                Position::make(),
-                Text::make('Заголовок', 'title')
+                Tab::make('Основные данные', [
+                    ID::make()->sortable(),
+                    Text::make('Название', 'title'),
+                    Slug::make('Окончание сылки', 'slug'),
+                    Text::make('Цена от', 'price'),
+                    Text::make('Время выполнения', 'time'),
+                    Text::make('good_pacients', 'good_pacients'),
+                    Number::make('Порядок сортировки', 'order')->sortable(),
+                    Image::make('Изображение', 'img')->dir('service'),
+                    TinyMce::make('Описание', 'description'),
+                    Json::make('Результаты', 'resul')->fields([
+                        Position::make(),
+                        Text::make('Заголовок', 'title')
+                    ]),
+                    Json::make('Преимущества', 'adv')->fields([
+                        Position::make(),
+                        Text::make('Заголовок', 'title')
+                    ])
+                ]),
+
+                Tab::make('Данные лендинга', [
+                    Text::make('Шаблон', 'template'),
+                    Text::make('Заголовок лендинга', 'title_lend'),
+                    Text::make('Подзаголовок лендинга', 'sub_title_lend'),
+                    Image::make('Баннер лендинга', 'banner')->dir('lending'),
+                    Json::make('Контент', 'lending_data')->fields([
+                        Position::make(),
+                        Text::make('Секция', 'part'),
+                        Text::make('Заголовок', 'title'),
+                        Text::make('Подзаголовок', 'sub_title'),
+                        Image::make('Фото', 'picture')->dir('lending'),
+                        TinyMce::make('Контент', 'content'),
+                    ]),
+                ]),
             ])
         ];
     }
@@ -86,24 +109,37 @@ class ServiceResource extends ModelResource
     public function detailFields(): array
     {
         return [
-            ID::make()->sortable(),
+            Tabs::make([
 
-            Text::make('Название', 'title'),
-            Slug::make('Окончание сылки', 'slug'),
-            Text::make('Цена от', 'price'),
-            Text::make('Время выполнения', 'time'),
-            Text::make('good_pacients', 'good_pacients'),
-            Number::make('Порядок сортировки', 'order')->sortable(),
-            Image::make('Изображение', 'img')->dir('service'),
-            TinyMce::make('Описание', 'description'),
-            Json::make('Результаты', 'resul')->fields([
-                Position::make(),
-                Text::make('Заголовок', 'title')
-            ]),
-            Json::make('Преимущества', 'adv')->fields([
-                Position::make(),
-                Text::make('Заголовок', 'title')
+                Tab::make('Основные данные', [
+                    ID::make()->sortable(),
+                    Text::make('Название', 'title'),
+                    Slug::make('Окончание сылки', 'slug'),
+                    Text::make('Цена от', 'price'),
+                    Text::make('Время выполнения', 'time'),
+                    Text::make('good_pacients', 'good_pacients'),
+                    Number::make('Порядок сортировки', 'order')->sortable(),
+                    Image::make('Изображение', 'img')->dir('service'),
+                    TinyMce::make('Описание', 'description'),
+                    Json::make('Результаты', 'resul')->fields([
+                        Position::make(),
+                        Text::make('Заголовок', 'title')
+                    ]),
+                    Json::make('Преимущества', 'adv')->fields([
+                        Position::make(),
+                        Text::make('Заголовок', 'title')
+                    ])
+                ]),
+
+                Tab::make('Данные лендинга', [
+                    Text::make('Заголовок лендинга', 'title_lend'),
+                    Text::make('Подзаголовок лендинга', 'sub_title_lend'),
+                    Image::make('Баннер лендинга', 'banner')->dir('lending'),
+                    Text::make('Шаблон', 'template'),
+                ]),
             ])
+
+
         ];
     }
 

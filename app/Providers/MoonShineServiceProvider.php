@@ -10,16 +10,17 @@ use MoonShine\Pages\Page;
 use MoonShine\Menu\MenuItem;
 use MoonShine\Menu\MenuGroup;
 use MoonShine\Menu\MenuElement;
-use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\PageResource;
-use App\MoonShine\Resources\PriceResource;
 use App\MoonShine\Resources\SaleResource;
-use App\MoonShine\Resources\ReviewResource;
+use App\MoonShine\Resources\PriceResource;
 use App\MoonShine\Resources\DoctorResource;
-use App\MoonShine\Resources\ServiceResource;
+use App\MoonShine\Resources\ReviewResource;
 use App\MoonShine\Resources\ContactResource;
+use App\MoonShine\Resources\SeoDataResource;
+use App\MoonShine\Resources\ServiceResource;
 use MoonShine\Resources\MoonShineUserResource;
+use App\MoonShine\Resources\InformationResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Resources\ResourceContract;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
@@ -52,6 +53,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Мню'),
                 new MenuResource()
             )->icon('heroicons.bars-3') ,
+
+            MenuItem::make(
+                static fn() => __('Полезная информация'),
+                new InformationResource()
+            )->icon('heroicons.outline.information-circle') ,
 
 
             MenuItem::make(
