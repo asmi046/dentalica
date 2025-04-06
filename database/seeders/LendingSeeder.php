@@ -79,7 +79,7 @@ class LendingSeeder extends Seeder
             [
             'Плазмолифтинг, лечение заболеваний десен и пародонта в Курске',
             'Безопасное и эффективное лечение десен и пародонта по доступной цене',
-            $banner_lec, $template_lec, $data_lec, 'Плазмолифтинг']
+            $banner_lec, $template_lec, $data_lec, 'Плазмолифтинг и лечение заболеваний пародонта']
         );
 
         $affected = DB::update(
