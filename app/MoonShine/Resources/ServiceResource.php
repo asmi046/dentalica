@@ -97,7 +97,7 @@ class ServiceResource extends ModelResource
                         Text::make('Подзаголовок', 'sub_title'),
                         Image::make('Фото', 'picture')->dir('lending'),
                         TinyMce::make('Контент', 'content'),
-                    ])->removable(),
+                    ])->removable()->nullable(),
                 ]),
             ])
         ];
