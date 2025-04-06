@@ -89,7 +89,7 @@ class ServiceResource extends ModelResource
                     Text::make('Шаблон', 'template'),
                     Text::make('Заголовок лендинга', 'title_lend'),
                     Text::make('Подзаголовок лендинга', 'sub_title_lend'),
-                    Image::make('Баннер лендинга', 'banner')->dir('lending'),
+                    Image::make('Баннер лендинга', 'banner')->dir('lending')->removable(),
                     Json::make('Контент', 'lending_data')->fields([
                         Position::make(),
                         Text::make('Секция', 'part'),
@@ -97,7 +97,7 @@ class ServiceResource extends ModelResource
                         Text::make('Подзаголовок', 'sub_title'),
                         Image::make('Фото', 'picture')->dir('lending'),
                         TinyMce::make('Контент', 'content'),
-                    ]),
+                    ])->removable(),
                 ]),
             ])
         ];
