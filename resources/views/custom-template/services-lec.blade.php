@@ -49,6 +49,15 @@
     </x-lend.section-logo>
 
 
+    <section class="what_impant">
+        <div class="container">
+            @foreach ($service->lending_data as $item)
+                @continue($item['part'] != 'Что вы получите после лечения?')
+                <x-lend.resilts title="Что вы получите после лечения?" :subtitle="$item['title']" :text="$item['content']" ></x-lend.resilts>
+            @endforeach
+        </div>
+    </section>
+
     <section class="lec_podgotovka">
         <div class="container">
             <h2>Как подготовиться к процедуре?</h2>
@@ -100,13 +109,5 @@
         </div>
     </section>
 
-    <section class="what_impant">
-        <div class="container">
-            @foreach ($service->lending_data as $item)
-                @continue($item['part'] != 'Что вы получите после лечения?')
-                <x-lend.resilts title="Что вы получите после лечения?" :subtitle="$item['title']" :text="$item['content']" ></x-lend.resilts>
-            @endforeach
-        </div>
-    </section>
 
 @endsection

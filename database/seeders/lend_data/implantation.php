@@ -68,7 +68,7 @@ $implantation_data = [
     //____________________________________________________
     [
         'part' => 'Экспертный подход:',
-        'picture' => 'lending/impl-expert.webp',
+        'picture' => 'lending/modern-image-4.webp',
         'title' => '',
         'sub_title' => '',
         'content' => file_get_contents( public_path('old_data/lending_data/text/expert.html')),

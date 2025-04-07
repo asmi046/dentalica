@@ -24,6 +24,25 @@
         </div>
     </section>
 
+
+    <x-lend.section-logo title="Наши гарантии">
+        <div class="stepper">
+            <div class="line"></div>
+            @foreach ($service->lending_data as $item)
+                @continue($item['part'] != 'Наши гарантии')
+                <div class="step">
+                    <div class="counter">
+                        <span>{{ $item['sub_title'] }}</span>
+                    </div>
+
+                    <div class="title">
+                        <span>{!! $item['title'] !!}</span>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+    </x-lend.section-logo>
+
     <section class="expert">
         <div class="container">
             @foreach ($service->lending_data as $item)
@@ -40,6 +59,29 @@
                     </div>
                 </div>
             @endforeach
+        </div>
+    </section>
+
+
+    <section class="system_section">
+        <div class="container">
+            <h2>Мы доверяем только проверенным системам</h2>
+            <hr class="gray_hr">
+
+            <div class="systems">
+                @foreach ($service->lending_data as $item)
+                    @continue($item['part'] != 'Мы доверяем только проверенным системам')
+                    <div class="system">
+                        <div class="logo_wrapper">
+                            <img src="{{ Storage::url($item['picture']) }}" alt="{{ $item['title'] }}">
+                        </div>
+
+                        <div class="title text_styles">
+                            <span>{!! $item['content'] !!}</span>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
         </div>
     </section>
 
@@ -93,50 +135,7 @@
     </section>
 
 
-    <section class="garant">
-        <div class="container">
-            <h2>Наши гарантии</h2>
-            <hr class="gray_hr">
 
-            <div class="stepper">
-                <div class="line"></div>
-                @foreach ($service->lending_data as $item)
-                    @continue($item['part'] != 'Наши гарантии')
-                    <div class="step">
-                        <div class="counter">
-                            <span>{{ $item['sub_title'] }}</span>
-                        </div>
-
-                        <div class="title">
-                            <span>{!! $item['title'] !!}</span>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
-
-    <section class="system_section">
-        <div class="container">
-            <h2>Мы доверяем только проверенным системам</h2>
-            <hr class="gray_hr">
-
-            <div class="systems">
-                @foreach ($service->lending_data as $item)
-                    @continue($item['part'] != 'Мы доверяем только проверенным системам')
-                    <div class="system">
-                        <div class="logo_wrapper">
-                            <img src="{{ Storage::url($item['picture']) }}" alt="{{ $item['title'] }}">
-                        </div>
-
-                        <div class="title text_styles">
-                            <span>{!! $item['content'] !!}</span>
-                        </div>
-                    </div>
-                @endforeach
-            </div>
-        </div>
-    </section>
 
     <section class="quote_section">
         <div class="container">

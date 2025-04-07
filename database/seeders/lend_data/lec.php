@@ -3,7 +3,7 @@ $lec_data = [
     [
         'part' => 'Как проходит лечение?',
         'picture' => '',
-        'title' => 'Профессиональная <br>гигиена ивектор-терапия',
+        'title' => 'Вектор терапия',
         'sub_title' => '01.',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_work_1.html')),
     ],
@@ -11,7 +11,7 @@ $lec_data = [
     [
         'part' => 'Как проходит лечение?',
         'picture' => '',
-        'title' => 'Плазмотерапия <br>(плазмолифтинг):',
+        'title' => 'Плазмолифтинг',
         'sub_title' => '02.',
         'content' => file_get_contents(public_path('old_data/lending_data/text/lec_treatment_work_2.html')),
     ],
@@ -36,7 +36,7 @@ $lec_data = [
         'picture' => 'lending/medic_exp.svg',
         'title' => '',
         'sub_title' => '',
-        'content' => 'Врачи-профессионалы с опытом работы от 20 лет и сертифицированным обучением',
+        'content' => 'Врачи-профессионалы с опытом работы от 20 лет, прошли обучение в компании Plasmolifting, имеют сертификаты, позволяющие проводить данную процедуру',
     ],
     [
         'part' => 'Почему выбирают нас:',
