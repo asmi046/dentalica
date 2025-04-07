@@ -9,7 +9,6 @@
                         <img src="{{ Storage::url($item->img) }}" alt="{{ $item->title }}">
                     </div>
                     <div class="useful-cards__item-content">
-                        <div class="useful-cards__item-title">{{ $item->title }}</div>
                         <div class="useful-cards__item-text">
                             {!! $item->short_description !!}
                         </div>
@@ -42,7 +41,7 @@
         spaceBetween: 30,
         loop:true,
         autoplay: {
-            delay: 2500,
+            delay: 5500,
         },
             breakpoints: {
 
