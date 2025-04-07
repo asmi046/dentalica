@@ -22,7 +22,7 @@
 
     <section class="services-useful">
         <div class="container">
-            <h2>Полезная информация</h2>
+            <h2>Оснащение и оборудование</h2>
             <hr class="gray_hr">
             <x-information-in-main></x-information-in-main>
         </div>
