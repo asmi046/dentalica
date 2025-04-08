@@ -20,6 +20,7 @@ use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\ServiceResource;
 use MoonShine\Resources\MoonShineUserResource;
+use App\MoonShine\Resources\BeforeAfterResource;
 use App\MoonShine\Resources\InformationResource;
 use MoonShine\Resources\MoonShineUserRoleResource;
 use MoonShine\Contracts\Resources\ResourceContract;
@@ -99,6 +100,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Контакты'),
                 new ContactResource()
             )->icon('heroicons.outline.phone') ,
+
+            MenuItem::make(
+                static fn() => __('До - После'),
+                new BeforeAfterResource()
+            )->icon('heroicons.outline.arrows-right-left') ,
 
 
 
