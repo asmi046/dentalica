@@ -320,3 +320,26 @@ header{
 
     }
 }
+
+@media (max-width: 360px) {
+    header {
+        &.main_page_header {
+
+            .photo_side {
+                height: 430px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        &.main_page_header {
+
+            .photo_side {
+                height: 400px;
+            }
+        }
+    }
+}
