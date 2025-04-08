@@ -27,10 +27,23 @@
             border: 1px solid #96744A;
             border-radius: $border_rad_main;
             overflow: hidden;
+
+
         }
+
+        &-text {
+            margin-bottom: 10px;
+        }
+
         &-title{
             font-weight: 700;
             font-size: 19px;
+        }
+
+        &-more{
+            font-size: 14px;
+            margin-top: auto;
+            color: $main_color;
         }
     }
 }

@@ -12,6 +12,7 @@
                         <div class="useful-cards__item-text">
                             {!! $item->short_description !!}
                         </div>
+                        <p class="useful-cards__item-more">Подробнее...</p>
                     </div>
                 </div>
             </a>
