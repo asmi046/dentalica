@@ -3,19 +3,19 @@
 namespace App\View\Components;
 
 use Closure;
-use App\Models\Information;
+use App\Models\Select;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class InformationInMain extends Component
+class WhySelect extends Component
 {
-    public $information_list;
+    public $puncts;
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->information_list = Information::select()->orderBy('order', 'ASC')->get();
+        $this->puncts = Select::select()->orderBy('order', 'ASC')->take(4)->get();
     }
 
     /**
@@ -23,6 +23,6 @@ class InformationInMain extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('components.information-in-main');
+        return view('components.why-select');
     }
 }

@@ -42,7 +42,7 @@
         <div class="container">
             <h2>Почему пациенты выбирают нас</h2>
             <hr class="gray_hr">
-            <x-princips></x-princips>
+            <x-why-select></x-why-select>
         </div>
     </section>
 

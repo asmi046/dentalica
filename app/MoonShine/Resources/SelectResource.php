@@ -4,12 +4,11 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
+use App\Models\Select;
 use MoonShine\Fields\ID;
-use MoonShine\Fields\Text;
 
-use App\Models\Information;
+use MoonShine\Fields\Text;
 use MoonShine\Fields\Field;
-use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Handlers\ExportHandler;
@@ -19,13 +18,13 @@ use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\MoonShineComponent;
 
 /**
- * @extends ModelResource<Information>
+ * @extends ModelResource<Select>
  */
-class InformationResource extends ModelResource
+class SelectResource extends ModelResource
 {
-    protected string $model = Information::class;
+    protected string $model = Select::class;
 
-    protected string $title = 'Полезная информация';
+    protected string $title = 'Почему выбирают нас';
 
     protected string $column = 'title';
 
@@ -46,11 +45,8 @@ class InformationResource extends ModelResource
     {
         return [
             ID::make()->sortable(),
-            TinyMce::make('Короткое описание', 'short_description')->changePreview(
-                fn($values, TinyMce $ctx) => strip_tags($values)
-            ),
-            Image::make('Изображение', 'img')->dir('information'),
-            Number::make('Порядок вывода', 'order'),
+            Text::make('Заголовок', 'title'),
+            Number::make('Порядок вывода', 'order')->sortable(),
 
         ];
     }
@@ -63,10 +59,8 @@ class InformationResource extends ModelResource
         return [
             ID::make()->sortable(),
             Text::make('Заголовок', 'title'),
-            Image::make('Изображение', 'img')->dir('information'),
-            Number::make('Порядок вывода', 'order')->default(0),
-            TinyMce::make('Короткое описание', 'short_description'),
-            TinyMce::make('Описание', 'description'),
+            Number::make('Порядок вывода', 'order'),
+            TinyMce::make('Короткое описание', 'description'),
         ];
     }
 
@@ -78,25 +72,19 @@ class InformationResource extends ModelResource
         return [
             ID::make()->sortable(),
             Text::make('Заголовок', 'title'),
-            Image::make('Изображение', 'img')->dir('information'),
             Number::make('Порядок вывода', 'order'),
-            TinyMce::make('Короткое описание', 'short_description'),
-            TinyMce::make('Описание', 'description'),
+            TinyMce::make('Короткое описание', 'description'),
         ];
     }
 
     /**
-     * @param Information $item
+     * @param Select $item
      *
      * @return array<string, string[]|string>
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
     public function rules(Model $item): array
     {
-        return [
-            'img' => ($item->img === "")?['required']:[],
-            'short_description' => ['required'],
-            'description' => ['required'],
-        ];
+        return [];
     }
 }

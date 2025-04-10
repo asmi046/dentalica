@@ -16,6 +16,7 @@ use App\MoonShine\Resources\SaleResource;
 use App\MoonShine\Resources\PriceResource;
 use App\MoonShine\Resources\DoctorResource;
 use App\MoonShine\Resources\ReviewResource;
+use App\MoonShine\Resources\SelectResource;
 use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\ServiceResource;
@@ -59,6 +60,11 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn() => __('Полезная информация'),
                 new InformationResource()
             )->icon('heroicons.outline.information-circle') ,
+
+            MenuItem::make(
+                static fn() => __('Почему выбирают нас'),
+                new SelectResource()
+            )->icon('heroicons.outline.check-badge') ,
 
 
             MenuItem::make(
