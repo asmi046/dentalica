@@ -11,6 +11,7 @@ class Sale extends Model
 
     public $fillable = [
         'order',
+        'is_active',
         'title',
         'subtitle',
         'img',
