@@ -1,5 +1,6 @@
 <div class="actions">
     @foreach ( $sale as $item)
+        @continue(!$item->is_active)
         <x-card-actions :sale="$item"></x-card-actions>
     @endforeach
 

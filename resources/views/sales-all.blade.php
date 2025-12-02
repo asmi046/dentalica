@@ -19,6 +19,7 @@
     <div class="container">
         <div class="all_actions_wrapper">
             @foreach ($all_sales as $sale)
+                @continue(!$sale->is_active)
                 <x-card-actions :sale="$sale"></x-card-actions>
             @endforeach
         </div>

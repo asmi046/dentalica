@@ -12,6 +12,7 @@ use MoonShine\Fields\Field;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
 use MoonShine\Fields\TinyMce;
+use MoonShine\Fields\Switcher;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
@@ -59,6 +60,7 @@ class SaleResource extends ModelResource
         return [
             ID::make()->sortable(),
             Text::make('Заголовок', 'title'),
+            Switcher::make('Активна ли акция', 'is_active'),
             Text::make('Подзаголовок', 'subtitle'),
             Number::make('Порядок сортировки', 'order')->sortable(),
             Image::make('Изображение', 'img')->dir('sales'),
