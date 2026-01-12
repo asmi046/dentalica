@@ -94,6 +94,9 @@ class DoctorResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        return [];
+        return [
+            'name' => ['required', 'string', 'max:255'],
+            'photo' => ['required', 'string', 'max:500'],
+        ];
     }
 }

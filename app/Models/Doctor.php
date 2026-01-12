@@ -18,4 +18,12 @@ class Doctor extends Model
         'description',
         'short_description',
     ];
+
+    public function setSlugAttribute($value)
+    {
+        if (empty($value))
+            $this->attributes['slug'] =  Str::slug($this->title);
+        else
+            $this->attributes['slug'] =  $value;
+    }
 }
