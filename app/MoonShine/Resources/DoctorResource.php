@@ -5,19 +5,19 @@ declare(strict_types=1);
 namespace App\MoonShine\Resources;
 
 use App\Models\Doctor;
-use MoonShine\Fields\ID;
-
-use MoonShine\Fields\Slug;
-use MoonShine\Fields\Text;
+use Illuminate\Database\Eloquent\Model;
+use MoonShine\Components\MoonShineComponent;
 use MoonShine\Fields\Field;
+use MoonShine\Fields\ID;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Number;
+use MoonShine\Fields\Slug;
+use MoonShine\Fields\Switcher;
+use MoonShine\Fields\Text;
 use MoonShine\Fields\TinyMce;
 use MoonShine\Handlers\ExportHandler;
 use MoonShine\Handlers\ImportHandler;
 use MoonShine\Resources\ModelResource;
-use Illuminate\Database\Eloquent\Model;
-use MoonShine\Components\MoonShineComponent;
 
 /**
  * @extends ModelResource<Doctor>
@@ -48,7 +48,7 @@ class DoctorResource extends ModelResource
             Image::make('Фото доктора', 'photo')->dir('doctors'),
             Text::make('Имя доктора', 'name'),
             Text::make('Должность', 'dolgnost'),
-            Number::make('Порядок сортировки', 'order')
+            Number::make('Порядок сортировки', 'order'),
         ];
     }
 
@@ -60,6 +60,7 @@ class DoctorResource extends ModelResource
         return [
             ID::make()->sortable(),
             Text::make('Имя доктора', 'name'),
+            Switcher::make('Активен', 'active'),
             Text::make('Должность', 'dolgnost'),
             Slug::make('Окончание сылки', 'slug'),
             Image::make('Фото доктора', 'photo')->dir('doctors'),
@@ -77,6 +78,7 @@ class DoctorResource extends ModelResource
         return [
             ID::make()->sortable(),
             Text::make('Имя доктора', 'name'),
+            Switcher::make('Активен', 'active'),
             Text::make('Должность', 'dolgnost'),
             Slug::make('Окончание сылки', 'slug'),
             Image::make('Фото доктора', 'photo')->dir('doctors'),
@@ -87,16 +89,18 @@ class DoctorResource extends ModelResource
     }
 
     /**
-     * @param Doctors $item
-     *
+     * @param  Doctors  $item
      * @return array<string, string[]|string>
+     *
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
     public function rules(Model $item): array
     {
         return [
             'name' => ['required', 'string', 'max:255'],
-            'photo' => ['required', 'string', 'max:500'],
+            'photo' => $item->exists
+                ? ['nullable', 'string', 'max:500']
+                : ['required', 'string', 'max:500'],
         ];
     }
 }

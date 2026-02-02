@@ -4,28 +4,27 @@ declare(strict_types=1);
 
 namespace App\Providers;
 
-use Closure;
-use MoonShine\MoonShine;
-use MoonShine\Pages\Page;
-use MoonShine\Menu\MenuItem;
-use MoonShine\Menu\MenuGroup;
-use MoonShine\Menu\MenuElement;
+use App\MoonShine\Resources\BeforeAfterResource;
+use App\MoonShine\Resources\ContactResource;
+use App\MoonShine\Resources\DoctorResource;
+use App\MoonShine\Resources\InformationResource;
 use App\MoonShine\Resources\MenuResource;
 use App\MoonShine\Resources\PageResource;
-use App\MoonShine\Resources\SaleResource;
 use App\MoonShine\Resources\PriceResource;
-use App\MoonShine\Resources\DoctorResource;
 use App\MoonShine\Resources\ReviewResource;
+use App\MoonShine\Resources\SaleResource;
 use App\MoonShine\Resources\SelectResource;
-use App\MoonShine\Resources\ContactResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\ServiceResource;
-use MoonShine\Resources\MoonShineUserResource;
-use App\MoonShine\Resources\BeforeAfterResource;
-use App\MoonShine\Resources\InformationResource;
-use MoonShine\Resources\MoonShineUserRoleResource;
+use Closure;
 use MoonShine\Contracts\Resources\ResourceContract;
+use MoonShine\Menu\MenuElement;
+use MoonShine\Menu\MenuGroup;
+use MoonShine\Menu\MenuItem;
+use MoonShine\Pages\Page;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
+use MoonShine\Resources\MoonShineUserResource;
+use MoonShine\Resources\MoonShineUserRoleResource;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
@@ -52,79 +51,75 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     {
         return [
             MenuItem::make(
-                static fn() => __('Мню'),
-                new MenuResource()
-            )->icon('heroicons.bars-3') ,
+                static fn () => __('Мню'),
+                new MenuResource
+            )->icon('heroicons.bars-3'),
 
             MenuItem::make(
-                static fn() => __('Полезная информация'),
-                new InformationResource()
-            )->icon('heroicons.outline.information-circle') ,
+                static fn () => __('Оборудование и материалы'),
+                new InformationResource
+            )->icon('heroicons.outline.information-circle'),
 
             MenuItem::make(
-                static fn() => __('Почему выбирают нас'),
-                new SelectResource()
-            )->icon('heroicons.outline.check-badge') ,
-
+                static fn () => __('Почему выбирают нас'),
+                new SelectResource
+            )->icon('heroicons.outline.check-badge'),
 
             MenuItem::make(
-                static fn() => __('Страницы'),
-                new PageResource()
+                static fn () => __('Страницы'),
+                new PageResource
             )->icon('heroicons.outline.clipboard-document'),
 
             MenuItem::make(
-                static fn() => __('Специалисты'),
-                new DoctorResource()
+                static fn () => __('Специалисты'),
+                new DoctorResource
             )->icon('heroicons.outline.users'),
 
             MenuItem::make(
-                static fn() => __('Отзывы'),
-                new ReviewResource()
+                static fn () => __('Отзывы'),
+                new ReviewResource
             )->icon('heroicons.outline.chat-bubble-oval-left-ellipsis'),
 
             MenuItem::make(
-                static fn() => __('SEO'),
-                new SeoDataResource()
+                static fn () => __('SEO'),
+                new SeoDataResource
             )->icon('heroicons.outline.chart-bar-square'),
 
             MenuItem::make(
-                static fn() => __('Цена'),
-                new PriceResource()
-            )->icon('heroicons.outline.banknotes') ,
+                static fn () => __('Цена'),
+                new PriceResource
+            )->icon('heroicons.outline.banknotes'),
 
             MenuItem::make(
-                static fn() => __('Услуги'),
-                new ServiceResource()
-            )->icon('heroicons.outline.rectangle-group') ,
+                static fn () => __('Услуги'),
+                new ServiceResource
+            )->icon('heroicons.outline.rectangle-group'),
 
             MenuItem::make(
-                static fn() => __('Скидки'),
-                new SaleResource()
-            )->icon('heroicons.outline.receipt-percent') ,
+                static fn () => __('Скидки'),
+                new SaleResource
+            )->icon('heroicons.outline.receipt-percent'),
 
             MenuItem::make(
-                static fn() => __('Контакты'),
-                new ContactResource()
-            )->icon('heroicons.outline.phone') ,
+                static fn () => __('Контакты'),
+                new ContactResource
+            )->icon('heroicons.outline.phone'),
 
             MenuItem::make(
-                static fn() => __('До - После'),
-                new BeforeAfterResource()
-            )->icon('heroicons.outline.arrows-right-left') ,
+                static fn () => __('До - После'),
+                new BeforeAfterResource
+            )->icon('heroicons.outline.arrows-right-left'),
 
-
-
-            MenuGroup::make(static fn() => __('moonshine::ui.resource.system'), [
+            MenuGroup::make(static fn () => __('moonshine::ui.resource.system'), [
                 MenuItem::make(
-                    static fn() => __('moonshine::ui.resource.admins_title'),
-                    new MoonShineUserResource()
+                    static fn () => __('moonshine::ui.resource.admins_title'),
+                    new MoonShineUserResource
                 ),
                 MenuItem::make(
-                    static fn() => __('moonshine::ui.resource.role_title'),
-                    new MoonShineUserRoleResource()
+                    static fn () => __('moonshine::ui.resource.role_title'),
+                    new MoonShineUserRoleResource
                 ),
             ]),
-
 
         ];
     }

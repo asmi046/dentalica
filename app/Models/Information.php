@@ -13,7 +13,8 @@ class Information extends Model
         'img',
         'order',
         'title',
+        'active',
         'short_description',
-        'description'
+        'description',
     ];
 }

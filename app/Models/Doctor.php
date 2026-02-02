@@ -13,6 +13,7 @@ class Doctor extends Model
         'name',
         'slug',
         'photo',
+        'active',
         'order',
         'dolgnost',
         'description',
@@ -21,9 +22,10 @@ class Doctor extends Model
 
     public function setSlugAttribute($value)
     {
-        if (empty($value))
-            $this->attributes['slug'] =  Str::slug($this->title);
-        else
-            $this->attributes['slug'] =  $value;
+        if (empty($value)) {
+            $this->attributes['slug'] = Str::slug($this->title);
+        } else {
+            $this->attributes['slug'] = $value;
+        }
     }
 }
