@@ -2,20 +2,21 @@
 
 namespace App\View\Components;
 
-use Closure;
 use App\Models\Information;
-use Illuminate\View\Component;
+use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
 class InformationInMain extends Component
 {
     public $information_list;
+
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
-        $this->information_list = Information::select()->orderBy('order', 'ASC')->get();
+        $this->information_list = Information::where('active', true)->orderBy('order', 'ASC')->get();
     }
 
     /**
