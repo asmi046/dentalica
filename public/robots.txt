@@ -1,2 +1,65 @@
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /admin/
+Disallow: /admin-*
+Disallow: /backend/
+Disallow: /cp/
+Disallow: /controlpanel/
+Disallow: /dashboard/
+Disallow: /api/
+Disallow: /api/*
+Disallow: /ajax/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /config/
+Disallow: /database/
+Disallow: /routes/
+Disallow: /tests/
+Disallow: /app/
+Disallow: /bootstrap/
+Disallow: /public/uploads/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /log/
+Disallow: /logs/
+Disallow: /*.php$
+Disallow: /*.env$
+Disallow: /*.sql$
+Disallow: /*.zip$
+Disallow: /*?*
+Disallow: /*/edit$
+Disallow: /*/create$
+Disallow: /*/delete$
+Disallow: /*/login$
+Disallow: /*/register$
+Disallow: /*/password/*
+Disallow: /*/reset/*
+Disallow: /*/profile/
+Disallow: /*/cart/
+Disallow: /*/checkout/
+Disallow: /*/order/*
+
+# Дополнительные правила для поисковых систем
+User-agent: Yandex
+Allow: /
+Clean-param: ref /search/
+Clean-param: utm_source&utm_medium&utm_campaign /
+Host: ваш-домен.ru
+
+User-agent: Googlebot
+Allow: /
+Disallow: /*?utm_*
+Disallow: /*?ref=*
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+# Sitemaps
+Sitemap: https://dentalica-kursk.com/sitemap.xml
