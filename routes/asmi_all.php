@@ -39,3 +39,9 @@ Route::get('/before_after', [BeforeAfterController::class, 'index'])->name('befo
 Route::get('/devices', [DevicesController::class, 'index'])->name('devices');
 
 Route::get('/sitemap.xml', [SitemapController::class, 'index']);
+
+Route::get('/cache_clear', function () {
+    Artisan::call('optimize:clear');
+
+    return Redirect::back()->with('msg', 'Кеш сброшен');
+})->name('cache_clear');
