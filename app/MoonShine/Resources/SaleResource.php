@@ -89,8 +89,6 @@ class SaleResource extends ModelResource
      */
     public function rules(Model $item): array
     {
-        // dd($item->img);
-
         return [
             'img' => (! $item->img) ? ['required'] : [],
             'title' => ['required'],
