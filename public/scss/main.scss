@@ -9,79 +9,81 @@
 @import "form/all-form";
 @import "elements/all-elements";
 
-
-body{
+body {
     font-family: $main_fonts;
     font-size: 16px;
     color: $black_color;
     // font-weight: 200;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Philosopher";
     font-weight: normal;
     line-height: 0.9;
     color: $header_color;
 }
 
-h2{
+h2 {
     font-size: 54px;
     margin-bottom: 30px;
 }
 
 header,
 footer,
-section{
+section {
     width: 100%;
     padding-top: $section_space;
     padding-bottom: $section_space;
 }
 
-.container{
-    width:100%;
+.container {
+    width: 100%;
     max-width: $conteiner_max_w;
     margin: 0 auto;
 }
 
 img {
-    width:100%;
-    height:100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
 .color_lnk {
-    color:$main_color;
+    color: $main_color;
     font-weight: normal;
     &:hover {
-        color:$hover_color
+        color: $hover_color;
     }
 }
 
 .map_in_page {
-    width:100%;
+    width: 100%;
     min-height: 300px;
 }
 
 .circl_btn {
-    width:50px;
+    width: 50px;
     height: 50px;
     background-color: $main_color;
     border-radius: 30px;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
-    &.green{
+    &.green {
         background-color: $sub_color;
     }
 
-    &.green:hover{
+    &.green:hover {
         background-color: $sub_color_hover;
     }
 
     &.arrow_back {
         display: flex;
-        svg{
-            width:35%;
+        svg {
+            width: 35%;
             height: 35%;
             stroke: white;
             margin: auto;
@@ -90,7 +92,7 @@ img {
     }
 
     &.phone {
-        background-image: url('../img/icons/phone.svg')
+        background-image: url("../img/icons/phone.svg");
     }
 
     &:hover {
@@ -101,7 +103,7 @@ img {
 
 .bacword_btn {
     display: flex;
-    span{
+    span {
         margin: auto 0 auto 10px;
     }
 }
@@ -111,14 +113,13 @@ img {
     height: 1px;
     background-color: $main_color;
     border: none;
-    margin: 20px auto 20px 0
+    margin: 20px auto 20px 0;
 }
 
 .phone_lnk {
     font-size: 30px;
     font-weight: bold;
 }
-
 
 .arrow_button {
     width: 40px;
@@ -147,17 +148,18 @@ img {
 
 .snoska {
     font-size: 12px;
-    color:$header_color;
+    color: $header_color;
 }
 
-
-swiper-slide { height: auto; }
+swiper-slide {
+    height: auto;
+}
 
 .expert {
     margin-top: 50px;
 }
 
-@media (max-width:1440px) {
+@media (max-width: 1440px) {
     .container {
         width: 96%;
         margin-left: auto;
@@ -167,12 +169,12 @@ swiper-slide { height: auto; }
 
 @media (max-width: 480px) {
     .circl_btn {
-        width:30px;
+        width: 30px;
         height: 30px;
         background-size: 60%;
     }
 
-    h2{
+    h2 {
         font-size: 32px;
         margin-bottom: 10px;
     }
@@ -195,3 +197,4 @@ swiper-slide { height: auto; }
 @import "beforeafter";
 @import "service-page";
 @import "lending/lending_all";
+@import "blog/index";

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\BeforeAfterController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\DevicesController;
 use App\Http\Controllers\DoctorController;
@@ -26,6 +27,10 @@ Route::get('/doctors', [DoctorController::class, 'index'])->name('doctors');
 Route::get('/doctors/{slug}', [DoctorController::class, 'doctors_page'])->name('doctors_page');
 
 Route::get('/all_rewiews', [ReviewController::class, 'index'])->name('rewiews');
+
+Route::get('/blog/videos', [BlogController::class, 'videos'])->name('blog.videos');
+Route::get('/blog/texts', [BlogController::class, 'texts'])->name('blog.texts');
+Route::get('/blog/{slug}', [BlogController::class, 'page'])->name('blog.page');
 
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 
