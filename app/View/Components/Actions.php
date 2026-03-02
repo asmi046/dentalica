@@ -16,8 +16,8 @@ class Actions extends Component
      */
     public function __construct()
     {
-        $this->sale = Sale::orderBy('order')->take(2)->get();
-        dd($this->sale);
+        $this->sale = Sale::where('is_active', true)->orderBy('order')->take(2)->get();
+        // dd($this->sale);
     }
 
     /**
