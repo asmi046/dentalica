@@ -2,20 +2,22 @@
 
 namespace App\View\Components;
 
-use Closure;
 use App\Models\Sale;
-use Illuminate\View\Component;
+use Closure;
 use Illuminate\Contracts\View\View;
+use Illuminate\View\Component;
 
 class Actions extends Component
 {
     public $sale;
+
     /**
      * Create a new component instance.
      */
     public function __construct()
     {
         $this->sale = Sale::orderBy('order')->take(2)->get();
+        dd($this->sale);
     }
 
     /**
