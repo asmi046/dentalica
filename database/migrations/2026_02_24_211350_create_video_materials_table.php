@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('video_materials', function (Blueprint $table) {
             $table->id();
             $table->string('title')->comment('Заголовок');
+            $table->string('img')->nullable()->comment('Изображение');
             $table->string('slug')->unique()->comment('Слаг');
-            $table->text('short_description')->nullable()->comment('Короткое описание');
-            $table->string('author_name')->nullable()->comment('Имя автора');
-            $table->string('author_position')->nullable()->comment('Должность автора');
+            $table->text('description')->nullable()->comment('Короткое описание');
+            $table->text('video_frame')->nullable()->comment('Короткое описание');
             $table->timestamps();
         });
     }

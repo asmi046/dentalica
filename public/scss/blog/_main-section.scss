@@ -1,0 +1,136 @@
+.information {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    .numbers {
+        flex: 1;
+        display: flex;
+        background-color: $gray_bg_color;
+        border-radius: $border_rad;
+        padding: 20px 40px;
+        gap: 40px;
+        position: relative;
+
+        .logo-to-numbers {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 40%;
+            height: auto;
+        }
+
+        .number {
+            font-size: 112px;
+            font-family: "Philosopher", sans-serif;
+            color: $main_color;
+        }
+
+        .text_comment {
+            font-size: 22px;
+        }
+
+        .elelemt {
+            display: flex;
+            font-size: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .button {
+            margin: auto auto auto 0;
+            min-width: 220px;
+        }
+    }
+
+    .informer {
+        width: 350px;
+        position: relative;
+        h3 {
+            text-align: center;
+            font-size: 32px;
+            line-height: 1.2;
+            color: $sub_color;
+            // text-transform: uppercase;
+        }
+
+        .arrow {
+            width: 120px;
+            height: 80px;
+            position: absolute;
+            top: 60%;
+            right: 20%;
+            transform: rotate(-63deg);
+            background-image: url(../img/icons/arrow_circle_green.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            animation: arrow-rock 2s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes arrow-rock {
+    0%,
+    100% {
+        transform: rotate(-63deg);
+    }
+    50% {
+        transform: rotate(-53deg);
+    }
+}
+
+@keyframes arrow-rock-mobile {
+    0%,
+    100% {
+        transform: rotate(-150deg);
+    }
+    50% {
+        transform: rotate(-140deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .information {
+        flex-direction: column-reverse;
+        .numbers {
+            flex-direction: column;
+        }
+
+        .informer {
+            width: 100%;
+            h3 {
+                text-align: left;
+                margin-bottom: 0;
+            }
+            .arrow {
+                width: 100px;
+                height: 80px;
+                top: 30%;
+                right: 10%;
+                animation: arrow-rock-mobile 2s ease-in-out infinite;
+
+                transform: rotate(-150deg);
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .information .informer {
+        h3 {
+            font-size: 22px;
+            width: 80%;
+            br {
+                display: none;
+            }
+        }
+
+        .arrow {
+            width: 70px;
+            height: 50px;
+            top: 30%;
+            right: 0%;
+        }
+    }
+}

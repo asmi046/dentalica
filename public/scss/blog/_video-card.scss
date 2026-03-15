@@ -1,0 +1,31 @@
+.blog_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    .video_placeholder {
+        overflow: hidden;
+        border-radius: $border_rad;
+        position: relative;
+        border: 1px solid $dark_gray_color;
+        .play_button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.8;
+            transition: opacity 0.3s ease;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

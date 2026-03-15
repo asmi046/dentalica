@@ -1,0 +1,17 @@
+.video_page {
+    display: flex;
+    gap: 30px;
+    .video {
+        max-width: 350px;
+    }
+    .text {
+        flex: 1;
+    }
+
+    @media (max-width: 780px) {
+        flex-direction: column;
+        .video {
+            max-width: 100%;
+        }
+    }
+}

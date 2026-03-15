@@ -12,18 +12,15 @@
     <x-header.inner-page-header></x-header.inner-page-header>
     <x-header.inner-page-title-no-photo :title="$page->title"></x-header.inner-page-title-no-photo>
 
-    <section class="page_section">
+    <section class="video_page_section">
         <div class="container text_styles">
-            <div class="blog_post">
-                <div class="blog_post_meta">
-                    <p class="author_info">
-                        <strong>{{ $page->author_name }}</strong> - {{ $page->author_position }}
-                    </p>
-                    <p class="post_date">{{ $page->created_at->format('d.m.Y') }}</p>
+            <div class="video_page">
+                <div class="video">
+                    {!! $page->video_frame !!}
                 </div>
 
-                <div class="blog_post_content">
-                    {!! $page->text !!}
+                <div class="text">
+                    {!! $page->description !!}
                 </div>
             </div>
         </div>

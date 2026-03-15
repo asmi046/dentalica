@@ -21,10 +21,10 @@ class BlogController extends Controller
         return view('blog.texts', compact('texts'));
     }
 
-    public function page(string $slug)
+    public function video_page(string $slug)
     {
-        $page = TextMaterial::where('slug', $slug)->firstOrFail();
+        $page = VideoMaterial::where('slug', $slug)->firstOrFail();
 
-        return view('blog.page', compact('page'));
+        return view('blog.page_video', compact('page'));
     }
 }

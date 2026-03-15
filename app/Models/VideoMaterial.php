@@ -8,9 +8,9 @@ class VideoMaterial extends Model
 {
     protected $fillable = [
         'title',
+        'img',
         'slug',
-        'short_description',
-        'author_name',
-        'author_position',
+        'description',
+        'video_frame',
     ];
 }

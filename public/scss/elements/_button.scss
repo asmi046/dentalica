@@ -2,7 +2,7 @@ button,
 .button {
     background-color: $main_color;
     border: 1px solid $main_color;
-    color:white;
+    color: white;
     padding: 10px 50px;
     cursor: pointer;
     transition: $main_transition;
@@ -12,7 +12,7 @@ button,
     font-size: 22px;
     border-radius: $border_rad;
     // font-weight: 200;
-
+    text-align: center;
     &:hover {
         background-color: $hover_color;
         border-color: $hover_color;
@@ -25,7 +25,7 @@ button,
     border: 1px solid $main_color;
     text-decoration: none;
 
-    &:hover{
+    &:hover {
         color: white;
         text-decoration: none;
     }
@@ -38,26 +38,25 @@ button,
     }
 }
 
-
 .btn_effect {
     animation-duration: 3s;
     animation-name: btn_animation_pulse;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     animation-delay: 5s;
-    animation-fill-mode:none;
+    animation-fill-mode: none;
 }
 
 .btn_effect_2 {
     position: relative;
     &::before {
-        content: '';
+        content: "";
 
         animation-duration: 1.5s;
         animation-name: btn_animation_arrow;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
-        animation-fill-mode:none;
+        animation-fill-mode: none;
 
         width: 13px;
         height: 27px;
@@ -65,7 +64,6 @@ button,
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
-
 
         color: $main_color;
         position: absolute;
@@ -77,13 +75,13 @@ button,
 .btn_effect_3 {
     position: relative;
     &::before {
-        content: '';
+        content: "";
 
         animation-duration: 1.5s;
         animation-name: btn_animation_rotate;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in;
-        animation-fill-mode:none;
+        animation-fill-mode: none;
 
         width: 40px;
         height: 20px;
@@ -92,14 +90,12 @@ button,
         background-position: center;
         background-size: contain;
 
-
         color: $main_color;
         position: absolute;
         bottom: -40%;
         left: -15%;
     }
 }
-
 
 @keyframes btn_animation_rotate {
     0% {
@@ -129,7 +125,7 @@ button,
     }
 }
 
-@keyframes btn_animation_pulse{
+@keyframes btn_animation_pulse {
     0% {
         transform: scale(1);
     }

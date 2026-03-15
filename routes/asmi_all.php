@@ -13,6 +13,8 @@ use App\Http\Controllers\ReviewController;
 use App\Http\Controllers\SaleController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SitemapController;
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [IndexController::class, 'index'])->name('home');
@@ -30,7 +32,8 @@ Route::get('/all_rewiews', [ReviewController::class, 'index'])->name('rewiews');
 
 Route::get('/blog/videos', [BlogController::class, 'videos'])->name('blog.videos');
 Route::get('/blog/texts', [BlogController::class, 'texts'])->name('blog.texts');
-Route::get('/blog/{slug}', [BlogController::class, 'page'])->name('blog.page');
+Route::get('/blog/videos/{slug}', [BlogController::class, 'video_page'])->name('blog.videos.page');
+Route::get('/blog/texts/{slug}', [BlogController::class, 'text_page'])->name('blog.texts.page');
 
 Route::get('/contacts', [ContactsController::class, 'index'])->name('contacts');
 
