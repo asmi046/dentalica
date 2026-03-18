@@ -15,12 +15,14 @@
 
     <section class="page_section">
         <div class="container">
-            <div class="blog_grid">
-                @forelse($texts as $text)
-                    <x-card.text-card :text="$text"></x-card.text-card>
-                @empty
-                    <p>Статьи отсутствуют</p>
-                @endforelse
+            <div class="text_blog_grid">
+                <div class="text-card-list">
+                    @forelse($texts as $text)
+                        <x-card.text-card :text="$text"></x-card.text-card>
+                    @empty
+                        <p>Статьи отсутствуют</p>
+                    @endforelse
+                </div>
             </div>
 
             @if ($texts->hasPages())

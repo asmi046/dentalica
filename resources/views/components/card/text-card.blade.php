@@ -1,21 +1,79 @@
-<div class="card text_card">
-    <div class="card_content">
-        <h3 class="card_title">
-            <a href="{{ route('blog.texts.page', $text->slug) }}">{{ $text->title }}</a>
-        </h3>
+<article class="text-card-item">
+    <div class="text-card-item__top">
+        <h2>Имплантация зубов: подготовка к безопасному лечению</h2>
+    </div>
 
-        <p class="card_description">{{ $text->short_description }}</p>
-
-        <div class="card_meta">
-            <div class="author_info">
-                <p class="author_name">{{ $text->author_name }}</p>
-                <p class="author_position">{{ $text->author_position }}</p>
+    <div class="text-card-item__center">
+        <div class="text-card-author">
+            <div class="text-card-author__photo">
+                <img src="/old_data/blog/doktor_1.webp" alt="Корнев Сергей Александрович">
             </div>
-            <p class="post_date">{{ $text->created_at->format('d.m.Y') }}</p>
+            <div class="text-card-author__content">
+                <p class="label_a">Автор</p>
+                <p class="author">Корнев Сергей Александрович</p>
+                <p class="position">Стоматолог имплантолог-хирург / Ортопед / Терапевт</p>
+            </div>
         </div>
 
-        <a href="{{ route('blog.texts.page', $text->slug) }}" class="read_more">
-            Читать далее →
-        </a>
+        <div class="text-card-tags" aria-label="Хештеги статьи">
+            <a href="#">#имплантация</a>
+            <a href="#">#костнаяпластика</a>
+            <a href="#">#стоматология</a>
+            <a href="#">#улыбка</a>
+        </div>
     </div>
-</div>
+
+    <div class="text-card-item__bottom">
+        <div class="text-card-item__text text_styles">
+            <p><strong>Перед имплантацией важно провести полную диагностику:</strong> оценить состояние костной ткани,
+                проверить здоровье десен и спланировать этапы лечения. Такой подход помогает снизить риски,
+                сделать операцию прогнозируемой и получить надежный результат на долгие годы.</p>
+            <p>После установки импланта пациент получает рекомендации по домашнему уходу и график
+                контрольных осмотров. Регулярная профессиональная гигиена и соблюдение назначений врача
+                позволяют сохранить стабильность конструкции и естественную эстетику улыбки.</p>
+        </div>
+        <div class="text-card-item__image">
+            <img src="/old_data/blog/bi_1.webp" alt="Иллюстрация статьи о стоматологии">
+        </div>
+    </div>
+</article>
+
+<article class="text-card-item">
+    <div class="text-card-item__top">
+        <h2>Имплантация зубов: подготовка к безопасному лечению</h2>
+    </div>
+
+    <div class="text-card-item__center">
+        <div class="text-card-author">
+            <div class="text-card-author__photo">
+                <img src="/old_data/blog/doktor_2.webp" alt="Алымова Виктория Викторовна">
+            </div>
+            <div class="text-card-author__content">
+                <p class="label_a">Автор</p>
+                <p class="author">Алымова Виктория Викторовна</p>
+                <p class="position">Стоматолог терапевт</p>
+            </div>
+        </div>
+
+        <div class="text-card-tags" aria-label="Хештеги статьи">
+            <a href="#">#имплантация</a>
+            <a href="#">#костнаяпластика</a>
+            <a href="#">#стоматология</a>
+            <a href="#">#улыбка</a>
+        </div>
+    </div>
+
+    <div class="text-card-item__bottom">
+        <div class="text-card-item__text text_styles">
+            <p><strong>Перед имплантацией важно провести полную диагностику:</strong> оценить состояние костной ткани,
+                проверить здоровье десен и спланировать этапы лечения. Такой подход помогает снизить риски,
+                сделать операцию прогнозируемой и получить надежный результат на долгие годы.</p>
+            <p>После установки импланта пациент получает рекомендации по домашнему уходу и график
+                контрольных осмотров. Регулярная профессиональная гигиена и соблюдение назначений врача
+                позволяют сохранить стабильность конструкции и естественную эстетику улыбки.</p>
+        </div>
+        <div class="text-card-item__image">
+            <img src="/old_data/blog/bi_1.webp" alt="Иллюстрация статьи о стоматологии">
+        </div>
+    </div>
+</article>
