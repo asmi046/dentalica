@@ -4,16 +4,15 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use Illuminate\Database\Eloquent\Model;
 use App\Models\TextMaterial;
-
-use MoonShine\Resources\ModelResource;
+use Illuminate\Database\Eloquent\Model;
+use MoonShine\Components\MoonShineComponent;
+use MoonShine\Fields\Field;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
-use MoonShine\Fields\Field;
 use MoonShine\Fields\TinyMce;
-use MoonShine\Components\MoonShineComponent;
+use MoonShine\Resources\ModelResource;
 
 /**
  * @extends ModelResource<TextMaterial>
@@ -85,9 +84,9 @@ class TextMaterialResource extends ModelResource
     }
 
     /**
-     * @param TextMaterial $item
-     *
+     * @param  TextMaterial  $item
      * @return array<string, string[]|string>
+     *
      * @see https://laravel.com/docs/validation#available-validation-rules
      */
     public function rules(Model $item): array
