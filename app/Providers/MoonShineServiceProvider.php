@@ -16,6 +16,8 @@ use App\MoonShine\Resources\SaleResource;
 use App\MoonShine\Resources\SelectResource;
 use App\MoonShine\Resources\SeoDataResource;
 use App\MoonShine\Resources\ServiceResource;
+use App\MoonShine\Resources\TextMaterialResource;
+use App\MoonShine\Resources\VideoMaterialResource;
 use Closure;
 use MoonShine\Contracts\Resources\ResourceContract;
 use MoonShine\Menu\MenuElement;
@@ -114,6 +116,18 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 static fn () => __('Сброс кеша'),
                 fn () => route('cache_clear'),
             )->icon('heroicons.arrow-path-rounded-square'),
+
+            MenuGroup::make(static fn () => __('Полезные материалы'), [
+                MenuItem::make(
+                    static fn () => __('Текстовые материалы'),
+                    new TextMaterialResource
+                )->icon('heroicons.outline.book-open'),
+
+                MenuItem::make(
+                    static fn () => __('Видеоматериалы'),
+                    new VideoMaterialResource
+                )->icon('heroicons.outline.video-camera'),
+            ]),
 
             MenuGroup::make(static fn () => __('moonshine::ui.resource.system'), [
                 MenuItem::make(
