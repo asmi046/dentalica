@@ -16,7 +16,19 @@
         <div class="container text_styles">
             <div class="video_page">
                 <div class="video">
-                    {!! $page->video_frame !!}
+                    <video
+                        controls
+                        playsinline
+                        webkit-playsinline
+                        x5-playsinline
+                        preload="metadata"
+                        controlsList="nodownload"
+                        poster="{{ asset('storage/'.$page->img) }}"
+                        aria-label="{{ $page->title }}"
+                    >
+                        <source src="{{ asset('storage/'.$page->video_frame) }}" type="video/mp4">
+                        Ваш браузер не поддерживает HTML5 видео.
+                    </video>
                 </div>
 
                 <div class="text">

@@ -12,6 +12,9 @@
         flex-direction: column;
         .video {
             max-width: 100%;
+            video {
+                width: 100%;
+            }
         }
     }
 }

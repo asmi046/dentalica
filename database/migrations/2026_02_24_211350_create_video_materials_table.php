@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('img')->nullable()->comment('Изображение');
             $table->string('slug')->unique()->comment('Слаг');
             $table->text('description')->nullable()->comment('Короткое описание');
-            $table->text('video_frame')->nullable()->comment('Короткое описание');
+            $table->string('video_frame', 700)->nullable()->comment('Видео');
             $table->timestamps();
         });
     }
