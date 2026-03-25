@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
 class TextMaterialSeeder extends Seeder
@@ -15,61 +16,45 @@ class TextMaterialSeeder extends Seeder
     {
         DB::table('text_materials')->truncate();
 
+        Storage::disk('public')->put('blog_specialist/korenev.webp', file_get_contents(public_path('old_data/blog/text/korenev.webp')), 'public');
+        Storage::disk('public')->put('blog_specialist/korenev_ml.webp', file_get_contents(public_path('old_data/blog/text/korenev_ml.webp')), 'public');
+        Storage::disk('public')->put('blog_specialist/alimova.webp', file_get_contents(public_path('old_data/blog/text/alimova.webp')), 'public');
+        Storage::disk('public')->put('blog_specialist/lisova.webp', file_get_contents(public_path('old_data/blog/text/lisova.webp')), 'public');
+
+        Storage::disk('public')->put('blog/text/s1.webp', file_get_contents(public_path('old_data/blog/text/s1.webp')), 'public');
+        Storage::disk('public')->put('blog/text/s2.webp', file_get_contents(public_path('old_data/blog/text/s2.webp')), 'public');
+
+
         $now = now();
 
         $items = [
             [
-                'title' => '5 ошибок в ежедневной чистке зубов',
-                'slug' => Str::slug('5-oshibok-v-ezhednevnoj-chistke-zubov'),
-                'short_description' => 'Разбираем самые частые ошибки в домашней гигиене и способы исправить их без лишних затрат.',
-                'text' => '<p>Даже при регулярной чистке многие пациенты пропускают труднодоступные зоны и используют слишком жесткую технику. Это приводит к налету, воспалению десен и повышенной чувствительности.</p><p>Оптимально чистить зубы 2 раза в день по 2-3 минуты, используя мягкую щетку и выметающие движения от десны к режущему краю. Дополнительно важно применять ирригатор или межзубные ершики, чтобы очищать промежутки.</p><p>Если вы замечаете кровоточивость десен или неприятный запах, стоит пройти профессиональную гигиену и получить персональные рекомендации по уходу.</p>',
+                'title' => 'На что обращать внимание при выборе врача и клиники',
+                'slug' => Str::slug('na-chto-obrashchat-vnimanie-pri-vybore-vracha-i-kliniki'),
+                'img' => 'blog/text/s1.webp',
+                'hash_tags' => '#стоматология #лечение #зубы #врач #клиника',
+                'text' => file_get_contents(public_path('old_data/blog/text/s1.html')),
+                'short_description' => file_get_contents(public_path('old_data/blog/text/s1_short.html')),
                 'author_name' => 'Корнев Сергей Александрович',
-                'author_photo' => null,
-                'author_position' => 'Стоматолог-хирург, ортопед',
-                'seo_title' => '5 ошибок в чистке зубов: рекомендации стоматолога',
-                'seo_description' => 'Какие ошибки в чистке зубов встречаются чаще всего и как правильно ухаживать за полостью рта.',
+                'author_photo' => 'blog_specialist/korenev.webp',
+                'author_position' => 'гл.врач клиники «Денталика», врач стоматолог-терапевт',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
             [
-                'title' => 'Нужно ли лечить кариес, если зуб не болит',
-                'slug' => Str::slug('nuzhno-li-lechit-karies-esli-zub-ne-bolit'),
-                'short_description' => 'Почему отсутствие боли не означает отсутствие проблемы и как избежать сложного лечения в будущем.',
-                'text' => '<p>Кариес на ранних стадиях может протекать бессимптомно, но процесс разрушения эмали и дентина продолжается. Когда появляется боль, поражение обычно уже глубокое.</p><p>Своевременное лечение небольшого кариеса занимает меньше времени и позволяет сохранить больше здоровых тканей зуба. Это также снижает риск развития пульпита и необходимости лечения каналов.</p><p>Рекомендуем проходить профилактический осмотр каждые 6 месяцев и выполнять снимки по показаниям для ранней диагностики.</p>',
-                'author_name' => 'Алымова Виктория Викторовна',
-                'author_photo' => null,
-                'author_position' => 'Стоматолог-терапевт',
-                'seo_title' => 'Нужно ли лечить кариес без боли',
-                'seo_description' => 'Объясняем, почему кариес важно лечить даже при отсутствии боли и дискомфорта.',
-                'created_at' => $now,
-                'updated_at' => $now,
-            ],
-            [
-                'title' => 'Профессиональная гигиена: как часто делать и зачем',
-                'slug' => Str::slug('professionalnaya-gigiena-kak-chasto-delat-i-zachem'),
-                'short_description' => 'Что дает профгигиена, кому нужна чаще и как поддерживать результат после процедуры.',
-                'text' => '<p>Профессиональная гигиена удаляет мягкий и твердый налет в зонах, которые невозможно полноценно очистить дома. Это важная профилактика кариеса и заболеваний десен.</p><p>В среднем процедуру рекомендуют 1 раз в 6 месяцев. При ношении брекетов, скученности зубов или склонности к быстрому образованию камня интервалы могут быть короче.</p><p>После гигиены врач подбирает индивидуальные средства ухода и объясняет технику, чтобы эффект сохранялся максимально долго.</p>',
-                'author_name' => 'Корнев Никита Сергеевич',
-                'author_photo' => null,
-                'author_position' => 'Гигиенист',
-                'seo_title' => 'Профессиональная гигиена зубов: частота и польза',
-                'seo_description' => 'Когда делать профгигиену, как она проходит и почему это базовая часть профилактики.',
-                'created_at' => $now,
-                'updated_at' => $now,
-            ],
-            [
-                'title' => 'Имплантация зубов: основные этапы лечения',
-                'slug' => Str::slug('implantaciya-zubov-osnovnye-etapy-lecheniya'),
-                'short_description' => 'Коротко и понятно об этапах имплантации: от диагностики до установки постоянной коронки.',
-                'text' => '<p>Имплантация начинается с диагностики: осмотра, КТ и планирования будущей конструкции. Это позволяет оценить объем кости и выбрать подходящую систему имплантов.</p><p>Далее проводится хирургический этап установки импланта и период приживления. В зависимости от клинической ситуации врач может предложить одномоментные или двухэтапные протоколы.</p><p>Финальный этап - протезирование: установка абатмента и коронки, восстановление жевательной функции и эстетики улыбки.</p>',
+                'title' => 'Какую специализацию должен иметь врач, чтобы оказывать услуги по имплантации и эндодонтии',
+                'slug' => Str::slug('kakuyu-specializatsiyu-dolzhen-imet-vrach-chtoby-okazyvat-uslugi-po-implantatsii-i-endodontii'),
+                'img' => 'blog/text/s2.webp',
+                'hash_tags' => '#стоматология #лечение #медицинская помощь #аккредитация #специализация #врач',
+                'text' => file_get_contents(public_path('old_data/blog/text/s2.html')),
+                'short_description' => file_get_contents(public_path('old_data/blog/text/s2_short.html')),
                 'author_name' => 'Корнев Сергей Александрович',
-                'author_photo' => null,
-                'author_position' => 'Стоматолог-хирург, ортопед',
-                'seo_title' => 'Этапы имплантации зубов',
-                'seo_description' => 'Подробно об этапах имплантации зубов: диагностика, установка импланта и протезирование.',
+                'author_photo' => 'blog_specialist/korenev.webp',
+                'author_position' => 'гл.врач клиники «Денталика», врач стоматолог-терапевт',
                 'created_at' => $now,
                 'updated_at' => $now,
             ],
+
         ];
 
         DB::table('text_materials')->upsert(
@@ -77,13 +62,13 @@ class TextMaterialSeeder extends Seeder
             ['slug'],
             [
                 'title',
+                'img',
+                'hash_tags',
                 'short_description',
                 'text',
                 'author_name',
                 'author_photo',
                 'author_position',
-                'seo_title',
-                'seo_description',
                 'updated_at',
             ]
         );

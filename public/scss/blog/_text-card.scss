@@ -27,6 +27,12 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 1px solid $gray_border_color;
+
+    &--page {
+        border: 3px dotted $dark_gray_color;
+        border-radius: $border_rad_main;
+        padding: 20px;
+    }
 }
 
 .text-card-author {
