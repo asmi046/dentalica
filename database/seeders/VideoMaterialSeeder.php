@@ -88,6 +88,41 @@ class VideoMaterialSeeder extends Seeder
                 'video_source' => 'сколько надо зубной пасты.mp4',
                 'description' => null,
             ],
+            [
+                'title' => 'Почему стерильность в стоматологии — это важно?',
+                'img_source' => 'v1.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v1.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239341&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Что происходит с инструментами после вашего приема?',
+                'img_source' => 'v2.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v2.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239360&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Одноразовые материалы - минимум рисков!',
+                'img_source' => 'v3.webp',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v3.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239378&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Хотите убедиться что все безопасно?',
+                'img_source' => 'v4.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239443&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Будут ли инструменты после обработки спиртом стерильны?',
+                'img_source' => 'v5.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239480&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
         ];
     }
 
