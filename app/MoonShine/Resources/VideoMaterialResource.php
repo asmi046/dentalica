@@ -47,7 +47,8 @@ class VideoMaterialResource extends ModelResource
             Image::make('Изображение', 'img')->removable(),
             Slug::make('Слаг', 'slug'),
             TinyMce::make('Короткое описание', 'description'),
-            Text::make('Короткое описание', 'video_frame'),
+            Text::make('Видео фрейм vk', 'video_frame'),
+            Text::make('Видео файл', 'video_file'),
         ];
     }
 
@@ -62,7 +63,8 @@ class VideoMaterialResource extends ModelResource
             Image::make('Изображение', 'img')->removable(),
             Slug::make('Слаг', 'slug'),
             TinyMce::make('Короткое описание', 'description'),
-            Text::make('Короткое описание', 'video_frame'),
+            Text::make('Видео фрейм vk', 'video_frame'),
+            Text::make('Видео файл', 'video_file'),
         ];
     }
 

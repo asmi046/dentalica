@@ -12,5 +12,6 @@ class VideoMaterial extends Model
         'slug',
         'description',
         'video_frame',
+        'video_file'
     ];
 }
