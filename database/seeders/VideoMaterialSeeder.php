@@ -123,6 +123,118 @@ class VideoMaterialSeeder extends Seeder
                 'description' => null,
                 'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239480&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
             ],
+            [
+                'title' => 'Поговорим о витаминах, которые нужны для здоров',
+                'img_source' => 'v6.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239321&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Здоровье зубов начинается с правильной гигиены полости рта!',
+                'img_source' => 'v7.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v7.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239314&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Зубные щетки, которыми наши стоматологи никогда не будут пользоваться',
+                'img_source' => 'v8.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v8.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239309&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Хотите сохранить улыбку здоровой?',
+                'img_source' => 'v9.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v9.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239302&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'А как вы ухаживаете за зубами?',
+                'img_source' => 'v10.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v10.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239300&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как выбрать ту самую пасту?',
+                'img_source' => 'v11.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v11.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239342&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Правильный выбор зубной щетки',
+                'img_source' => 'v12.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v12.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239343&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как правильно чистить зубы',
+                'img_source' => 'v13.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v13.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239344&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Тратите много денег на зубную пасту? 😱',
+                'img_source' => 'v14.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v14.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239349&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Учимся чистить зубы как профессионалы!',
+                'img_source' => 'v15.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v15.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239407&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => '🌟 Делимся вашими впечатлениями!',
+                'img_source' => 'v16.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v16.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239408&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Уход за зубами',
+                'img_source' => 'v17.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239501&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Я буду делать проф. гигиену, потому что не хочу что бы у меня было:',
+                'img_source' => 'v18.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v18.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239521&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Бокс для чувствительных десен',
+                'img_source' => 'v19.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v19.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239522&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Сделай правильный выбор',
+                'img_source' => 'v20.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239545&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Новый зуб — новая щетка❓',
+                'img_source' => 'v21.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v21.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239594&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
         ];
     }
 
