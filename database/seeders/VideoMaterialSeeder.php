@@ -235,6 +235,258 @@ class VideoMaterialSeeder extends Seeder
                 'description' => file_get_contents(public_path('old_data/blog/video/v21.html')),
                 'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239594&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
             ],
+            [
+                'title' => 'Почему важно вовремя делать имплантацию❓',
+                'img_source' => 'v22.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v22.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239351&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Вы поставили имплантат. Что дальше❓',
+                'img_source' => 'v23.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v23.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239365&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как подготовиться к имплантации?',
+                'img_source' => 'v24.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v24.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239394&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Рекомендации после имплантации',
+                'img_source' => 'v25.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v25.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239415&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Успешная имплантация',
+                'img_source' => 'v26.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v26.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239420&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как проверить подлинность имплантата?',
+                'img_source' => 'v27.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v27.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239471&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Имплантация зуба: как правильно подготовиться и легко восстановиться!',
+                'img_source' => 'v28.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v28.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239572&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => '🤕 Послеоперационный период. Правила комфортного восстановления',
+                'img_source' => 'v29.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v29.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239577&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Зубы мудрости удалять или нет?',
+                'img_source' => 'v30.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v30.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239353&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Чем сложное удаление зуба отличается от простого?',
+                'img_source' => 'v31.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v31.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239403&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Белое после операции — это не всегда гной! Разбираем «фибриновый налет»',
+                'img_source' => 'v32.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v32.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239583&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как отличить фибрин от гноя? 🩹🦷',
+                'img_source' => 'v33.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v33.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239590&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Гиперестезия или повышенная чувствительность зубов',
+                'img_source' => 'v34.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v34.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239383&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Ирригатор. За или против?',
+                'img_source' => 'v36.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v36.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239436&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Минутка юмора 😄',
+                'img_source' => 'v37.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v37.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239446&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Как правильно пользоваться флоссом',
+                'img_source' => 'v38.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v38.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239468&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Имплантация и отбеливание не для вас, если…',
+                'img_source' => 'v39.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v39.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239472&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Галитоз или неприятный запах изо рта',
+                'img_source' => 'v40.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v40.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239484&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Что нужно знать о герпесе?',
+                'img_source' => 'v41.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v41.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239488&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Что нужно знать о лечение герпеса',
+                'img_source' => 'v42.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v42.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239503&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Виниры и реставрации - ОТКАЗАНО',
+                'img_source' => 'v43.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v43.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239519&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Зубы и остеопороз!',
+                'img_source' => 'v44.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v44.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239525&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Почему зуб болит именно сейчас?',
+                'img_source' => 'v45.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v45.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239535&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Однотогенный синусит!',
+                'img_source' => 'v46.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v46.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239542&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Все есть яд и все есть лекарство, то и другое определяет доза',
+                'img_source' => 'v47.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v47.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239550&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Основа успешной методики лечения',
+                'img_source' => 'v48.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239559&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => '🤰🏻🦷 Можно ли лечить зубы беременным? Спойлер: НУЖНО',
+                'img_source' => 'v49.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v49.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239616&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Антибиотики в стоматологии: давайте обсудим этот вопрос👇🏻',
+                'img_source' => 'v50.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v50.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239623&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Не дяоверяй, а проверяй!',
+                'img_source' => 'v51.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v51.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239398&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Врачебная тайна или по секрету всему свету…',
+                'img_source' => 'v52.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v52.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239426&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Диплом на стол',
+                'img_source' => 'v53.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v53.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239455&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Монопрофильные клиники уходят в прошлое',
+                'img_source' => 'v54.jpg',
+                'video_source' => null,
+                'description' => null,
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239477&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Лечи умом, а не …',
+                'img_source' => 'v55.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v55.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239511&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'У врача нет специализации?',
+                'img_source' => 'v56.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v56.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239529&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Важное про план лечения!',
+                'img_source' => 'v57.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v57.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239601&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
+            [
+                'title' => 'Хотите зафиксировать стоимость лечения и не переживать о росте цен?',
+                'img_source' => 'v58.jpg',
+                'video_source' => null,
+                'description' => file_get_contents(public_path('old_data/blog/video/v58.html')),
+                'video_frame' => '<iframe src="https://vk.ru/clip_ext.php?oid=-228329352&id=456239607&autoplay=1" width="325" height="646" style="background-color: #000" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>'
+            ],
         ];
     }
 
