@@ -33,7 +33,7 @@ class TextMaterialSeeder extends Seeder
         Storage::disk('public')->put('blog/text/s10.jpg', file_get_contents(public_path('old_data/blog/text/s10.JPG')), 'public');
         Storage::disk('public')->put('blog/text/s11.jpg', file_get_contents(public_path('old_data/blog/text/s11.JPG')), 'public');
         // Storage::disk('public')->put('blog/text/s12.jpg', file_get_contents(public_path('old_data/blog/text/s12.jpg')), 'public');
-        Storage::disk('public')->put('blog/text/s13.jpg', file_get_contents(public_path('old_data/blog/text/s13.jpg')), 'public');
+        Storage::disk('public')->put('blog/text/s13.jpg', file_get_contents(public_path('old_data/blog/text/s13.JPG')), 'public');
         Storage::disk('public')->put('blog/text/s14.jpg', file_get_contents(public_path('old_data/blog/text/s14.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s15.jpg', file_get_contents(public_path('old_data/blog/text/s15.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s16.jpg', file_get_contents(public_path('old_data/blog/text/s16.jpg')), 'public');
