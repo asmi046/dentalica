@@ -35,10 +35,10 @@ class TextMaterialSeeder extends Seeder
         // Storage::disk('public')->put('blog/text/s12.jpg', file_get_contents(public_path('old_data/blog/text/s12.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s13.jpg', file_get_contents(public_path('old_data/blog/text/s13.JPG')), 'public');
         Storage::disk('public')->put('blog/text/s14.jpg', file_get_contents(public_path('old_data/blog/text/s14.jpg')), 'public');
-        Storage::disk('public')->put('blog/text/s15.jpg', file_get_contents(public_path('old_data/blog/text/s15.jpg')), 'public');
+        Storage::disk('public')->put('blog/text/s15.jpg', file_get_contents(public_path('old_data/blog/text/s15.JPG')), 'public');
         Storage::disk('public')->put('blog/text/s16.jpg', file_get_contents(public_path('old_data/blog/text/s16.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s17.jpg', file_get_contents(public_path('old_data/blog/text/s17.jpg')), 'public');
-        Storage::disk('public')->put('blog/text/s18.jpg', file_get_contents(public_path('old_data/blog/text/s18.jpg')), 'public');
+        Storage::disk('public')->put('blog/text/s18.jpg', file_get_contents(public_path('old_data/blog/text/s18.JPG')), 'public');
         Storage::disk('public')->put('blog/text/s19.jpg', file_get_contents(public_path('old_data/blog/text/s19.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s20.jpg', file_get_contents(public_path('old_data/blog/text/s20.jpg')), 'public');
         Storage::disk('public')->put('blog/text/s21.jpg', file_get_contents(public_path('old_data/blog/text/s21.jpg')), 'public');
