@@ -21,12 +21,7 @@
                     <p>Видео материалы отсутствуют</p>
                 @endforelse
             </div>
-
-            @if ($videos->hasPages())
-                <div class="pagination_wrapper">
-                    {{ $videos->links() }}
-                </div>
-            @endif
+            <x-pagination :tovars="$videos"></x-pagination>
         </div>
     </section>
 

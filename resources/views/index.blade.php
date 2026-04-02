@@ -11,7 +11,7 @@
     </section>
 
 
-    {{-- <x-blog-in-main></x-blog-in-main> --}}
+    <x-blog-in-main></x-blog-in-main>
 
     <section class="services_section">
         <div class="container">

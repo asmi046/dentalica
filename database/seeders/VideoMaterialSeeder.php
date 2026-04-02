@@ -40,54 +40,54 @@ class VideoMaterialSeeder extends Seeder
     private function itemsConfig(): array
     {
         return [
-            [
-                'title' => 'Ирригатор за или против',
-                'img_source' => 'Ирригатор за или против .webp',
-                'video_source' => 'Ирригатор за или против .mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Как выбрать зубную щетку',
-                'img_source' => 'Как выбрать зубную щетку.webp',
-                'video_source' => 'Как выбрать зубную щетку.mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Как подобрать зубную пасту',
-                'img_source' => 'Как подобрать зубную пасту.webp',
-                'video_source' => 'Как подобрать зубную пасту.mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Как пользоваться флоссом',
-                'img_source' => 'Как пользоваться флоссом .webp',
-                'video_source' => 'Как пользоваться флоссом .mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Техника чистки зубов СА',
-                'img_source' => 'Техника чистки зубов СА.webp',
-                'video_source' => 'Техника чистки зубов СА.mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Техника чистки зубов',
-                'img_source' => 'Техника чистки зубов.webp',
-                'video_source' => 'Техника чистки зубов.mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Товары',
-                'img_source' => 'Товары.webp',
-                'video_source' => 'Товары.mp4',
-                'description' => null,
-            ],
-            [
-                'title' => 'Cколько надо зубной пасты',
-                'img_source' => 'сколько надо зубной пасты.webp',
-                'video_source' => 'сколько надо зубной пасты.mp4',
-                'description' => null,
-            ],
+            // [
+            //     'title' => 'Ирригатор за или против',
+            //     'img_source' => 'Ирригатор за или против .webp',
+            //     'video_source' => 'Ирригатор за или против .mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Как выбрать зубную щетку',
+            //     'img_source' => 'Как выбрать зубную щетку.webp',
+            //     'video_source' => 'Как выбрать зубную щетку.mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Как подобрать зубную пасту',
+            //     'img_source' => 'Как подобрать зубную пасту.webp',
+            //     'video_source' => 'Как подобрать зубную пасту.mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Как пользоваться флоссом',
+            //     'img_source' => 'Как пользоваться флоссом .webp',
+            //     'video_source' => 'Как пользоваться флоссом .mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Техника чистки зубов СА',
+            //     'img_source' => 'Техника чистки зубов СА.webp',
+            //     'video_source' => 'Техника чистки зубов СА.mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Техника чистки зубов',
+            //     'img_source' => 'Техника чистки зубов.webp',
+            //     'video_source' => 'Техника чистки зубов.mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Товары',
+            //     'img_source' => 'Товары.webp',
+            //     'video_source' => 'Товары.mp4',
+            //     'description' => null,
+            // ],
+            // [
+            //     'title' => 'Cколько надо зубной пасты',
+            //     'img_source' => 'сколько надо зубной пасты.webp',
+            //     'video_source' => 'сколько надо зубной пасты.mp4',
+            //     'description' => null,
+            // ],
             [
                 'title' => 'Почему стерильность в стоматологии — это важно?',
                 'img_source' => 'v1.jpg',
@@ -506,27 +506,27 @@ class VideoMaterialSeeder extends Seeder
             $slug = Str::slug($this->transliterate($title));
 
             $imgSourcePath = $videoDirPath.DIRECTORY_SEPARATOR.$config['img_source'];
-            $videoSourcePath = $videoDirPath.DIRECTORY_SEPARATOR.$config['video_source'];
+            // $videoSourcePath = $videoDirPath.DIRECTORY_SEPARATOR.$config['video_frame'];
 
-            if (!is_file($imgSourcePath) || !is_file($videoSourcePath)) {
-                continue;
-            }
+            // if (!is_file($imgSourcePath) || !is_file($videoSourcePath)) {
+            //     continue;
+            // }
 
             $imgExt = strtolower(pathinfo($config['img_source'], PATHINFO_EXTENSION));
-            $videoExt = strtolower(pathinfo($config['video_source'], PATHINFO_EXTENSION));
+            // $videoExt = strtolower(pathinfo($config['video_frame'], PATHINFO_EXTENSION));
 
             $imgPath = "blog/video/{$slug}.{$imgExt}";
-            $videoPath = "blog/video/{$slug}.{$videoExt}";
+            // $videoPath = "blog/video/{$slug}.{$videoExt}";
 
             Storage::disk('public')->put($imgPath, file_get_contents($imgSourcePath), 'public');
-            Storage::disk('public')->put($videoPath, file_get_contents($videoSourcePath), 'public');
+            // Storage::disk('public')->put($videoPath, file_get_contents($videoSourcePath), 'public');
 
             $items[] = [
                 'title' => $title,
                 'img' => $imgPath,
                 'slug' => $slug,
                 'description' => $config['description'] ?? null,
-                'video_frame' => $videoPath,
+                'video_frame' => $config['video_frame'],
                 'created_at' => $now,
                 'updated_at' => $now,
             ];

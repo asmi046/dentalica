@@ -24,12 +24,7 @@
                     @endforelse
                 </div>
             </div>
-
-            @if ($texts->hasPages())
-                <div class="pagination_wrapper">
-                    {{ $texts->links() }}
-                </div>
-            @endif
+            <x-pagination :tovars="$texts"></x-pagination>
         </div>
     </section>
 
