@@ -1,6 +1,6 @@
 <a href="{{ route('blog.videos.page', ['slug' => $video->slug]) }}" class="card video_card">
     <div class="card_image video_placeholder">
-        <img src="{{ $video->img }}" alt="{{ $video->title }}" class="card_img">
+        <img src="{{ Storage::url($video->img) }}" alt="{{ $video->title }}" class="card_img">
         <div class="play_button">
             <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="30" cy="30" r="30" fill="black" fill-opacity="0.5" />
