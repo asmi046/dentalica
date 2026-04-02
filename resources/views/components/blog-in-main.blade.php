@@ -18,10 +18,10 @@
                         <a href="{{ route('blog.videos') }}" class="button">Смотреть</a>
                     </div>
                 </div>
-                <div class="informer">
+                {{-- <div class="informer">
                     <h3>Много интересной информации для <br>Вас</h3>
                     <div class="arrow"></div>
-                </div>
+                </div> --}}
             </div>
         </div>
     </section>

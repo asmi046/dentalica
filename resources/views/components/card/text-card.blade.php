@@ -6,7 +6,8 @@
     <div class="text-card-item__center">
         <div class="text-card-author">
             <div class="text-card-author__photo">
-                <img src="{{ Storage::url($text->author_photo) }}" alt="{{ $text->author_name }}">
+                <img src="{{ $text->author_photo ? Storage::url($text->author_photo) : asset('img/no_photo.webp') }}"
+                    alt="{{ $text->author_name }}">
             </div>
             <div class="text-card-author__content">
                 <p class="label_a">Автор</p>
@@ -27,8 +28,10 @@
             {!! $text->short_description !!}
 
         </div>
-        <div class="text-card-item__image">
-            <img src="{{ Storage::url($text->img) }}" alt="{{ $text->title }}">
-        </div>
+        @if ($text->img)
+            <div class="text-card-item__image">
+                <img src="{{ Storage::url($text->img) }}" alt="{{ $text->title }}">
+            </div>
+        @endif
     </a>
 </article>

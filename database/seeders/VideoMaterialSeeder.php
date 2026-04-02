@@ -515,11 +515,20 @@ class VideoMaterialSeeder extends Seeder
             $imgExt = strtolower(pathinfo($config['img_source'], PATHINFO_EXTENSION));
             // $videoExt = strtolower(pathinfo($config['video_frame'], PATHINFO_EXTENSION));
 
-            $imgPath = "blog/video/{$slug}.{$imgExt}";
-            // $videoPath = "blog/video/{$slug}.{$videoExt}";
+            if (!empty($config['img_source'])) {
+                $imgPath = "blog/video/{$slug}.{$imgExt}";
+                // $videoPath = "blog/video/{$slug}.{$videoExt}";
+            } else {
+                $imgPath = null;
+                // $videoPath = null;
+            }
 
-            Storage::disk('public')->put($imgPath, file_get_contents($imgSourcePath), 'public');
-            // Storage::disk('public')->put($videoPath, file_get_contents($videoSourcePath), 'public');
+            if ($imgPath) {
+                Storage::disk('public')->put($imgPath, file_get_contents($imgSourcePath), 'public');
+            }
+            // if ($videoPath) {
+            //     Storage::disk('public')->put($videoPath, file_get_contents($videoSourcePath), 'public');
+            // }
 
             $items[] = [
                 'title' => $title,

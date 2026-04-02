@@ -7,10 +7,12 @@
         flex: 1;
         display: flex;
         background-color: $gray_bg_color;
+        // background-color: $sub_color;
         border-radius: $border_rad;
         padding: 20px 40px;
         gap: 40px;
         position: relative;
+        // color: white;
 
         .logo-to-numbers {
             position: absolute;
@@ -24,6 +26,7 @@
             font-size: 112px;
             font-family: "Philosopher", sans-serif;
             color: $main_color;
+            // color: white;
         }
 
         .text_comment {
