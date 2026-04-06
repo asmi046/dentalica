@@ -26,7 +26,7 @@
     <a href="{{ route('blog.texts.page', ['slug' => $text->slug]) }}" class="text-card-item__bottom">
         <div class="text-card-item__text text_styles">
             {!! $text->short_description !!}
-
+            <button>Читать далее...</button>
         </div>
         @if ($text->img)
             <div class="text-card-item__image">
