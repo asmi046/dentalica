@@ -9,14 +9,14 @@ class BlogController extends Controller
 {
     public function videos()
     {
-        $videos = VideoMaterial::paginate(12);
+        $videos = VideoMaterial::orderBy('created_at', 'desc')->paginate(12);
 
         return view('blog.videos', compact('videos'));
     }
 
     public function texts()
     {
-        $texts = TextMaterial::paginate(12);
+        $texts = TextMaterial::orderBy('created_at', 'desc')->paginate(12);
 
         return view('blog.texts', compact('texts'));
     }
